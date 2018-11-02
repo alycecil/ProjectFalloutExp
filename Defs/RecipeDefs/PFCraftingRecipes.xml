@@ -5,7 +5,7 @@
     <RecipeDef>
         <defName>PFMakeHerbalMedsFromHerbs</defName>
         <label>Make herbal medicine</label>
-        <description>Makes herbal medicine by combining Broc Flowers and Xander root.</description>
+        <description>Makes herbal medicine by combining Broc Flowers and Xander root</description>
         <jobString>Making herbal medicine.</jobString>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_CookMeal</soundWorking>
@@ -45,8 +45,7 @@
         <defName>PFMakeStimpakFromStuff</defName>
         <label>Make stimpak</label>
         <description>Makes a stimpak by extracting chemicals from Xander Root and Broc Flowers and putting them into a
-            hypdermic syringe.
-        </description>
+            hypdermic syringe.</description>
         <jobString>Making stimpak.</jobString>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_CookMeal</soundWorking>

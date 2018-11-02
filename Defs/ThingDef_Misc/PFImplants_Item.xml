@@ -31,8 +31,7 @@
         <defName>PFVATSImplant</defName>
         <label>VATS Implant</label>
         <description>A variation of the VaultTec Assisted Targeting System that is implanted directly into the user's
-            brain.
-        </description>
+            brain.</description>
         <graphicData>
             <texPath>Things/Fallout/Implants/Implant</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -50,8 +49,7 @@
         <defName>PFAgilityImplant</defName>
         <label>Agility Implant</label>
         <description>An advanced reflex booster implant that enhances the user's agility, allowing them to move and
-            react faster.
-        </description>
+            react faster.</description>
         <graphicData>
             <texPath>Things/Fallout/Implants/Implant</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -65,8 +63,7 @@
         <defName>PFCharismaImplant</defName>
         <label>Charisma Implant</label>
         <description>An advanced empathy synthesizer implant that enhances the user's charisma, allowing them to
-            negotiate and persuade easier.
-        </description>
+            negotiate and persuade easier.</description>
         <graphicData>
             <texPath>Things/Fallout/Implants/Implant</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -81,8 +78,7 @@
         <defName>PFEnduranceImplant</defName>
         <label>Endurance Implant</label>
         <description>An advanced nociception regulator implant that enhances the user's endurance, allowing them to
-            resist pain and overcome disease or infections more easily.
-        </description>
+            resist pain and overcome disease or infections more easily.</description>
         <graphicData>
             <texPath>Things/Fallout/Implants/Implant</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -97,8 +93,7 @@
         <defName>PFIntelligenceImplant</defName>
         <label>Intelligence Implant</label>
         <description>An advanced logic co-processor implant that enhances the user's intelligence, allowing them to
-            learn new skills more quickly and speeds up their mental processes.
-        </description>
+            learn new skills more quickly and speeds up their mental processes.</description>
         <graphicData>
             <texPath>Things/Fallout/Implants/Implant</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -113,8 +108,7 @@
         <defName>PFPerceptionImplant</defName>
         <label>Perception Implant</label>
         <description>An advanced optics enhancer implant that augments the user's perecption, allowing them to see more
-            clearly and shoot more accurately.
-        </description>
+            clearly and shoot more accurately.</description>
         <graphicData>
             <texPath>Things/Fallout/Implants/Implant</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -129,8 +123,7 @@
         <defName>PFStrengthImplant</defName>
         <label>Strength Implant</label>
         <description>An advanced hypertrophy accelerator implant that enhances the user's strength, allowing them to
-            lift and haul more and heavier things.
-        </description>
+            lift and haul more and heavier things.</description>
         <graphicData>
             <texPath>Things/Fallout/Implants/Implant</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -145,8 +138,7 @@
         <defName>PFPMBImplant</defName>
         <label>Phoenix Monocyte Breeder Implant</label>
         <description>An advanced implant that enhances the user's metabolism efficiency and filtration of blood,
-            allowing them to recover from disease and have to eat less often.
-        </description>
+            allowing them to recover from disease and have to eat less often.</description>
         <graphicData>
             <texPath>Things/Fallout/Implants/Implant</texPath>
             <graphicClass>Graphic_Single</graphicClass>

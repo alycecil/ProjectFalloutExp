@@ -6,8 +6,7 @@
         <defName>MealPFDandyBoyApples</defName>
         <label>Dandy Boy Apples</label>
         <description>"Apples so good, they never go bad!". An old package of freeze dried apples, they taste a bit
-            stale, but they are still nutritious.
-        </description>
+            stale, but they are still nutritious.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/DandyApplesItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -33,8 +32,7 @@
         <defName>MealPFFancyLadsSnackCakes</defName>
         <label>Fancy Lads Snack Cakes</label>
         <description>An old package of small snack cakes, despite their age they don't seem to be stale or expired at
-            all.
-        </description>
+            all.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/FancyLadsCookiesItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -60,8 +58,7 @@
         <defName>MealPFCram</defName>
         <label>Cram</label>
         <description>An old can of processed meat, while particularly good as rations back in their day...they might
-            taste a bit funny by now.
-        </description>
+            taste a bit funny by now.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/CramItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -87,8 +84,7 @@
         <defName>MealPFYumYumDeviledEggs</defName>
         <label>Yum Yum Deviled Eggs</label>
         <description>An old package of preserved deviled eggs, they are surprisingly fresh for their age, but smell a
-            bit weird.
-        </description>
+            bit weird.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/YumYumEggsItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -114,8 +110,7 @@
         <defName>MealPFPorkNBeans</defName>
         <label>Pork n' Beans</label>
         <description>An old can of pork and beans, with all of the preservatives it has stayed mostly edible after a
-            very long time.
-        </description>
+            very long time.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/PorkNBeansItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -140,7 +135,7 @@
     <ThingDef ParentName="MealBase">
         <defName>MealPFBlamcoMacAndCheese</defName>
         <label>Blamco Mac and Cheese</label>
-        <description>An old box of instant Mac and Cheese that has held up well over its lifetime.</description>
+        <description>An old box of instant Mac and Cheese that has held up well over its lifetime</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/BlamCo_CheeseItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -165,8 +160,7 @@
     <ThingDef ParentName="MealBase">
         <defName>MealPFPotatoCrisps</defName>
         <label>Potato Crisps</label>
-        <description>An old box of very salty preserved potato crisps, they're a bit stale but still taste fine.
-        </description>
+        <description>An old box of very salty preserved potato crisps, they're a bit stale but still taste fine.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/PotatoCrispsItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -192,8 +186,7 @@
         <defName>MealPFSugarBombs</defName>
         <label>Sugar Bombs</label>
         <description>"Sugar Bombs: 100 percent daily value of sugar!". An old box of sugary cereal that has somehow
-            survived all this time, likely from the excess of sugar.
-        </description>
+            survived all this time, likely from the excess of sugar.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/SugarBombsItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -219,8 +212,7 @@
         <defName>MealPFInstaMash</defName>
         <label>InstaMash</label>
         <description>An old box of instant mashed potatoes, whether or not it is actually potatoes is one thing, but
-            they taste fine.
-        </description>
+            they taste fine.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/InstamashItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -246,8 +238,7 @@
         <defName>MealPFSalisburySteak</defName>
         <label>Salisbury Steak</label>
         <description>An old box with some preserved meat slabs and "gravy", it tastes pretty good, but who knows what
-            age has done to it.
-        </description>
+            age has done to it.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/SalisburySteakItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -273,8 +264,7 @@
         <defName>MealPFGumdrops</defName>
         <label>Gum Drops</label>
         <description>An old box of gum drops, while not a particularly nutritious meal, the sugar content has kept them
-            tasty and well preserved.
-        </description>
+            tasty and well preserved.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Pre-war/RadioactiveGumdropsItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>

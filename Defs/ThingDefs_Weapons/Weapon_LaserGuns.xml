@@ -31,8 +31,7 @@
         <defName>PFAEPLaser_Rifle</defName>
         <label>AEP9 Laser Rifle</label>
         <description>The AEP9 laser rifle fires intense lasers to inflict damage upon the user's target. This is the
-            more modern version that replaced the early Wattz 2000 model of laser rifles.
-        </description>
+            more modern version that replaced the early Wattz 2000 model of laser rifles.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/LaserRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -95,8 +94,7 @@
         <defName>PFTri-Beam_Laser_Rifle</defName>
         <label>Tri-Beam Laser Rifle</label>
         <description>A triple barreled laser rifle, it acts like a scattergun, firing 3 lasers at once. It lacks the
-            range and accuracy of other laser weapons, but makes up for it in damage.
-        </description>
+            range and accuracy of other laser weapons, but makes up for it in damage.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/TBLaserRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -159,8 +157,7 @@
         <defName>PFWLaser_Rifle</defName>
         <label>Wattz 2000 Laser Rifle</label>
         <description>The Wattz 2000 laser rifle fires percise lasers to take down targets. This outdated model was
-            replaced by the AEP9, which had a higher fire rate and was much more durable.
-        </description>
+            replaced by the AEP9, which had a higher fire rate and was much more durable.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Wattz2000</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -220,7 +217,7 @@
     <ThingDef ParentName="BaseLaserMakeableGun">
         <defName>PFAEPLaser_Pistol</defName>
         <label>AEP7 Laser Pistol</label>
-        <description>The AEP7 laser pistol fires intense beams of concentrated light.</description>
+        <description>The AEP7 laser pistol fires intense beams of concentrated light</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/LaserPistol</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -283,8 +280,7 @@
         <defName>Laser_PewPew</defName>
         <label>Pew Pew</label>
         <description>A unique variant of the AEP7 laser pistol that fires an extremely strong laser at the cost of it's
-            normally high fire rate.
-        </description>
+            normally high fire rate.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PewPew</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -339,8 +335,7 @@
         <defName>PFW1000Laser_Pistol</defName>
         <label>Wattz 1000 Laser Pistol</label>
         <description>The civilian grade Wattz 1000 laser pistol fires focused beams of light, however its lower wattage
-            and lack of a focusing array leave it weaker than the military grade AEP7.
-        </description>
+            and lack of a focusing array leave it weaker than the military grade AEP7.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Wattz1000</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -402,8 +397,7 @@
         <defName>PFGatlingLaser</defName>
         <label>Gatling Laser</label>
         <description>The L30 Gatling laser fires rapid inaccurate bursts of concentrated energy. The best friend of any
-            self-respecting Paladin.
-        </description>
+            self-respecting Paladin.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/LaserGatling</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -471,8 +465,7 @@
         <defName>Laser_PFSniper</defName>
         <label>Laser Sniper</label>
         <description>A modified laser rifle with a second focusing lens to further enhance accuracy, damage, and
-            range.
-        </description>
+            range.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/LaserSniper</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -534,8 +527,7 @@
         <defName>Laser_Musket</defName>
         <label>Laser Musket</label>
         <description>A makeshift hand crank operated laser rifle. It has moderate accuracy at all ranges, serving as a
-            very well balanced weapon for any well armed militia.
-        </description>
+            very well balanced weapon for any well armed militia.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/LaserMusket</texPath>
             <graphicClass>Graphic_Single</graphicClass>

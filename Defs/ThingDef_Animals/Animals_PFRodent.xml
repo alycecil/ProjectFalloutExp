@@ -6,8 +6,7 @@
         <defName>PFMoleRat</defName>
         <label>Mole Rat</label>
         <description>A giant genetically engineered naked mole rat. Their massive teeth can bite through solid bone or
-            metal.
-        </description>
+            metal.</description>
         <statBases>
             <MoveSpeed>3.75</MoveSpeed>
             <ComfyTemperatureMin>-20</ComfyTemperatureMin>

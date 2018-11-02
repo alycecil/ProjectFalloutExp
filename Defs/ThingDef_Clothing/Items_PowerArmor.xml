@@ -63,8 +63,7 @@
         <defName>X-01_PowerArmor</defName>
         <label>X-01 Power Armor</label>
         <description>The X-01 series of power armor was designed by the Enclave after the great war and was more heavily
-            armored than previous models.
-        </description>
+            armored than previous models.</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -126,8 +125,7 @@
         <defName>Raider_PowerArmor</defName>
         <label>Raider Power Armor</label>
         <description>A makeshift suit of power armor, it'll protect you, but won't last very long. Mostly used by
-            raiders and mercenaries.
-        </description>
+            raiders and mercenaries.</description>
         <techLevel>Industrial</techLevel>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -188,8 +186,7 @@
         <label>T-45 Power Armor</label>
         <description>The earliest model of power armor that was successfully deployed during the pre-war era and severed
             well for medium and heavy troopers alike. It does however have less advanced servos, so it limits a wearer's
-            movements.
-        </description>
+            movements.</description>
         <techLevel>Industrial</techLevel>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>

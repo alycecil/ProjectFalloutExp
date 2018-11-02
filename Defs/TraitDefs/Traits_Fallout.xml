@@ -9,8 +9,7 @@
             <li>
                 <label>Gifted</label>
                 <description>NAME has been special from birth, showing prowess in many skills. HECAP doesn't learn new
-                    things as quickly, since they are used to already being knowledgable.
-                </description>
+                    things as quickly, since they are used to already being knowledgable.</description>
                 <statOffsets>
                     <GlobalLearningFactor>-0.33</GlobalLearningFactor>
                 </statOffsets>
@@ -80,8 +79,7 @@
             <li>
                 <label>Intense Training</label>
                 <description>NAME was born losing to others, always coming up short. HECAP trained very hard to keep up
-                    with others, eventually becoming more skilled in every field.
-                </description>
+                    with others, eventually becoming more skilled in every field.</description>
                 <skillGains>
                     <li>
                         <key>Shooting</key>
@@ -147,8 +145,7 @@
             <li>
                 <label>Good Natured</label>
                 <description>NAME has always been well mannered, and they always tended to be on everyone's good side.
-                    Although this meant HE rarely got in fights.
-                </description>
+                    Although this meant HE rarely got in fights.</description>
                 <skillGains>
                     <li>
                         <key>Shooting</key>
@@ -193,8 +190,7 @@
             <li>
                 <label>Smooth Talker</label>
                 <description>NAME knows what to say and when to say it, making negotiations and conversations a breeze,
-                    for the most part.
-                </description>
+                    for the most part.</description>
                 <degree>1</degree>
                 <statOffsets>
                     <NegotiationAbility>0.05</NegotiationAbility>
@@ -211,8 +207,7 @@
             <li>
                 <label>Salesperson</label>
                 <description>NAME is an adept salesperson, they can sway prices in their favor, and charm their way to
-                    riches.
-                </description>
+                    riches.</description>
                 <degree>2</degree>
                 <statOffsets>
                     <NegotiationAbility>0.1</NegotiationAbility>
@@ -244,8 +239,7 @@
             <li>
                 <label>Idiot Savant</label>
                 <description>Something has always been off about NAME. They don't seem very intelligent, but they
-                    somehow pick up skills very quickly.
-                </description>
+                    somehow pick up skills very quickly.</description>
                 <statOffsets>
                     <GlobalLearningFactor>1.0</GlobalLearningFactor>
                 </statOffsets>
@@ -279,7 +273,7 @@
         <degreeDatas>
             <li>
                 <label>Animal Friend</label>
-                <description>NAME has always had an aptitude with animals, both domestic and wild.</description>
+                <description>NAME has always had an aptitude with animals, both domestic and wild</description>
                 <statOffsets>
                     <TrainAnimalChance>0.1</TrainAnimalChance>
                 </statOffsets>
@@ -303,8 +297,7 @@
             <li>
                 <label>Nerd Rage</label>
                 <description>Genius is angry! In some cases, high intelligence can lead to extreme strength, and NAME is
-                    a prime example.
-                </description>
+                    a prime example.</description>
                 <skillGains>
                     <li>
                         <key>Intellectual</key>
@@ -332,8 +325,7 @@
         <degreeDatas>
             <li>
                 <label>Small Frame</label>
-                <description>NAME has a small build, and while they can move quickly, they are physically weaker.
-                </description>
+                <description>NAME has a small build, and while they can move quickly, they are physically weaker.</description>
                 <degree>-1</degree>
                 <skillGains>
                     <li>
@@ -356,7 +348,7 @@
             </li>
             <li>
                 <label>Strong Back</label>
-                <description>NAME is pretty strong, and it helps them carry things around.</description>
+                <description>NAME is pretty strong, and it helps them carry things around</description>
                 <degree>1</degree>
                 <skillGains>
                     <li>
@@ -371,8 +363,7 @@
             <li>
                 <label>Pack Rat</label>
                 <description>NAME may as well have built-in pockets. They can carry much more stuff than a typical
-                    person.
-                </description>
+                    person.</description>
                 <degree>2</degree>
                 <statOffsets>
                     <CarryingCapacity>50</CarryingCapacity>
@@ -388,8 +379,7 @@
             <li>
                 <label>Whiskey Rose</label>
                 <description>NAME likes drinking, they also like shooting. Combining the two seems like a bad idea, but
-                    somehow it works.
-                </description>
+                    somehow it works.</description>
                 <skillGains>
                     <li>
                         <key>Shooting</key>
@@ -424,8 +414,7 @@
             <li>
                 <label>Jury Rigger</label>
                 <description>NAME quickly can mash some stuff together and still end up with a result looking moderately
-                    ok.
-                </description>
+                    ok.</description>
                 <degree>-1</degree>
                 <statOffsets>
                     <ConstructionSpeed>0.05</ConstructionSpeed>
@@ -449,8 +438,7 @@
             </li>
             <li>
                 <label>Regular Maintenance</label>
-                <description>NAME can do fairly well with materials, and has experience with building various things.
-                </description>
+                <description>NAME can do fairly well with materials, and has experience with building various things.</description>
                 <degree>1</degree>
                 <statOffsets>
                     <ConstructionSpeed>0.1</ConstructionSpeed>
@@ -476,8 +464,7 @@
             <li>
                 <label>Full Maintenance</label>
                 <description>NAME is quite proficient with all manner of crafts and construction, being able to do
-                    projects quick with high quality.
-                </description>
+                    projects quick with high quality.</description>
                 <degree>2</degree>
                 <statOffsets>
                     <ConstructionSpeed>0.15</ConstructionSpeed>
@@ -509,7 +496,7 @@
         <degreeDatas>
             <li>
                 <label>Inspirational</label>
-                <description>NAME has a tendency to inspire other people, as a result people admire them.</description>
+                <description>NAME has a tendency to inspire other people, as a result people admire them</description>
                 <degree>1</degree>
                 <statOffsets>
                     <NegotiationAbility>0.1</NegotiationAbility>
@@ -524,7 +511,7 @@
             </li>
             <li>
                 <label>Local Leader</label>
-                <description>NAME is a natural leader, people just tend to follow them.</description>
+                <description>NAME is a natural leader, people just tend to follow them</description>
                 <degree>2</degree>
                 <statOffsets>
                     <NegotiationAbility>0.2</NegotiationAbility>
@@ -556,8 +543,7 @@
             <li>
                 <label>Healer</label>
                 <description>NAME has done a bit of studying on medical terms, they are no trained medic, but are better
-                    than the average person.
-                </description>
+                    than the average person.</description>
                 <degree>-1</degree>
                 <statOffsets>
                     <MedicalSurgerySuccessChance>0.05</MedicalSurgerySuccessChance>
@@ -573,8 +559,7 @@
             <li>
                 <label>Medic</label>
                 <description>NAME is quite proficient with medicine, and knows how to patch up even the most serious
-                    wounds.
-                </description>
+                    wounds.</description>
                 <degree>1</degree>
                 <statOffsets>
                     <MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
@@ -592,8 +577,7 @@
             <li>
                 <label>Lifegiver</label>
                 <description>NAME is a medical prodigy, capable of skilled medical work, heroes almost never die when
-                    under their care.
-                </description>
+                    under their care.</description>
                 <degree>2</degree>
                 <statOffsets>
                     <MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
@@ -626,8 +610,7 @@
             <li>
                 <label>Survivalist</label>
                 <description>NAME has been through some tough stuff, and has adapted to survive through hell and back,
-                    more or less.
-                </description>
+                    more or less.</description>
                 <skillGains>
                     <li>
                         <key>Shooting</key>
@@ -684,8 +667,7 @@
             <li>
                 <label>Iron Fist</label>
                 <description>NAME's fists are like bullets, that and anything else they can hit with. HE doesn't speak
-                    so softly, but certainly carries a big stick.
-                </description>
+                    so softly, but certainly carries a big stick.</description>
                 <skillGains>
                     <li>
                         <key>Melee</key>

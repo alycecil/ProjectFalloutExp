@@ -61,8 +61,7 @@
         <defName>PFBrahmin</defName>
         <label>Brahmin</label>
         <description>A distant descendent of cows, this two-headed mutated bovine is used for meat and milk in the
-            wasteland.
-        </description>
+            wasteland.</description>
         <statBases>
             <MoveSpeed>3</MoveSpeed>
             <ComfyTemperatureMin>-18</ComfyTemperatureMin>
@@ -261,8 +260,7 @@
         <defName>PFBighorner</defName>
         <label>Bighorner</label>
         <description>A distant descendent of bighorn sheep, this aggresive mutated animal is a good source of meat in
-            the wasteland.
-        </description>
+            the wasteland.</description>
         <statBases>
             <MoveSpeed>3.25</MoveSpeed>
             <ComfyTemperatureMin>-18</ComfyTemperatureMin>

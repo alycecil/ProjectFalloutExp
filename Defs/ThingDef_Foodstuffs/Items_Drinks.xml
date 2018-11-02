@@ -45,7 +45,7 @@
     <ThingDef ParentName="MealBase">
         <defName>MealPFNukaCola</defName>
         <label>Nuka-Cola</label>
-        <description>A slightly radioactive and popular cola soft drink.</description>
+        <description>A slightly radioactive and popular cola soft drink</description>
         <graphicData>
             <texPath>Things/Fallout/Food/NukaCola</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -78,7 +78,7 @@
     <ThingDef ParentName="MealBase">
         <defName>MealPFSunsetSarsaparilla</defName>
         <label>Sunset Sarsaparilla</label>
-        <description>A refreshing sarsaparilla flavored soft drink that predates even Nuka-Cola.</description>
+        <description>A refreshing sarsaparilla flavored soft drink that predates even Nuka-Cola</description>
         <graphicData>
             <texPath>Things/Fallout/Food/Sunset</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -112,8 +112,7 @@
         <defName>MealPFNukaQuantum</defName>
         <label>Nuka-Cola Quantum</label>
         <description>A variant of Nuka-Cola with even more radiation and the twice the calories! It glows blue due to a
-            mildly radioactive isotope of Strontium-90.
-        </description>
+            mildly radioactive isotope of Strontium-90.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/NukaQuantum</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -147,8 +146,7 @@
         <defName>MealPFNukaQuartz</defName>
         <label>Nuka-Cola Quartz</label>
         <description>A variant of Nuka-Cola in a milky white bottle. It acts as a mild painkiller, and enhances eyesight
-            temporarily.
-        </description>
+            temporarily.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/NukaQuartz</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -185,7 +183,7 @@
     <ThingDef ParentName="MealBase">
         <defName>MealPFNukaCherry</defName>
         <label>Nuka-Cherry</label>
-        <description>A cherry flavored Nuka-Cola in a bright red bottle.</description>
+        <description>A cherry flavored Nuka-Cola in a bright red bottle</description>
         <graphicData>
             <texPath>Things/Fallout/Food/NukaCherry</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>

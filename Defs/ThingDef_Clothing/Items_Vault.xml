@@ -5,7 +5,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>Apparel_VaultJumpsuit</defName>
         <label>Vault Jumpsuit</label>
-        <description>The standard Vault-Tec jumpsuit worn by Vault Dwellers.</description>
+        <description>The standard Vault-Tec jumpsuit worn by Vault Dwellers</description>
         <graphicData>
             <texPath>Things/Fallout/Apparel/VaultJumpsuit/Standard/Vaultsuit_Male_front</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -60,7 +60,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>Apparel_ArmVaultJumpsuit</defName>
         <label>Armored Vault Jumpsuit</label>
-        <description>A standard Vault Jumpsuit reinforced to protect the wearer in combat.</description>
+        <description>A standard Vault Jumpsuit reinforced to protect the wearer in combat</description>
         <graphicData>
             <texPath>Things/Fallout/Apparel/VaultJumpsuit/Armor/VaultArmor_Male_front</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -118,7 +118,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>Apparel_PFVaultSecVest</defName>
         <label>Vault Security Vest</label>
-        <description>The ballistic vest worn by Vault-Tec security guards.</description>
+        <description>The ballistic vest worn by Vault-Tec security guards</description>
         <graphicData>
             <texPath>Things/Fallout/Apparel/VaultSecurity/VaultSecurityVest_Male_front</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -171,7 +171,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>PFVaultSecHelmet</defName>
         <label>Vault Security Helmet</label>
-        <description>The riot helmet worn by Vault-Tec security guards.</description>
+        <description>The riot helmet worn by Vault-Tec security guards</description>
         <graphicData>
             <texPath>Things/Fallout/Apparel/VaultSecurity/Helmet/VaultSecurityHelmet_front</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -218,8 +218,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>Apparel_PFVaultSciCoat</defName>
         <label>Vault Lab Coat</label>
-        <description>The Vault-Tec standard lab coat, designed for "maximum" safety in the event of an emergency.
-        </description>
+        <description>The Vault-Tec standard lab coat, designed for "maximum" safety in the event of an emergency.</description>
         <graphicData>
             <texPath>Things/Fallout/Apparel/VaultLab/VaultLabCoat_Male_front</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -272,8 +271,7 @@
         <defName>Apparel_PFPipboy3000Vault</defName>
         <label>Pipboy 3000</label>
         <description>A fairly advanced wrist-mounted computer. It assists greatly in accuracy and work efficiency. It
-            contains a multitude of utilities including a full body status scanner as well as a Geiger counter.
-        </description>
+            contains a multitude of utilities including a full body status scanner as well as a Geiger counter.</description>
         <graphicData>
             <texPath>Things/Fallout/Apparel/Pipboy/Pipboy3000</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -323,8 +321,7 @@
         <defName>Apparel_PFPipboy2000Vault</defName>
         <label>Pipboy 2000</label>
         <description>A basic wrist-mounted computing device. It is slow compared to its newer counterpart the Pipboy
-            3000, but still assists in productivity and accuracy.
-        </description>
+            3000, but still assists in productivity and accuracy.</description>
         <graphicData>
             <texPath>Things/Fallout/Apparel/Pipboy/Pipboy2000</texPath>
             <graphicClass>Graphic_Single</graphicClass>

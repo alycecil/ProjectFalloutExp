@@ -20,7 +20,7 @@
             <SellPriceFactor>0.5</SellPriceFactor>
         </statBases>
         <altitudeLayer>Item</altitudeLayer>
-        <description>Equipment lacks desc.</description>
+        <description>Equipment lacks desc</description>
         <comps>
             <li Class="CompProperties_Forbiddable"/>
             <li>
@@ -68,7 +68,7 @@
         <defName>Throwable_PFDynamite</defName>
         <equipmentType>Primary</equipmentType>
         <label>Dynamite</label>
-        <description>Old-fashion sticks of dynamite.</description>
+        <description>Old-fashion sticks of dynamite</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Throwables/Dynamite</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -124,7 +124,7 @@
         <defName>Throwable_LFDynamite</defName>
         <equipmentType>Primary</equipmentType>
         <label>Long-fuse Dynamite</label>
-        <description>Old-fashion sticks of dynamite with extended fuses.</description>
+        <description>Old-fashion sticks of dynamite with extended fuses</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Throwables/LFDynamite</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -181,8 +181,7 @@
         <equipmentType>Primary</equipmentType>
         <label>Pulse Grenades</label>
         <description>A grenade that when detonated releases a very strong EMP pulse that damages robots and
-            electronics.
-        </description>
+            electronics.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Throwables/PulseGrenade</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -239,8 +238,7 @@
         <equipmentType>Primary</equipmentType>
         <label>Plasma Grenades</label>
         <description>A powerful grenade that highly outclasses the standard fragmentation grenade. It combines energy
-            and fragmentation to utterly melt those who are directly in it's blast.
-        </description>
+            and fragmentation to utterly melt those who are directly in it's blast.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Throwables/PlasmaGrenade</texPath>
             <graphicClass>Graphic_Single</graphicClass>

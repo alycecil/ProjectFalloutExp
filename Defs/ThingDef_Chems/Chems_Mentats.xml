@@ -4,7 +4,7 @@
     <ThingDef ParentName="MakeableChemPillBase">
         <defName>PFMentats</defName>
         <label>Mentats</label>
-        <description>Taking Mentats provides a boost to mental capacity, it is slightly addictive.</description>
+        <description>Taking Mentats provides a boost to mental capacity, it is slightly addictive</description>
         <graphicData>
             <texPath>Things/Fallout/Chems/Mentats</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -105,7 +105,7 @@
         <stages>
             <li>
                 <label>Aided by Mentats</label>
-                <description>I feel like everything makes more sense, I should get to work.</description>
+                <description>I feel like everything makes more sense, I should get to work</description>
                 <baseMoodEffect>5</baseMoodEffect>
             </li>
         </stages>
@@ -124,8 +124,7 @@
         <needClass>Need_Chemical</needClass>
         <label>Mentats</label>
         <description>Because of an addiction to Mentats, this person needs to regularly consume the drug to avoid
-            withdrawal symptoms.
-        </description>
+            withdrawal symptoms.</description>
         <listPriority>45</listPriority>
     </NeedDef>
 
@@ -189,7 +188,7 @@
             </li>
             <li>
                 <label>Mentats withdrawal</label>
-                <description>I've got a splitting migraine...just thinking at all hurts.</description>
+                <description>I've got a splitting migraine...just thinking at all hurts</description>
                 <baseMoodEffect>-15</baseMoodEffect>
             </li>
         </stages>

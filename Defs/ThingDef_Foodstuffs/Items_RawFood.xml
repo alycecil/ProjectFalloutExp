@@ -6,8 +6,7 @@
         <defName>PFRawTatos</defName>
         <label>Tatos</label>
         <description>A mutated hybrid between potatoes and tomatoes. It tastes horrible raw, and not much better when
-            cooked, but in the wasteland you can't complain.
-        </description>
+            cooked, but in the wasteland you can't complain.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/RawPlants/Tato</texPath>
         </graphicData>
@@ -29,7 +28,7 @@
     <ThingDef ParentName="PlantFoodRawBase">
         <defName>PFRazorgrain</defName>
         <label>Razorgrain</label>
-        <description>A distant descendant of wheat, it is able to grow in the harsh wasteland.</description>
+        <description>A distant descendant of wheat, it is able to grow in the harsh wasteland</description>
         <soundInteract>Grain_Drop</soundInteract>
         <soundDrop>Grain_Drop</soundDrop>
         <graphicData>
@@ -54,8 +53,7 @@
         <defName>PFMutfruit</defName>
         <label>Mutfruit</label>
         <description>A large mutated descendant of blueberries, it tastes good and won't kill you, a must have for
-            farmers in the wastelands.
-        </description>
+            farmers in the wastelands.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/RawPlants/Mutfruit</texPath>
         </graphicData>
@@ -82,8 +80,7 @@
         <defName>PFTarberry</defName>
         <label>Tarberries</label>
         <description>A cluster of small purple berries, very similar to cranberries. They taste great and have some
-            other uses other than consumption.
-        </description>
+            other uses other than consumption.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/RawPlants/Tarberry</texPath>
         </graphicData>
@@ -110,8 +107,7 @@
         <defName>PFBarrelCactusFruit</defName>
         <label>Barrel Cactus Fruit</label>
         <description>A slimy and slightly sour fruit that comes from the flower of a barrel cactus. They aren't
-            particularly tasty, but make a nutritious food in a pinch and do not spoil quickly.
-        </description>
+            particularly tasty, but make a nutritious food in a pinch and do not spoil quickly.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/RawPlants/BarrelCactusItem</texPath>
         </graphicData>
@@ -138,8 +134,7 @@
         <defName>PFXanderRootItem</defName>
         <label>Xander Root</label>
         <description>A large turnip-like root with mild healing properties. When combined with a Broc Flower it can
-            create herbal medicine or stimpaks.
-        </description>
+            create herbal medicine or stimpaks.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/RawPlants/XanderRootItem</texPath>
         </graphicData>
@@ -161,8 +156,7 @@
         <defName>PFBrocFlowerItem</defName>
         <label>Broc Flower</label>
         <description>A small orange flower with slight medicinal properties. When combined with a Xander Root it can
-            create herbal medicine or stimpaks.
-        </description>
+            create herbal medicine or stimpaks.</description>
         <graphicData>
             <texPath>Things/Fallout/Food/RawPlants/BrocFlowerItem</texPath>
         </graphicData>
@@ -184,8 +178,7 @@
         <defName>PFGiantGeckoEgg</defName>
         <label>Giant Gecko egg (fert.)</label>
         <description>Fertilized giant gecko egg. If all goes well, it should hatch into a baby giant gecko. It can be
-            eaten raw, but it's much better cooked.
-        </description>
+            eaten raw, but it's much better cooked.</description>
         <graphicData>
             <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
             <color>(245,245,245)</color>

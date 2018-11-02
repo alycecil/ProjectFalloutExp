@@ -19,7 +19,7 @@
     <ThingDef ParentName="BaseLaserMakeableGun">
         <defName>PFPlasma_Pistol</defName>
         <label>Plasma Pistol</label>
-        <description>A pistol that fires deadly superheated plasma propelled down a superconducted shaft.</description>
+        <description>A pistol that fires deadly superheated plasma propelled down a superconducted shaft</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PlasmaPistol</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -78,8 +78,7 @@
         <defName>PFPlasma_Defender</defName>
         <label>Plasma Defender</label>
         <description>The outdated Glock 86 plasma pistol fires a more powerful plasma bolt than a standard plasma
-            pistol, though it has a shorter range.
-        </description>
+            pistol, though it has a shorter range.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PlasmaDefender</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -137,7 +136,7 @@
     <ThingDef ParentName="BaseLaserMakeableGun">
         <defName>PFPlasma_Rifle</defName>
         <label>Plasma Rifle</label>
-        <description>A rifle that fires deadly superheated plasma propelled down a superconducted shaft.</description>
+        <description>A rifle that fires deadly superheated plasma propelled down a superconducted shaft</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PlasmaRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -196,8 +195,7 @@
         <defName>PFMultiplas_Rifle</defName>
         <label>Multiplas Rifle</label>
         <description>A scattergun that fires 3 superheated plasma bolts to utterly melt one's target, that is if they
-            hit..
-        </description>
+            hit.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PlasmaRifle2</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -258,8 +256,7 @@
         <defName>PFPlasmaScattergun</defName>
         <label>Plasma Scattergun</label>
         <description>An advanced scattergun that fires 4 superheated plasma bolts to utterly melt one's target, that is
-            if they hit..
-        </description>
+            if they hit.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PlasmaScattergun</texPath>
             <graphicClass>Graphic_Single</graphicClass>

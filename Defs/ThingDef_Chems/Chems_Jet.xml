@@ -6,8 +6,7 @@
         <defName>PFJet</defName>
         <label>Jet</label>
         <description>Using Jet puts you in an altered state of awareness in which time appears to slow, allowing for
-            more actions than normal for a short period of time, however it is highly addictive.
-        </description>
+            more actions than normal for a short period of time, however it is highly addictive.</description>
         <graphicData>
             <texPath>Things/Fallout/Chems/Jet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -108,7 +107,7 @@
         <stages>
             <li>
                 <label>High on Jet</label>
-                <description>I feel like everyting is moving...slowly, and it feels great!</description>
+                <description>I feel like everyting is moving...slowly, and it feels great</description>
                 <baseMoodEffect>10</baseMoodEffect>
             </li>
         </stages>
@@ -126,8 +125,7 @@
         <needClass>Need_Chemical</needClass>
         <label>Jet</label>
         <description>Because of an addiction to Jet, this person needs to regularly consume the drug to avoid withdrawal
-            symptoms.
-        </description>
+            symptoms.</description>
         <listPriority>45</listPriority>
     </NeedDef>
 
@@ -202,8 +200,7 @@
             </li>
             <li>
                 <label>Jet withdrawal</label>
-                <description>Everything is moving too fast...I can't focus, and everything feels so jittery.
-                </description>
+                <description>Everything is moving too fast...I can't focus, and everything feels so jittery.</description>
                 <baseMoodEffect>-25</baseMoodEffect>
             </li>
         </stages>

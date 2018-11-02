@@ -40,7 +40,7 @@
     <ThingDef ParentName="BasePipeMakeableHumanGun">
         <defName>Gun_PFPipePistol</defName>
         <label>Pipe Pistol</label>
-        <description>A makeshift pistol, it's simple to make but doesn't hit very hard.</description>
+        <description>A makeshift pistol, it's simple to make but doesn't hit very hard</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PipePistol</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -93,8 +93,7 @@
     <ThingDef ParentName="BasePipeMakeableHumanGun">
         <defName>Gun_PFPipeRevolver</defName>
         <label>Pipe Revolver</label>
-        <description>A makeshift revolver, it's simple to make and hits a bit harder than the normal pistol.
-        </description>
+        <description>A makeshift revolver, it's simple to make and hits a bit harder than the normal pistol.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PipeRevolver</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -146,7 +145,7 @@
     <ThingDef ParentName="BasePipeMakeableHumanGun">
         <defName>Gun_PFPipeRifle</defName>
         <label>Pipe Rifle</label>
-        <description>A makeshift rifle, it's simple to make but is more accurate than the pistol.</description>
+        <description>A makeshift rifle, it's simple to make but is more accurate than the pistol</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PipeRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -199,7 +198,7 @@
     <ThingDef ParentName="BasePipeMakeableHumanGun">
         <defName>Gun_PFPipeSMG</defName>
         <label>Pipe SMG</label>
-        <description>A makeshift submachine gun, it's simple to make but fires quickly.</description>
+        <description>A makeshift submachine gun, it's simple to make but fires quickly</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/PipeSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>

@@ -6,8 +6,7 @@
         <defName>PFSteady</defName>
         <label>Steady</label>
         <description>A hard combat drug made from a cocktail of chemicals, it provides the user with deadshot aim, at
-            the cost of being extraordinarily addictive.
-        </description>
+            the cost of being extraordinarily addictive.</description>
         <graphicData>
             <texPath>Things/Fallout/Chems/Steady</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -107,8 +106,7 @@
         <stages>
             <li>
                 <label>Steadied by Steady</label>
-                <description>I could totally shoot a bullseye, through a window, from a few hundred feet away.
-                </description>
+                <description>I could totally shoot a bullseye, through a window, from a few hundred feet away.</description>
                 <baseMoodEffect>5</baseMoodEffect>
             </li>
         </stages>
@@ -127,8 +125,7 @@
         <needClass>Need_Chemical</needClass>
         <label>Steady</label>
         <description>Because of an addiction to Steady, this person needs to regularly consume the drug to avoid
-            withdrawal symptoms.
-        </description>
+            withdrawal symptoms.</description>
         <listPriority>45</listPriority>
     </NeedDef>
 
@@ -206,7 +203,7 @@
             </li>
             <li>
                 <label>Steady withdrawal</label>
-                <description>Everything is so shaky, even my eyes are rattling around.</description>
+                <description>Everything is so shaky, even my eyes are rattling around</description>
                 <baseMoodEffect>-10</baseMoodEffect>
             </li>
         </stages>

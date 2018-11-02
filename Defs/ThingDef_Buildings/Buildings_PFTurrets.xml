@@ -41,7 +41,7 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
         </comps>
-        <description>A basic machinegun turret, it is much sturdier than the improvised turret. Despite these improvments, it's AI still suffers from simplicity and is prone to friendly fire.</description>
+        <description>A basic machinegun turret, it is much sturdier than the improvised turret. Despite these improvments, it's AI still suffers from simplicity and is prone to friendly fire</description>
         <passability>PassThroughOnly</passability>
         <pathCost>60</pathCost>
         <fillPercent>0.45</fillPercent>
@@ -91,7 +91,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <menuHidden>true</menuHidden>
-        <description>A machinegun built into a turret.</description>
+        <description>A machinegun built into a turret</description>
         <soundInteract>Interact_Rifle</soundInteract>
         <thingSetMakerTags><li>RewardSpecial</li></thingSetMakerTags>>
         <tradeability>Never</tradeability>
@@ -160,7 +160,7 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
         </comps>
-        <description>A heavier machinegun turret, it is stronger than the basic machinegun turret. Due to the higher caliber bullets it fires, it tends to overheat so it requires longer between firing.</description>
+        <description>A heavier machinegun turret, it is stronger than the basic machinegun turret. Due to the higher caliber bullets it fires, it tends to overheat so it requires longer between firing</description>
         <passability>PassThroughOnly</passability>
         <pathCost>65</pathCost>
         <fillPercent>0.45</fillPercent>
@@ -210,7 +210,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <menuHidden>true</menuHidden>
-        <description>A heavy machinegun built into a turret.</description>
+        <description>A heavy machinegun built into a turret</description>
         <soundInteract>Interact_Rifle</soundInteract>
         <thingSetMakerTags><li>RewardSpecial</li></thingSetMakerTags>>
         <tradeability>Never</tradeability>

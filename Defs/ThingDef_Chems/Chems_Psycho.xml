@@ -6,8 +6,7 @@
         <defName>PFPsycho</defName>
         <label>Psycho</label>
         <description>A rejected military sterioid that increases physical strength, but decreasing mental capacity, it
-            is fairly addictive.
-        </description>
+            is fairly addictive.</description>
         <graphicData>
             <texPath>Things/Fallout/Chems/Psycho</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -108,7 +107,7 @@
         <stages>
             <li>
                 <label>Enraged by Psycho</label>
-                <description>I WANT TO KILL STUFF, GAAAAHHH.</description>
+                <description>I WANT TO KILL STUFF, GAAAAHHH</description>
                 <baseMoodEffect>2</baseMoodEffect>
             </li>
         </stages>
@@ -127,8 +126,7 @@
         <needClass>Need_Chemical</needClass>
         <label>Psycho</label>
         <description>Because of an addiction to Psycho, this person needs to regularly consume the drug to avoid
-            withdrawal symptoms.
-        </description>
+            withdrawal symptoms.</description>
         <listPriority>45</listPriority>
     </NeedDef>
 
@@ -193,7 +191,7 @@
             </li>
             <li>
                 <label>Psycho withdrawal</label>
-                <description>I'm so angry...and everything hurts.</description>
+                <description>I'm so angry...and everything hurts</description>
                 <baseMoodEffect>-25</baseMoodEffect>
             </li>
         </stages>

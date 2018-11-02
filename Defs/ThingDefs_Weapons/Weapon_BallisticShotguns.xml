@@ -21,8 +21,7 @@
         <defName>Gun_PFCaravanShotgun</defName>
         <label>Caravan Shotgun</label>
         <description>An old ballistic over-under double barrel shotgun. It has a short range, but can tear up a target
-            if you get close.
-        </description>
+            if you get close.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/CaravanShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -76,8 +75,7 @@
         <defName>Gun_PFSCaravanShotgun</defName>
         <label>Sturdy Caravan Shotgun</label>
         <description>A unique variant of the Carvan Shotgun, although it is rougher around the edges, it has much more
-            sturdy components. It has a short range, but can tear up a target if you get close.
-        </description>
+            sturdy components. It has a short range, but can tear up a target if you get close.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/SturdyCaravanShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -130,8 +128,7 @@
         <defName>Gun_PFHuntingShotgun</defName>
         <label>Hunting Shotgun</label>
         <description>A powerful pump action shotgun that is commonly used for hunting game. It hits hard, but lacks good
-            accuracy at longer ranges.
-        </description>
+            accuracy at longer ranges.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/HuntingShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -185,8 +182,7 @@
         <defName>Gun_PFDinnerBell</defName>
         <label>Dinner Bell</label>
         <description>A unique variant of the Hunting Shotgun. It is covered in camouflage paint, and is more accurate
-            than its generic counterpart.
-        </description>
+            than its generic counterpart.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/DinnerBell</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -239,8 +235,7 @@
         <defName>Gun_PFLeverActionShotgun</defName>
         <label>Lever-action Shotgun</label>
         <description>An old single barrel lever action shotgun, used commonly for both hunting and defense. It has good
-            range for a shotgun, and fires very quickly, however it's damage suffers slightly in comparison.
-        </description>
+            range for a shotgun, and fires very quickly, however it's damage suffers slightly in comparison.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/LeverActionShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -294,8 +289,7 @@
         <defName>Gun_PFSawedOffShotgun</defName>
         <label>Sawed-off Shotgun</label>
         <description>An old sawed-off shotgun that fires both barrels at once. It shoots two powerful projectiles at the
-            expense of a very long reload time and short range.
-        </description>
+            expense of a very long reload time and short range.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/SawedOffShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -352,8 +346,7 @@
         <label>Big Boomer</label>
         <description>A unique variant of the Sawed-off Shotgun. It bears an inscription with the name of the gun, and is
             much more warn down. Despite this, it has a much greater stopping power and slightly better accuracy and
-            range.
-        </description>
+            range.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/BigBoomer</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -409,8 +402,7 @@
         <defName>Gun_PFSingleShotgun</defName>
         <label>Single Shotgun</label>
         <description>An old single barrel shotgun that fires high power slugs. It holds only a single shot, but reloads
-            fairly quickly while maintaining accuracy.
-        </description>
+            fairly quickly while maintaining accuracy.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/SingleShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -464,8 +456,7 @@
         <defName>Gun_PFRiotShotgun</defName>
         <label>Riot Shotgun</label>
         <description>An old pre-war military combat shotgun. It has a massive drum magazine, and a quick fire rate,
-            however while it's range remains intact, its accuracy is poor.
-        </description>
+            however while it's range remains intact, its accuracy is poor.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/RiotShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>

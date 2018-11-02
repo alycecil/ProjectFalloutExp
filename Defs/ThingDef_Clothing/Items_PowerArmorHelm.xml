@@ -23,7 +23,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>Apparel_X-01_Helmet</defName>
         <label>X-01 Power Armor Helmet</label>
-        <description>A post-war power armor helmet developed by the Enclave.</description>
+        <description>A post-war power armor helmet developed by the Enclave</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
             <researchPrerequisite>PFAdvancedPowerArmor</researchPrerequisite>
@@ -75,7 +75,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>Apparel_RaiderPA_Helmet</defName>
         <label>Raider Power Armor Helmet</label>
-        <description>A makeshift helmet with good protection, however it won't last very long.</description>
+        <description>A makeshift helmet with good protection, however it won't last very long</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
             <researchPrerequisite>Machining</researchPrerequisite>
@@ -127,8 +127,7 @@
         <label>T-45 Power Armor Helmet</label>
         <description>The earliest model of power armor that was successfully deployed during the pre-war era and severed
             well for medium and heavy troopers alike. It does however have less advanced servos, so it limits a wearer's
-            movements.
-        </description>
+            movements.</description>
         <techLevel>Industrial</techLevel>
         <recipeMaker>
             <researchPrerequisite>PoweredArmor</researchPrerequisite>

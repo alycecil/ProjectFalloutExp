@@ -86,7 +86,7 @@
     <ThingDef ParentName="BaseNormMeleeWeapon_Blunt">
         <defName>MeleeWeapon_PF9Iron</defName>
         <label>Nine Iron</label>
-        <description>A golf club, fairly battered after seeing long use in the wasteland.</description>
+        <description>A golf club, fairly battered after seeing long use in the wasteland</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Melee/9Iron</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -127,8 +127,7 @@
         <defName>MeleeWeapon_PFNephiGolfDriver</defName>
         <label>Nephi's Golf Driver</label>
         <description>A unique variant of the nine iron. It is in nearly prestine condition despite having been used to
-            bash in the faces of multiple men that offended the Fiend, Nephi.
-        </description>
+            bash in the faces of multiple men that offended the Fiend, Nephi.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Melee/NephiGolfDriver</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -166,7 +165,7 @@
     <ThingDef ParentName="BaseNormMeleeWeapon_Blunt">
         <defName>MeleeWeapon_PFBaseballBat</defName>
         <label>Baseball Bat</label>
-        <description>A baseball bat great for sports, or bashing in skulls.</description>
+        <description>A baseball bat great for sports, or bashing in skulls</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Melee/BaseballBat</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -212,7 +211,7 @@
     <ThingDef ParentName="BaseNormMeleeWeapon_Blunt">
         <defName>MeleeWeapon_PFPowerFist</defName>
         <label>Power Fist</label>
-        <description>A mechanical glove with hydraulic piston to increase force on impact.</description>
+        <description>A mechanical glove with hydraulic piston to increase force on impact</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Melee/PowerFist</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -257,8 +256,7 @@
         <defName>MeleeWeapon_PFPipe</defName>
         <label>Pipe</label>
         <description>A metal pipe, good for bashing heads in. Careful of the rusty edges, there are no tetanus shots out
-            in on the Rim.
-        </description>
+            in on the Rim.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Melee/LeadPipe</texPath>
             <graphicClass>Graphic_Single</graphicClass>

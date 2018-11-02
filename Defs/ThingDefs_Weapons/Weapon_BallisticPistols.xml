@@ -21,8 +21,7 @@
         <defName>Gun_357_Magnum</defName>
         <label>.357 Magnum</label>
         <description>A single action, fixed-cylinder revolver with lower stopping power, but higher accuracy compared to
-            its brother the .44 Magnum.
-        </description>
+            its brother the .44 Magnum.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/357_Magnum_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -77,8 +76,7 @@
         <defName>Gun_Lucky</defName>
         <label>Lucky</label>
         <description>A unique variant of the .357 single action, fixed-cylinder revolver with more stopping power,
-            accuracy, and firing rate.
-        </description>
+            accuracy, and firing rate.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Lucky_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -132,8 +130,7 @@
         <defName>Gun_44_Magnum</defName>
         <label>.44 Magnum</label>
         <description>A double action, swing-out cylinder revolver with higher stopping power but lower accuracy compared
-            to its brother the .357 Magnum
-        </description>
+            to its brother the .357 Magnum</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/44_Magnum_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -188,8 +185,7 @@
         <defName>Gun_MysteriousMagnum</defName>
         <label>Mysterious Magnum</label>
         <description>A unique variant of the .44 Magnum double action, swing-out cylinder revolver that has increased
-            stopping power, accuracy, and range.
-        </description>
+            stopping power, accuracy, and range.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/MysteriousMagnum_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -243,8 +239,7 @@
         <defName>Gun_PF9mmPistol</defName>
         <label>9mm Pistol</label>
         <description>A semi-automatic handgun, used as the standard issue side-arm of the New California Republic Army,
-            and is one of the most common guns in the wastelands.
-        </description>
+            and is one of the most common guns in the wastelands.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/9mm_Pistol_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -299,8 +294,7 @@
         <defName>Gun_Maria</defName>
         <label>Maria</label>
         <description>A unique variant of the 9mm semi-automatic handgun, with higher damage and accuracy. This was the
-            weapon that "killed" The Courier.
-        </description>
+            weapon that "killed" The Courier.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Maria_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -354,8 +348,7 @@
         <defName>Gun_PF10mmPistol</defName>
         <label>10mm Pistol</label>
         <description>The N99 10mm sidearm, used as standard issue military gear after it's predecessor, the N80 was
-            phased out in 2051. An extremely durable weapon, this model sees extensive use all across the wastes.
-        </description>
+            phased out in 2051. An extremely durable weapon, this model sees extensive use all across the wastes.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/10mm_Pistol_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -410,8 +403,7 @@
         <defName>Gun_12_7mmPistol</defName>
         <label>12.7mm Pistol</label>
         <description>A Swiss SIG-Sauer 14mm handgun that has been rechambered for 12.7mm ammunition. Fairly common
-            before the nukes dropped, the number of surviving models is slowly dwindling.
-        </description>
+            before the nukes dropped, the number of surviving models is slowly dwindling.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/12.7 Pistol_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -466,8 +458,7 @@
         <defName>Gun_LilDevil</defName>
         <label>Li'l Devil</label>
         <description>A unique variant of the Swiss SIG-Sauer 14mm handgun that has been rechambered for 12.7mm
-            ammunition.
-        </description>
+            ammunition.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/LilDevil_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -521,8 +512,7 @@
         <defName>Gun_HuntingRevolver</defName>
         <label>Hunting Revolver</label>
         <description>A large double-action revolver that fires .45-70 Gov't ammunition, it comes with a 2.46x magnifying
-            scope.
-        </description>
+            scope.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/HuntingRevolver_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -577,8 +567,7 @@
         <defName>Gun_RangerSequoia</defName>
         <label>Ranger Sequoia</label>
         <description>A unique scope-less variant of the Hunting Revolver given only to NCR Rangers after 20 years of
-            service. The Ranger Sequoia has the highest stopping power of any one-handed weapon in the wasteland.
-        </description>
+            service. The Ranger Sequoia has the highest stopping power of any one-handed weapon in the wasteland.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/RangerSequoia_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -633,8 +622,7 @@
         <label>Silenced .22 Pistol</label>
         <description>A handgun that fires .22 ammunition with an integrated silencer. Commonly used by assassins and
             those who would like to sneak weapons into secured areas, it has extremely low stopping power, but more than
-            makes up for that with it's high fire-rate and accuracy.
-        </description>
+            makes up for that with it's high fire-rate and accuracy.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Silenced 22 Pistol</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -689,8 +677,7 @@
         <label>5.56mm Pistol</label>
         <description>A revolver with a motorized cylinder chambered in 5.56mm ammunition, which is a heavily modified
             .223 Pistol. Weighing in at 5lbs it has similar stopping power but higher accuracy compared to other
-            revolvers in it's class
-        </description>
+            revolvers in it's class</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/5.56mm_Pistol_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -745,8 +732,7 @@
         <defName>Gun_ThatGun</defName>
         <label>That Gun</label>
         <description>A unique variant of the 5.56mm Pistol, it is quite heavy and has slightly more accuracy and
-            stopping power than it's generic version.
-        </description>
+            stopping power than it's generic version.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/ThatGun_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>

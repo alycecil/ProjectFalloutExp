@@ -35,7 +35,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp">
         <defName>PFShishkebab</defName>
         <label>Shishkebab</label>
-        <description>A makeshift 'flaming sword', with a dual purpose for cooking kebabs!</description>
+        <description>A makeshift 'flaming sword', with a dual purpose for cooking kebabs</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Melee/Shishkebab</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -85,8 +85,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp">
         <defName>PFRipper</defName>
         <label>Ripper</label>
-        <description>A handheld chainsaw-like device used for "ripping" through unarmored and lightly armored targets.
-        </description>
+        <description>A handheld chainsaw-like device used for "ripping" through unarmored and lightly armored targets.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Melee/Ripper</texPath>
             <graphicClass>Graphic_Single</graphicClass>

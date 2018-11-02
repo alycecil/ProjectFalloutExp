@@ -6,8 +6,7 @@
         <defName>PFUltraStimpak</defName>
         <label>Ultra Stimpak</label>
         <description>A syringe containing a cocktail of very high grade medicine and drugs that quickly heal injuries,
-            scars, infections, and even can regenerate limbs and organs to some capacity.
-        </description>
+            scars, infections, and even can regenerate limbs and organs to some capacity.</description>
         <graphicData>
             <texPath>Things/Fallout/Chems/UltraStimpak</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -80,7 +79,7 @@
         <stages>
             <li>
                 <label>Healing from Ultra Stimpak</label>
-                <description>All of my injuries are healing, I'll be back to full strength in no time!</description>
+                <description>All of my injuries are healing, I'll be back to full strength in no time</description>
                 <baseMoodEffect>0</baseMoodEffect>
             </li>
         </stages>

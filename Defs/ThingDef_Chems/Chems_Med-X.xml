@@ -6,8 +6,7 @@
         <defName>PFMedX</defName>
         <label>Med-X</label>
         <description>A potent painkiller, similar to morphene, that allows a user to shrug off even severe pain, it is
-            fairly addictive.
-        </description>
+            fairly addictive.</description>
         <graphicData>
             <texPath>Things/Fallout/Chems/Med-X</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -96,8 +95,7 @@
         <stages>
             <li>
                 <label>Numbed by Med-X</label>
-                <description>I can't feel anything, I should probably be careful I don't accidentally hurt myself
-                </description>
+                <description>I can't feel anything, I should probably be careful I don't accidentally hurt myself</description>
                 <baseMoodEffect>2</baseMoodEffect>
             </li>
         </stages>
@@ -116,8 +114,7 @@
         <needClass>Need_Chemical</needClass>
         <label>Med-X</label>
         <description>Because of an addiction to Med-X, this person needs to regularly consume the drug to avoid
-            withdrawal symptoms.
-        </description>
+            withdrawal symptoms.</description>
         <listPriority>45</listPriority>
     </NeedDef>
 
@@ -182,8 +179,7 @@
             <li>
                 <label>Med-X withdrawal</label>
                 <description>I'm so sensitive, even the slightest scratch hurts immensely, it's hard to focus on
-                    anything else.
-                </description>
+                    anything else.</description>
                 <baseMoodEffect>-5</baseMoodEffect>
             </li>
         </stages>

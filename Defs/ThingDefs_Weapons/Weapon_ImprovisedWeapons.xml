@@ -20,7 +20,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_PFRockItLauncher</defName>
         <label>Rock-It Launcher</label>
-        <description>A rudimentary cannon that fires literal junk at high velocities.</description>
+        <description>A rudimentary cannon that fires literal junk at high velocities</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/RockItLauncher</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -71,7 +71,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_PFJunkjet</defName>
         <label>Junkjet</label>
-        <description>A slightly less makeshift cannon that fires literal junk at high velocities.</description>
+        <description>A slightly less makeshift cannon that fires literal junk at high velocities</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/JunkJet</texPath>
             <graphicClass>Graphic_Single</graphicClass>

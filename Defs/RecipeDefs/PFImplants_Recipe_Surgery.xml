@@ -11,7 +11,7 @@
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>PFInstallVATS</defName>
         <label>Install VATS Implant</label>
-        <description>Installs a VATS Implant.</description>
+        <description>Installs a VATS Implant</description>
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing VATS Implant</jobString>
         <recipeUsers>
@@ -53,7 +53,7 @@
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>PFInstallAgility</defName>
         <label>Install Agility Implant</label>
-        <description>Installs an Agility Implant.</description>
+        <description>Installs an Agility Implant</description>
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing Agility Implant</jobString>
         <recipeUsers>
@@ -95,7 +95,7 @@
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>PFInstallCharisma</defName>
         <label>Install Charisma Implant</label>
-        <description>Installs a Charisma Implant.</description>
+        <description>Installs a Charisma Implant</description>
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing Charisma Implant</jobString>
         <recipeUsers>
@@ -137,7 +137,7 @@
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>PFInstallEndurance</defName>
         <label>Install Endurance Implant</label>
-        <description>Installs an Endurance Implant.</description>
+        <description>Installs an Endurance Implant</description>
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing Endurance Implant</jobString>
         <recipeUsers>
@@ -179,7 +179,7 @@
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>PFInstallIntelligence</defName>
         <label>Install Intelligence Implant</label>
-        <description>Installs an Intelligence Implant.</description>
+        <description>Installs an Intelligence Implant</description>
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing Intelligence Implant</jobString>
         <recipeUsers>
@@ -221,7 +221,7 @@
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>PFInstallPerception</defName>
         <label>Install Perception Implant</label>
-        <description>Installs a Perception Implant.</description>
+        <description>Installs a Perception Implant</description>
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing Perception Implant</jobString>
         <recipeUsers>
@@ -263,7 +263,7 @@
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>PFInstallStrength</defName>
         <label>Install Strength Implant</label>
-        <description>Installs a Strength Implant.</description>
+        <description>Installs a Strength Implant</description>
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing Stength Implant</jobString>
         <recipeUsers>
@@ -305,7 +305,7 @@
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>PFInstallPMB</defName>
         <label>Install Phoenix Monocyte Breeder Implant</label>
-        <description>Installs a Phoenix Monocyte Breeder Implant.</description>
+        <description>Installs a Phoenix Monocyte Breeder Implant</description>
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing Phoenix Monocyte Breeder Implant</jobString>
         <recipeUsers>

@@ -6,8 +6,7 @@
         <defName>PFPlantTato</defName>
         <label>Tato Plant</label>
         <description>A mutated hybrid of potatoes and tomatoes. It tastes horrible raw, and not much better cooked, but
-            in the wasteland you can't complain.
-        </description>
+            in the wasteland you can't complain.</description>
         <statBases>
             <MaxHitPoints>120</MaxHitPoints>
             <Nutrition>0.05</Nutrition>
@@ -42,7 +41,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>PFPlantRazorgrain</defName>
         <label>Razorgrain Plant</label>
-        <description>A distant descendant of wheat, it is able to grow in the harsh wasteland.</description>
+        <description>A distant descendant of wheat, it is able to grow in the harsh wasteland</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>1</Beauty>
@@ -80,8 +79,7 @@
         <defName>PFPlantMutfruit</defName>
         <label>Mutfruit Plant</label>
         <description>A mutated descendant of blueberries and blackberries, this crunchy berry is one of the best finds
-            for hungry travellers.
-        </description>
+            for hungry travellers.</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>2</Beauty>
@@ -118,8 +116,7 @@
         <defName>PFPlantTarberry</defName>
         <label>Tarberry Plant</label>
         <description>A descendant of cranberries, Tarberries are clusters of small purple berries. They are very hard to
-            cultivate, but is very nutritious.
-        </description>
+            cultivate, but is very nutritious.</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>2</Beauty>
@@ -157,8 +154,7 @@
         <defName>PFPlantBarrelCactus</defName>
         <label>Barrel Cactus</label>
         <description>A hardy cactus that can grow in most climates. It produces little edible food, but its fruit are
-            quite nutritious.
-        </description>
+            quite nutritious.</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>1</Beauty>

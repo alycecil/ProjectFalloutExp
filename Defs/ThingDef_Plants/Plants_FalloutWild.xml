@@ -3,7 +3,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>PFPlantWildRazorgrain</defName>
         <label>Wild Razorgrain Plant</label>
-        <description>A distant descendant of wheat, it is able to grow in the harsh wasteland.</description>
+        <description>A distant descendant of wheat, it is able to grow in the harsh wasteland</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Nutrition>0.05</Nutrition>
@@ -44,8 +44,7 @@
         <defName>PFPlantWildMutfruit</defName>
         <label>Wild Mutfruit Plant</label>
         <description>A mutated descendant of blueberries and blackberries, this crunchy berry is one of the best finds
-            for hungry travellers.
-        </description>
+            for hungry travellers.</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>1</Beauty>
@@ -87,8 +86,7 @@
         <defName>PFPlantWildBarrelCactus</defName>
         <label>Barrel Cactus</label>
         <description>A hardy bunch of cacti that can grow in most climates. It produces little edible food, but its
-            fruit are quite nutritious.
-        </description>
+            fruit are quite nutritious.</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>1</Beauty>

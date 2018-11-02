@@ -64,8 +64,7 @@
         <defName>PFFocusLens</defName>
         <label>Focusing Lens</label>
         <description>A lens that highly focuses light into a concentrated beam. It has use in the production of laser
-            weaponry.
-        </description>
+            weaponry.</description>
         <graphicData>
             <texPath>Things/Fallout/Crafting/FocusLens</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -99,8 +98,7 @@
         <defName>PFSuperconductor</defName>
         <label>Superconductor</label>
         <description>A material able to conduct electricity with no resistance, when used in the barrel of a gun it
-            stabilizes the projectile using magnetism. It has use in the production of plasma weaponry.
-        </description>
+            stabilizes the projectile using magnetism. It has use in the production of plasma weaponry.</description>
         <graphicData>
             <texPath>Things/Fallout/Crafting/Superconductor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -133,8 +131,7 @@
     <ThingDef ParentName="PFSyringeBase">
         <defName>PFEmptySyringe</defName>
         <label>Empty Syringe</label>
-        <description>An empty hypodermic syringe. Used in making stimpaks (and soon to be new chem recipes)
-        </description>
+        <description>An empty hypodermic syringe. Used in making stimpaks (and soon to be new chem recipes</description>
         <graphicData>
             <texPath>Things/Fallout/Crafting/EmptySyringe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -165,8 +162,7 @@
         <defName>PFHardenedLeather</defName>
         <label>Hardened Leather</label>
         <description>Leather that has been reinforced for use in light armor. (Currently only used for Armored Vault
-            Jumpsuit)
-        </description>
+            Jumpsuit</description>
         <graphicData>
             <texPath>Things/Fallout/Crafting/HardLeather</texPath>
             <graphicClass>Graphic_Single</graphicClass>

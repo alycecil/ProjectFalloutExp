@@ -5,7 +5,7 @@
     <ThingDef ParentName="MakeableChemPillBase">
         <defName>PFBuffout</defName>
         <label>Buffout</label>
-        <description>An advanced pre-war sterioid, that aides in physical tasks, it is fairly addictive.</description>
+        <description>An advanced pre-war sterioid, that aides in physical tasks, it is fairly addictive</description>
         <graphicData>
             <texPath>Things/Fallout/Chems/Buffout</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -106,7 +106,7 @@
         <stages>
             <li>
                 <label>Strengthened by Buffout</label>
-                <description>I feel strong, I think I should go lift some stuff...</description>
+                <description>I feel strong, I think I should go lift some stuff.</description>
                 <baseMoodEffect>5</baseMoodEffect>
             </li>
         </stages>
@@ -125,8 +125,7 @@
         <needClass>Need_Chemical</needClass>
         <label>Buffout</label>
         <description>Because of an addiction to Buffout, this person needs to regularly consume the drug to avoid
-            withdrawal symptoms.
-        </description>
+            withdrawal symptoms.</description>
         <listPriority>45</listPriority>
     </NeedDef>
 
@@ -190,8 +189,7 @@
             </li>
             <li>
                 <label>Buffout withdrawal</label>
-                <description>My muscles are sore and weak, I can't even walk properly, let alone do any heavy lifting.
-                </description>
+                <description>My muscles are sore and weak, I can't even walk properly, let alone do any heavy lifting.</description>
                 <baseMoodEffect>-20</baseMoodEffect>
             </li>
         </stages>

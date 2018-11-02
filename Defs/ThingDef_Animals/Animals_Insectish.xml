@@ -23,8 +23,7 @@
         <label>Radscorpion</label>
         <description>A massive mutated scorpion. It is surprisingly agile for its size, and can rip apart people with
             its massive pincers.Those unaware of a Radscorpion's presence may quickly fall victim to the poison from its
-            stinger.
-        </description>
+            stinger.</description>
         <statBases>
             <MoveSpeed>3.8</MoveSpeed>
             <ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -156,8 +155,7 @@
         <defName>PFRadroach</defName>
         <label>Radroach</label>
         <description>A giant mutated cockroach. While not much of a threat, in a swarm they are a massive danger to
-            those without explosives.
-        </description>
+            those without explosives.</description>
         <statBases>
             <MoveSpeed>5</MoveSpeed>
             <ComfyTemperatureMin>-40</ComfyTemperatureMin>

@@ -7,8 +7,7 @@
         <label>Vault Floor Tiles</label>
         <renderPrecedence>300</renderPrecedence>
         <description>A thick metal floor built for keeping out ground radiation. It is fairly pleasing to the eyes, and
-            can be cleaned with ease.
-        </description>
+            can be cleaned with ease</description>
         <texturePath>Things/Fallout/Buildings/Floors/VaultFloor</texturePath>
         <statBases>
             <Beauty>1</Beauty>

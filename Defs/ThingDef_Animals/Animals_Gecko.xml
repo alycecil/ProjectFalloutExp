@@ -6,8 +6,7 @@
         <defName>PFGiantGecko</defName>
         <label>Giant Gecko</label>
         <description>A large mutated gecko. While not particularly strong, they move quite quickly and can kill
-            quickly.
-        </description>
+            quickly.</description>
         <statBases>
             <MoveSpeed>4.25</MoveSpeed>
             <ComfyTemperatureMin>-5</ComfyTemperatureMin>

@@ -30,8 +30,7 @@
         <defName>Gun_VarmintRifle</defName>
         <label>Varmint Rifle</label>
         <description>A sturdy bolt-action rifle widely used around the wastelands, although quite accurate, it does
-            suffer fairly low stopping power for a rifle.
-        </description>
+            suffer fairly low stopping power for a rifle.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/VarmintRifle_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -85,8 +84,7 @@
         <defName>Gun_Ratslayer</defName>
         <label>Ratslayer</label>
         <description>A unique lighter weight variant of the "Varmint" model bolt-action rifle with a scope, silencer,
-            and higher stopping power.
-        </description>
+            and higher stopping power.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Ratslayer_Org</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -141,8 +139,7 @@
         <defName>Gun_AMRifle</defName>
         <label>Anti-Materiel Rifle</label>
         <description>An extremely powerful bolt-action rifle that fires .50Cal bullets. It has enough stopping power to
-            put down just about anything in 1 shot, if you can manage to fire it in time.
-        </description>
+            put down just about anything in 1 shot, if you can manage to fire it in time.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Anti_Materiel_Rifle_Custom</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -197,8 +194,7 @@
         <defName>Gun_AssaultCarbine</defName>
         <label>Assault Carbine</label>
         <description>A magazine-fed compact automatic rifle with a high firing rate and comparatively good accuracy. A
-            deadly weapon in the right hands, it can be used effectively at close to mid range combat.
-        </description>
+            deadly weapon in the right hands, it can be used effectively at close to mid range combat.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Assault_Carbine_Custom</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -254,8 +250,7 @@
         <label>Battle Rifle</label>
         <description>A semi-automatic rifle chambered for .308 cartridges, with good a nice firing rate and stopping
             power it can be highly effective at combat. What it lacks in accuracy it makes up for how many rounds it can
-            put down range and the power of the bullets themselves.
-        </description>
+            put down range and the power of the bullets themselves.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Battle_Rifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -313,8 +308,7 @@
         <label>This Machine</label>
         <description>A unique variant of the Battle Rifle, it is better in just about every way to it's more generic
             version, albeit only slightly. It has the words "WELL THIS MACHNE KILLS COMMIES" engraved on it's side, it
-            appears to have been used in a past war.
-        </description>
+            appears to have been used in a past war.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/This_Machine</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -371,8 +365,7 @@
         <label>BB Gun</label>
         <description>A BB gun that fires tiny metal pellets, it hits about as hard as a thrown rock. It has the
             potential to do some damage, thanks to it's accuracy and fire-rate, but you need to put a lot of shots down
-            range for any real effect.
-        </description>
+            range for any real effect.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/BB_Gun_Custom</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -425,7 +418,7 @@
     <ThingDef ParentName="BaseHumanGun">
         <defName>Gun_AbileneKid</defName>
         <label>Abilene Kid</label>
-        <description>A unique "Limited Edition" of the BB Gun, it has slightly higher damage and range.</description>
+        <description>A unique "Limited Edition" of the BB Gun, it has slightly higher damage and range</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Abilene_Kid</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -477,8 +470,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_BrushGun</defName>
         <label>Brush Gun</label>
-        <description>A large caliber lever action carbine used mainly for hunting at close to medium ranges.
-        </description>
+        <description>A large caliber lever action carbine used mainly for hunting at close to medium ranges.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Brush_Gun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -532,8 +524,7 @@
         <defName>Gun_MedicineStick</defName>
         <label>Medicine Stick</label>
         <description>A unique variant of the Brush Gun, with slightly higher stopping power and higher ammunition
-            capacity.
-        </description>
+            capacity.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Medicine_Stick</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -585,8 +576,7 @@
     <ThingDef ParentName="BaseHumanGun">
         <defName>Gun_LaLongueCarabine</defName>
         <label>La Longue Carabine</label>
-        <description>A unique scoped variant of the Cowboy Repeater with slightly higher stopping power accuracy.
-        </description>
+        <description>A unique scoped variant of the Cowboy Repeater with slightly higher stopping power accuracy.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/La_Longue_Carabine</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -638,7 +628,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_CowboyRepeater</defName>
         <label>Cowboy Repeater</label>
-        <description>A lever-action rifle firing small-caliber .357 magnum rounds.</description>
+        <description>A lever-action rifle firing small-caliber .357 magnum rounds</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Cowboy_Repeater</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -691,7 +681,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_HuntingRifle</defName>
         <label>Hunting Rifle</label>
-        <description>A bolt-action rifle firing .308 rounds.</description>
+        <description>A bolt-action rifle firing .308 rounds</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Hunting_Rifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -746,8 +736,7 @@
         <defName>PFPaciencia</defName>
         <label>Paciencia</label>
         <description>A unique variant of the Hunting Rifle. It has a flag wrapped around the stock, and multiple notches
-            in it, most likely as a kill counter.
-        </description>
+            in it, most likely as a kill counter.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Paciencia</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -800,7 +789,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>PFMarksmanCarbine</defName>
         <label>Marksman Carbine</label>
-        <description>A semi-auto rifle with a scope.</description>
+        <description>A semi-auto rifle with a scope</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Marksman_Carbine</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -856,8 +845,7 @@
         <defName>PFGobiCampaign</defName>
         <label>Gobi Campaign Scout Rifle</label>
         <description>A unique variant of the Sniper Rifle. An old and scarred rifle from a past war in a far away
-            desert.
-        </description>
+            desert.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/GobiCampaignScoutRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -910,8 +898,7 @@
     <ThingDef ParentName="BaseHumanGun">
         <defName>PFBozar</defName>
         <label>Bozar</label>
-        <description>A unique variant of the LMG. The Bozar is an odd weapon, a fusion of an LMG and a sniper rifle.
-        </description>
+        <description>A unique variant of the LMG. The Bozar is an odd weapon, a fusion of an LMG and a sniper rifle.</description>
         <graphicData>
             <texPath>Things/Fallout/Weapons/Guns/Bozar</texPath>
             <graphicClass>Graphic_Single</graphicClass>
