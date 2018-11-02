@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ThingDef Abstract="True" Name="BaseMeleeWeapon" ParentName="BaseWeapon">
+		<techLevel>Industrial</techLevel>
+		<smeltable>true</smeltable>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="BaseSpecMeleeWeapon" ParentName="BaseWeapon">
+		<techLevel>Industrial</techLevel>
+		<smeltable>true</smeltable>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="BaseNormMeleeWeapon_Blunt" ParentName="BaseMeleeWeapon">
+		<recipeMaker>
+			<defaultIngredientFilter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Silver</li>
+				<li>Gold</li>
+			</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="BaseSpecMeleeWeapon_Blunt" ParentName="BaseSpecMeleeWeapon">
+		<recipeMaker>
+		<defaultIngredientFilter>
+		<categories>
+			<li>Root</li>
+		</categories>
+		<disallowedThingDefs>
+			<li>Silver</li>
+			<li>Gold</li>
+		</disallowedThingDefs>
+		</defaultIngredientFilter>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseNormMeleeWeapon_Blunt">
+		<defName>MeleeWeapon_PF9Iron</defName>
+		<label>Nine Iron</label>
+		<description>A golf club, fairly battered after seeing long use in the wasteland.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Melee/9Iron</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>45</costStuffCount>
+		<statBases>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>1.35</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.77</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.77</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseSpecMeleeWeapon">
+		<defName>MeleeWeapon_PFNephiGolfDriver</defName>
+		<label>Nephi's Golf Driver</label>
+		<description>A unique variant of the nine iron. It is in nearly prestine condition despite having been used to bash in the faces of multiple men that offended the Fiend, Nephi.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Melee/NephiGolfDriver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingSetMakerTags>
+		<li>RewardSpecial</li>
+		</thingSetMakerTags>>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<Mass>1.35</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+				<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseNormMeleeWeapon_Blunt">
+		<defName>MeleeWeapon_PFBaseballBat</defName>
+		<label>Baseball Bat</label>
+		<description>A baseball bat great for sports, or bashing in skulls.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Melee/BaseballBat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>1.35</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+				<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageDef>Blunt</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseNormMeleeWeapon_Blunt">
+		<defName>MeleeWeapon_PFPowerFist</defName>
+		<label>Power Fist</label>
+		<description>A mechanical glove with hydraulic piston to increase force on impact.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Melee/PowerFist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<ComponentIndustrial>12</ComponentIndustrial>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>Spacer</li>
+			<li>SpacerMelee</li>
+		</weaponTags>
+		<costStuffCount>300</costStuffCount>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>2.7</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>side</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.75</cooldownTime>
+			</li>
+			<li>
+				<label>fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.75</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseNormMeleeWeapon_Blunt">
+		<defName>MeleeWeapon_PFPipe</defName>
+		<label>Pipe</label>
+		<description>A metal pipe, good for bashing heads in. Careful of the rusty edges, there are no tetanus shots out in on the Rim.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Melee/LeadPipe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>55</costStuffCount>
+		<statBases>
+			<WorkToMake>13500</WorkToMake>
+			<Mass>1.35</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

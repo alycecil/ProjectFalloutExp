@@ -1,0 +1,125 @@
+<Defs>
+
+<ThingDef ParentName="PlantBase">
+<defName>PFPlantWildRazorgrain</defName>
+<label>Wild Razorgrain Plant</label>
+<description>A distant descendant of wheat, it is able to grow in the harsh wasteland.</description>
+<statBases>
+<MaxHitPoints>100</MaxHitPoints>
+<Nutrition>0.05</Nutrition>
+</statBases>
+<graphicData>
+<texPath>Things/Fallout/Plants/RazorgrainPlant</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<selectable>true</selectable>
+<pathCost>10</pathCost>
+<ingestible/>
+<plant>
+<fertilitySensitivity>0.75</fertilitySensitivity>
+<dieIfLeafless>true</dieIfLeafless>
+<harvestYield>12</harvestYield>
+<harvestWork>600</harvestWork>
+<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+<fertilityMin>0.5</fertilityMin>
+<harvestedThingDef>PFRazorgrain</harvestedThingDef>
+<wildCommonalityMaxFraction>2.0</wildCommonalityMaxFraction>
+<wildClusterSizeRange>
+<min>1</min>
+<max>3</max>
+</wildClusterSizeRange>
+<wildClusterRadius>3</wildClusterRadius>
+<topWindExposure>0.1</topWindExposure>
+<growDays>3.5</growDays>
+<visualSizeRange>
+<min>0.25</min>
+<max>1.2</max>
+</visualSizeRange>
+<purpose>Food</purpose>
+</plant>
+</ThingDef>
+
+<ThingDef ParentName="PlantBase">
+<defName>PFPlantWildMutfruit</defName>
+<label>Wild Mutfruit Plant</label>
+<description>A mutated descendant of blueberries and blackberries, this crunchy berry is one of the best finds for hungry travellers.</description>
+<statBases>
+<MaxHitPoints>100</MaxHitPoints>
+<Beauty>1</Beauty>
+<Nutrition>0.07</Nutrition>
+</statBases>
+<graphicData>
+<texPath>Things/Fallout/Plants/MutfruitPlant</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<selectable>true</selectable>
+<pathCost>10</pathCost>
+<ingestible/>
+<plant>
+<fertilitySensitivity>0.6</fertilitySensitivity>
+<dieIfLeafless>true</dieIfLeafless>
+<harvestTag>Standard</harvestTag>
+<harvestedThingDef>PFMutfruit</harvestedThingDef>
+<wildCommonalityMaxFraction>2.0</wildCommonalityMaxFraction>
+<wildClusterSizeRange>
+<min>1</min>
+<max>2</max>
+</wildClusterSizeRange>
+<wildClusterRadius>5</wildClusterRadius>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+<fertilityMin>0.5</fertilityMin>
+<harvestYield>6</harvestYield>
+<harvestWork>600</harvestWork>
+<topWindExposure>0.1</topWindExposure>
+<growDays>3.2</growDays>
+<visualSizeRange>
+<min>0.25</min>
+<max>1.0</max>
+</visualSizeRange>
+<purpose>Food</purpose>
+</plant>
+</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>PFPlantWildBarrelCactus</defName>
+		<label>Barrel Cactus</label>
+		<description>A hardy bunch of cacti that can grow in most climates. It produces little edible food, but its fruit are quite nutritious.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Fallout/Plants/WildBarrelCactus</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>PFBarrelCactusFruit</harvestedThingDef>
+			<wildCommonalityMaxFraction>0.75</wildCommonalityMaxFraction>
+			<wildClusterSizeRange>
+				<min>2</min>
+				<max>5</max>
+			</wildClusterSizeRange>
+			<wildClusterRadius>10</wildClusterRadius>
+			<harvestAfterGrowth>0.10</harvestAfterGrowth>
+			<fertilityMin>0.25</fertilityMin>
+			<harvestYield>12</harvestYield>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>3.66</growDays>
+			<visualSizeRange>
+				<min>0.3</min>
+				<max>1.05</max>
+			</visualSizeRange>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
+
+</Defs>

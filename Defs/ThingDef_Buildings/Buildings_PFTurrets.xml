@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+
+
+<!--	<ThingDef ParentName="BuildingBase">
+	<defName>PFMachinegunTurret</defName>
+	<label>Machinegun Turret</label>
+	<thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Fallout/Buildings/Turrets/PlaceholderTurretBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(3,3)</drawSize>
+		<damageData>
+			<rect>(0.2,0.2,0.6,0.6)</rect>
+		</damageData>
+	</graphicData>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<altitudeLayer>Building</altitudeLayer>
+	<stealable>false</stealable>
+	<rotatable>false</rotatable>
+	<statBases>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<WorkToBuild>3000</WorkToBuild>
+		<Mass>120</Mass>
+		<Beauty>-20</Beauty>
+	</statBases>
+	<tickerType>Normal</tickerType>
+	<comps>
+		<li Class="CompProperties_Explosive">
+			<explosiveRadius>3.9</explosiveRadius>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+		</li>
+		<li Class="CompProperties_Forbiddable"/>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>400</basePowerConsumption>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_Breakdownable"/>
+	</comps>
+	<description>A basic machinegun turret, it is much sturdier than the improvised turret. Despite these improvments, it's AI still suffers from simplicity and is prone to friendly fire.</description>
+	<passability>PassThroughOnly</passability>
+	<pathCost>60</pathCost>
+	<fillPercent>0.45</fillPercent>
+	<castEdgeShadows>true</castEdgeShadows>
+	<hasTooltip>true</hasTooltip>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>125</costStuffCount>
+	<costList>
+		<Steel>100</Steel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+	</costList>
+	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<designationCategory>Security</designationCategory>
+	<specialDisplayRadius>26.9</specialDisplayRadius>
+	<building>
+		<ai_combatDangerous>true</ai_combatDangerous>
+		<turretGunDef>PFTurretGun</turretGunDef>
+		<turretBurstCooldownTime>5.5</turretBurstCooldownTime>
+		<turretTopGraphicPath>Things/Fallout/Buildings/Turrets/PlaceholderTurret</turretTopGraphicPath>
+	</building>
+	<researchPrerequisites>
+		<li>PFBasicTurrets</li>
+	</researchPrerequisites>
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+	<defName>Bullet_PFMachinegunTurret</defName>
+	<label>5.56mm bullet</label>
+	<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<projectile>
+		<damageDef>Bullet</damageDef>
+		<damageAmountBase>16</damageAmountBase>
+		<speed>75</speed>
+	</projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseHumanGun">
+	<defName>PFTurretGun</defName>
+	<label>Machinegun Turret gun</label>
+	<graphicData>
+		<texPath>Things/Fallout/Weapons/Guns/Assault_Carbine_Custom</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<menuHidden>true</menuHidden>
+	<description>A machinegun built into a turret.</description>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<thingSetMakerTags><li>RewardSpecial</li></thingSetMakerTags>>
+	<tradeability>Never</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<statBases>
+		<AccuracyTouch>0.82</AccuracyTouch>
+		<AccuracyShort>0.65</AccuracyShort>
+		<AccuracyMedium>0.43</AccuracyMedium>
+		<AccuracyLong>0.23</AccuracyLong>
+		<RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+	</statBases>
+	<weaponTags>
+		<li>TurretGun</li>
+	</weaponTags>
+	<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_PFMachinegunTurret</defaultProjectile>
+			<warmupTime>1.5</warmupTime>
+			<range>26.9</range>
+			<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+			<burstShotCount>3</burstShotCount>
+			<soundCast>GunShotA</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</li>
+	</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+	<defName>PFHeavyMachinegunTurret</defName>
+	<label>Heavy Machinegun Turret</label>
+	<thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Fallout/Buildings/Turrets/PlaceholderTurretBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(3,3)</drawSize>
+		<damageData>
+			<rect>(0.2,0.2,0.6,0.6)</rect>
+		</damageData>
+	</graphicData>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<altitudeLayer>Building</altitudeLayer>
+	<stealable>false</stealable>
+	<rotatable>false</rotatable>
+	<statBases>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<WorkToBuild>4000</WorkToBuild>
+		<Mass>145</Mass>
+		<Beauty>-25</Beauty>
+	</statBases>
+	<tickerType>Normal</tickerType>
+	<comps>
+		<li Class="CompProperties_Explosive">
+			<explosiveRadius>3.9</explosiveRadius>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+		</li>
+		<li Class="CompProperties_Forbiddable"/>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>500</basePowerConsumption>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_Breakdownable"/>
+	</comps>
+	<description>A heavier machinegun turret, it is stronger than the basic machinegun turret. Due to the higher caliber bullets it fires, it tends to overheat so it requires longer between firing.</description>
+	<passability>PassThroughOnly</passability>
+	<pathCost>65</pathCost>
+	<fillPercent>0.45</fillPercent>
+	<castEdgeShadows>true</castEdgeShadows>
+	<hasTooltip>true</hasTooltip>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>175</costStuffCount>
+	<costList>
+		<Steel>125</Steel>
+		<ComponentIndustrial>12</ComponentIndustrial>
+	</costList>
+	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<designationCategory>Security</designationCategory>
+	<specialDisplayRadius>28.9</specialDisplayRadius>
+	<building>
+		<ai_combatDangerous>true</ai_combatDangerous>
+		<turretGunDef>PFHeavyTurretGun</turretGunDef>
+		<turretBurstCooldownTime>6.0</turretBurstCooldownTime>
+		<turretTopGraphicPath>Things/Fallout/Buildings/Turrets/PlaceholderTurret</turretTopGraphicPath>
+	</building>
+	<researchPrerequisites>
+		<li>PFBasicTurrets</li>
+	</researchPrerequisites>
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+	<defName>Bullet_PFHeavyMachinegunTurret</defName>
+	<label>5.56mm bullet</label>
+	<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<projectile>
+		<damageDef>Bullet</damageDef>
+		<damageAmountBase>22</damageAmountBase>
+		<speed>75</speed>
+	</projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseHumanGun">
+	<defName>PFHeavyTurretGun</defName>
+	<label>Machinegun Turret gun</label>
+	<graphicData>
+		<texPath>Things/Fallout/Weapons/Guns/Assault_Carbine_Custom</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<menuHidden>true</menuHidden>
+	<description>A heavy machinegun built into a turret.</description>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<thingSetMakerTags><li>RewardSpecial</li></thingSetMakerTags>>
+	<tradeability>Never</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<statBases>
+		<AccuracyTouch>0.86</AccuracyTouch>
+		<AccuracyShort>0.64</AccuracyShort>
+		<AccuracyMedium>0.40</AccuracyMedium>
+		<AccuracyLong>0.22</AccuracyLong>
+		<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+	</statBases>
+	<weaponTags>
+		<li>TurretGun</li>
+	</weaponTags>
+	<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_PFMachinegunTurret</defaultProjectile>
+			<warmupTime>1.5</warmupTime>
+			<range>28.9</range>
+			<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+			<burstShotCount>3</burstShotCount>
+			<soundCast>GunShotA</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</li>
+	</verbs>
+	</ThingDef> -->
+	
+	</Defs>

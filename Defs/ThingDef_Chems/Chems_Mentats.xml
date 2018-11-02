@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<ThingDef ParentName="MakeableChemPillBase">
+<defName>PFMentats</defName>
+<label>Mentats</label>
+<description>Taking Mentats provides a boost to mental capacity, it is slightly addictive.</description>
+<graphicData>
+<texPath>Things/Fallout/Chems/Mentats</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<rotatable>false</rotatable>
+<stackLimit>25</stackLimit>
+<statBases>
+<WorkToMake>350</WorkToMake>
+<MarketValue>40</MarketValue>
+<Mass>0.04</Mass>
+</statBases>
+<techLevel>Industrial</techLevel>
+<ingestible>
+<foodType>Processed</foodType>
+<joy>0.2</joy>
+<drugCategory>Medical</drugCategory>
+<baseIngestTicks>200</baseIngestTicks>
+<ingestHoldUsesTable>false</ingestHoldUsesTable>
+<ingestCommandString>Take {0}</ingestCommandString>
+<ingestReportString>Taking {0}.</ingestReportString>
+<outcomeDoers>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFKeen</hediffDef>
+<severity>0.75</severity>
+<toleranceChemical>PFMentatsC</toleranceChemical>
+</li>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFMentatsTolerance</hediffDef>
+<severity>0.044</severity>
+</li>
+</outcomeDoers>
+</ingestible>
+<recipeMaker>
+<researchPrerequisite>PFChemProduction</researchPrerequisite>
+<recipeUsers>
+<li>DrugLab</li>
+</recipeUsers>
+</recipeMaker>
+<costList>
+<Neutroamine>1</Neutroamine>
+<MedicineIndustrial>1</MedicineIndustrial>
+</costList>
+<comps>
+<li Class="CompProperties_Drug">
+<chemical>PFMentatsC</chemical>
+<addictiveness>0.05</addictiveness>
+<minToleranceToAddict>0.05</minToleranceToAddict>
+<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+<needLevelOffset>1</needLevelOffset>
+<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+<listOrder>2001</listOrder>
+<overdoseSeverityOffset>
+<min>0.20</min>
+<max>0.40</max>
+</overdoseSeverityOffset>
+</li>
+</comps>
+</ThingDef>
+
+<HediffDef>
+<defName>PFKeen</defName>
+<hediffClass>HediffWithComps</hediffClass>
+<label>Aided by Mentats</label>
+<labelNoun>a mental boost from Mentats</labelNoun>
+<defaultLabelColor>(1,0,0,5)</defaultLabelColor>
+<scenarioCanAdd>false</scenarioCanAdd>
+<maxSeverity>1.0</maxSeverity>
+<isBad>false</isBad>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.50</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+<capMods>
+<li>
+<capacity>Sight</capacity>
+<offset>0.10</offset>
+</li>
+<li>
+<capacity>Consciousness</capacity>
+<offset>0.10</offset>
+</li>
+<li>
+<capacity>Manipulation</capacity>
+<offset>0.10</offset>
+</li>
+</capMods>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFMentatsHigh</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFKeen</hediff>
+<stages>
+<li>
+<label>Aided by Mentats</label>
+<description>I feel like everything makes more sense, I should get to work.</description>
+<baseMoodEffect>5</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+<ChemicalDef>
+<defName>PFMentatsC</defName>
+<label>Mentats</label>
+<addictionHediff>PFMentatsAddiction</addictionHediff>
+<toleranceHediff>PFMentatsTolerance</toleranceHediff>
+<canBinge>false</canBinge>
+</ChemicalDef>
+
+<NeedDef ParentName="ChemAddictionNeedBase">
+<defName>Chemical_PFMentats</defName>
+<needClass>Need_Chemical</needClass>
+<label>Mentats</label>
+<description>Because of an addiction to Mentats, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+<listPriority>45</listPriority>
+</NeedDef>
+
+<HediffDef ParentName="ChemToleranceBase">
+<defName>PFMentatsTolerance</defName>
+<label>Mentats tolerance</label>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.02</severityPerDay>
+</li>
+<li Class="HediffCompProperties_DrugEffectFactor">
+<chemical>PFMentatsC</chemical>
+</li>
+</comps>
+</HediffDef>
+
+<HediffDef ParentName="ChemAddictionBase">
+<defName>PFMentatsAddiction</defName>
+<hediffClass>Hediff_Addiction</hediffClass>
+<label>Mentats addiction</label>
+<causesNeed>Chemical_PFMentats</causesNeed>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.02</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+</li>
+<li>
+<label>Withdrawal</label>
+<restFallFactor>1.1</restFallFactor>
+<hungerRateFactor>2.0</hungerRateFactor>
+<capMods>
+<li>
+<capacity>Consciousness</capacity>
+<offset>-0.15</offset>
+</li>
+<li>
+<capacity>Sight</capacity>
+<offset>-0.1</offset>
+</li>
+</capMods>
+<mentalStateGivers>
+<li>
+<mentalState>Wander_Psychotic</mentalState>
+<mtbDays>14</mtbDays>
+</li>
+</mentalStateGivers>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFMentatsWithdrawal</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFMentatsAddiction</hediff>
+<stages>
+<li>
+<visible>false</visible>
+</li>
+<li>
+<label>Mentats withdrawal</label>
+<description>I've got a splitting migraine...just thinking at all hurts.</description>
+<baseMoodEffect>-15</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+</Defs>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<ThingDef ParentName="MakeableChemBase">
+<defName>PFJet</defName>
+<label>Jet</label>
+<description>Using Jet puts you in an altered state of awareness in which time appears to slow, allowing for more actions than normal for a short period of time, however it is highly addictive.</description>
+<graphicData>
+<texPath>Things/Fallout/Chems/Jet</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<rotatable>false</rotatable>
+<stackLimit>25</stackLimit>
+<statBases>
+<WorkToMake>400</WorkToMake>
+<MarketValue>70</MarketValue>
+<Mass>0.004</Mass>
+</statBases>
+<techLevel>Industrial</techLevel>
+<ingestible>
+<drugCategory>Hard</drugCategory>
+<foodType>Processed</foodType>
+<joy>0.4</joy>
+<baseIngestTicks>360</baseIngestTicks>
+<ingestSound>Ingest_Snort</ingestSound>
+<ingestHoldUsesTable>false</ingestHoldUsesTable>
+<ingestCommandString>Inhale {0}</ingestCommandString>
+<ingestReportString>Inhaling {0}.</ingestReportString>
+<outcomeDoers>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFBoosted</hediffDef>
+<severity>0.75</severity>
+<toleranceChemical>PFJetC</toleranceChemical>
+</li>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFJetTolerance</hediffDef>
+<severity>0.044</severity>
+<divideByBodySize>true</divideByBodySize>
+</li>
+</outcomeDoers>
+</ingestible>
+<recipeMaker>
+<researchPrerequisite>PFChemProduction</researchPrerequisite>
+<recipeUsers>
+<li>DrugLab</li>
+</recipeUsers>
+</recipeMaker>
+<costList>
+<Neutroamine>3</Neutroamine>
+<Yayo>1</Yayo>
+</costList>
+<comps>
+<li Class="CompProperties_Drug">
+<chemical>PFJetC</chemical>
+<addictiveness>0.30</addictiveness>
+<minToleranceToAddict>0.05</minToleranceToAddict>
+<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+<needLevelOffset>1</needLevelOffset>
+<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+<listOrder>2000</listOrder>
+<overdoseSeverityOffset>
+<min>0.20</min>
+<max>0.40</max>
+</overdoseSeverityOffset>
+<largeOverdoseChance>0.02</largeOverdoseChance>
+</li>
+</comps>
+</ThingDef>
+
+<HediffDef>
+<defName>PFBoosted</defName>
+<hediffClass>HediffWithComps</hediffClass>
+<label>High on Jet</label>
+<labelNoun>a Jet high</labelNoun>
+<defaultLabelColor>(1,0,0,5)</defaultLabelColor>
+<scenarioCanAdd>false</scenarioCanAdd>
+<maxSeverity>1.0</maxSeverity>
+<isBad>false</isBad>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.75</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+<capMods>
+<li>
+<capacity>Manipulation</capacity>
+<offset>0.15</offset>
+</li>
+<li>
+<capacity>Consciousness</capacity>
+<offset>0.10</offset>
+</li>
+</capMods>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFJetHigh</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFBoosted</hediff>
+<validWhileDespawned>true</validWhileDespawned>
+<stages>
+<li>
+<label>High on Jet</label>
+<description>I feel like everyting is moving...slowly, and it feels great!</description>
+<baseMoodEffect>10</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+<ChemicalDef>
+<defName>PFJetC</defName>
+<label>Jet</label>
+<addictionHediff>PFJetAddiction</addictionHediff>
+<toleranceHediff>PFJetTolerance</toleranceHediff>
+</ChemicalDef>
+
+<NeedDef ParentName="ChemAddictionNeedBase">
+<defName>Chemical_PFJet</defName>
+<needClass>Need_Chemical</needClass>
+<label>Jet</label>
+<description>Because of an addiction to Jet, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+<listPriority>45</listPriority>
+</NeedDef>
+
+<HediffDef ParentName="ChemToleranceBase">
+<defName>PFJetTolerance</defName>
+<label>Jet tolerance</label>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.01</severityPerDay>
+</li>
+<li Class="HediffCompProperties_DrugEffectFactor">
+<chemical>PFJetC</chemical>
+</li>
+</comps>
+<hediffGivers>
+<li Class="HediffGiver_RandomDrugEffect">
+<hediff>ChemicalDamageModerate</hediff>
+<minSeverity>0.50</minSeverity>
+<baseMtbDays>120</baseMtbDays>
+<partsToAffect>
+<li>Brain</li>
+</partsToAffect>
+</li>
+</hediffGivers>
+</HediffDef>
+
+<HediffDef ParentName="ChemAddictionBase">
+<defName>PFJetAddiction</defName>
+<hediffClass>Hediff_Addiction</hediffClass>
+<label>Jet addiction</label>
+<causesNeed>Chemical_PFJet</causesNeed>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.04</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+</li>
+<li>
+<label>Withdrawal</label>
+<restFallFactor>1.5</restFallFactor>
+<hungerRateFactor>1.5</hungerRateFactor>
+<capMods>
+<li>
+<capacity>Consciousness</capacity>
+<offset>-0.25</offset>
+</li>
+<li>
+<capacity>Moving</capacity>
+<offset>-0.1</offset>
+</li>
+</capMods>
+<mentalStateGivers>
+<li>
+<mentalState>Wander_Psychotic</mentalState>
+<mtbDays>5</mtbDays>
+</li>
+</mentalStateGivers>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFJetWithdrawal</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFJetAddiction</hediff>
+<validWhileDespawned>true</validWhileDespawned>
+<stages>
+<li>
+<visible>false</visible>
+</li>
+<li>
+<label>Jet withdrawal</label>
+<description>Everything is moving too fast...I can't focus, and everything feels so jittery.</description>
+<baseMoodEffect>-25</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+</Defs>

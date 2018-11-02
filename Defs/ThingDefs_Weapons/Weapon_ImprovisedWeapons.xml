@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFRockItLauncher</defName>
+		<label>Random Junk</label>
+		<graphicData>
+			<texPath>Effects/JunkJet/Junkjet_i</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_PFRockItLauncher</defName>
+		<label>Rock-It Launcher</label>
+		<description>A rudimentary cannon that fires literal junk at high velocities.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/RockItLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<MarketValue>375</MarketValue>
+			<Mass>3.6</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.78</AccuracyShort>
+			<AccuracyMedium>0.66</AccuracyMedium>
+			<AccuracyLong>0.43</AccuracyLong>
+			<RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFRockItLauncher</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<range>20</range>
+				<soundCast>ShotJunkJet</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFJunkJet</defName>
+		<label>Random Junk</label>
+		<graphicData>
+			<texPath>Effects/JunkJet/Junkjet_i</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_PFJunkjet</defName>
+		<label>Junkjet</label>
+		<description>A slightly less makeshift cannon that fires literal junk at high velocities.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/JunkJet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>550</MarketValue>
+			<Mass>11.33</Mass>
+			<AccuracyTouch>0.92</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.69</AccuracyMedium>
+			<AccuracyLong>0.46</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFJunkJet</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>25</range>
+				<soundCast>ShotJunkJet</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

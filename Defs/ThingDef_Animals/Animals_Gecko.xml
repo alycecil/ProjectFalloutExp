@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+ <ThingDef ParentName="AnimalThingBase">
+    <defName>PFGiantGecko</defName>
+    <label>Giant Gecko</label>
+    <description>A large mutated gecko. While not particularly strong, they move quite quickly and can kill quickly.</description>
+    <statBases>
+      <MoveSpeed>4.25</MoveSpeed>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <MarketValue>150</MarketValue>
+    </statBases>
+    <tools>
+      <li>
+			<label>left claw</label>
+			<capacities>
+				<li>Scratch</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>1.95</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+		<label>right claw</label>
+		<capacities>
+			<li>Scratch</li>
+		</capacities>
+		<power>9</power>
+		<cooldownTime>1.95</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+		<capacities>
+			<li>Bite</li>
+		</capacities>
+		<power>12</power>
+		<cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+		<label>head</label>
+		<capacities>
+			<li>Blunt</li>
+		</capacities>
+		<power>6</power>
+		<cooldownTime>1.95</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>PFGiantGeckoEgg</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>15</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>
+				<min>1</min>
+				<max>2</max>
+			</eggCountRange>
+		</li>
+	</comps>
+    <race>
+      <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseBodySize>0.65</baseBodySize>
+      <baseHealthScale>0.66</baseHealthScale>
+	  <foodType>OmnivoreRoughAnimal</foodType>
+		<leatherDef>Leather_Lizard</leatherDef>
+      <meatLabel>gecko meat</meatLabel>
+      <wildness>0.8</wildness>
+	  <trainability>Simple</trainability>
+	  <petness>0.05</petness>
+      <lifeExpectancy>15</lifeExpectancy>
+		<wildBiomes>
+			<AridShrubland>0.1</AridShrubland>
+			<Desert>0.3</Desert>
+			<ExtremeDesert>0.1</ExtremeDesert>
+		</wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.15</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>PFGiantGecko</defName>
+    <label>Giant Gecko</label>
+    <race>PFGiantGecko</race>
+    <combatPower>55</combatPower>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Fallout/Animals/GiantGecko/GiantGecko</texPath>
+          <drawSize>0.5</drawSize>
+          <color>(114,107,84)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Fallout/Animals/GiantGecko/GiantGecko</texPath>
+          <drawSize>1.1</drawSize>
+          <color>(114,107,84))</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Fallout/Animals/GiantGecko/GiantGecko</texPath>
+          <drawSize>1.2</drawSize>
+          <color>(114,107,84)</color>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

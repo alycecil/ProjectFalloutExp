@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<BodyPartDef>
+	<defName>PFScorpTail</defName>
+	<label>Tail</label>
+	<hitPoints>20</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0.025</permanentInjuryChanceFactor>
+	<skinCovered>false</skinCovered>
+</BodyPartDef>
+
+<BodyPartDef>
+	<defName>PFStinger</defName>
+	<label>Stinger</label>
+	<hitPoints>10</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0.01</permanentInjuryChanceFactor>
+	<skinCovered>false</skinCovered>
+</BodyPartDef>
+
+<BodyPartDef>
+	<defName>PFScorpPincerLeft</defName>
+	<label>Left Pincer</label>
+	<hitPoints>20</hitPoints>
+	<permanentInjuryChanceFactor>0.05</permanentInjuryChanceFactor>
+	<skinCovered>false</skinCovered>
+	<isSolid>true</isSolid>
+	<tags>
+		<li>ManipulationLimbCore</li>
+	</tags>
+</BodyPartDef>
+
+<BodyPartDef>
+	<defName>PFScorpPincerRight</defName>
+	<label>Right Pincer</label>
+	<hitPoints>20</hitPoints>
+	<permanentInjuryChanceFactor>0.05</permanentInjuryChanceFactor>
+	<skinCovered>false</skinCovered>
+	<isSolid>true</isSolid>
+	<tags>
+		<li>ManipulationLimbCore</li>
+	</tags>
+</BodyPartDef>
+
+</Defs>

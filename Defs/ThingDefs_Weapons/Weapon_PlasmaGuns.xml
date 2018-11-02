@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFPlasmaPistol</defName>
+		<label>Energy Cell</label>
+		<projectile>
+			<damageDef>PFPlasma</damageDef>
+			<damageAmountBase>26</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Plasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFPlasma_Pistol</defName>
+		<label>Plasma Pistol</label>
+		<description>A pistol that fires deadly superheated plasma propelled down a superconducted shaft.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/PlasmaPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPlasmaPistol</soundInteract>
+		<statBases>
+			<WorkToMake>110000</WorkToMake>
+			<MarketValue>1050</MarketValue>
+			<Mass>1.35</Mass>
+			<AccuracyTouch>0.91</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.52</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>35</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<PFSuperconductor>1</PFSuperconductor>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFPlasmaPistol</defaultProjectile>
+				<warmupTime>0.80</warmupTime>
+				<range>28</range>
+				<soundCast>ShotPlasmaPistol</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFPlasmaDefender</defName>
+		<label>Energy Cell</label>
+		<projectile>
+			<damageDef>PFPlasma</damageDef>
+			<damageAmountBase>28</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Plasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFPlasma_Defender</defName>
+		<label>Plasma Defender</label>
+		<description>The outdated Glock 86 plasma pistol fires a more powerful plasma bolt than a standard plasma pistol, though it has a shorter range.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/PlasmaDefender</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPlasmaPistol</soundInteract>
+		<statBases>
+			<WorkToMake>110000</WorkToMake>
+			<MarketValue>1200</MarketValue>
+			<Mass>0.9</Mass>
+			<AccuracyTouch>0.91</AccuracyTouch>
+			<AccuracyShort>0.77</AccuracyShort>
+			<AccuracyMedium>0.49</AccuracyMedium>
+			<AccuracyLong>0.32</AccuracyLong>
+			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<PFSuperconductor>1</PFSuperconductor>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFPlasmaDefender</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>22</range>
+				<soundCast>ShotPlasmaPistol</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFPlasmaRifle</defName>
+		<label>Energy Cell</label>
+		<projectile>
+			<damageDef>PFPlasma</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Plasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFPlasma_Rifle</defName>
+		<label>Plasma Rifle</label>
+		<description>A rifle that fires deadly superheated plasma propelled down a superconducted shaft.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/PlasmaRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPlasmaPistol</soundInteract>
+		<statBases>
+			<WorkToMake>150000</WorkToMake>
+			<MarketValue>1400</MarketValue>
+			<Mass>3.6</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.67</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<PFSuperconductor>1</PFSuperconductor>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFPlasmaRifle</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>35</range>
+				<soundCast>ShotPlasmaPistol</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFMultiplasRifle</defName>
+		<label>Energy Cell</label>
+		<projectile>
+			<damageDef>PFPlasma</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<speed>75</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Plasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFMultiplas_Rifle</defName>
+		<label>Multiplas Rifle</label>
+		<description>A scattergun that fires 3 superheated plasma bolts to utterly melt one's target, that is if they hit..</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/PlasmaRifle2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPlasmaPistol</soundInteract>
+		<statBases>
+			<WorkToMake>175000</WorkToMake>
+			<MarketValue>1800</MarketValue>
+			<Mass>3.175</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.33</AccuracyLong>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+			<PFSuperconductor>2</PFSuperconductor>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFSpecialEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFMultiplasRifle</defaultProjectile>
+				<warmupTime>1.55</warmupTime>
+				<range>22</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<soundCast>ShotPlasmaPistol</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFPlasmaScattergun</defName>
+		<label>Energy Cell</label>
+		<projectile>
+			<damageDef>PFPlasma</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>75</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Plasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFPlasmaScattergun</defName>
+		<label>Plasma Scattergun</label>
+		<description>An advanced scattergun that fires 4 superheated plasma bolts to utterly melt one's target, that is if they hit..</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/PlasmaScattergun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPlasmaPistol</soundInteract>
+		<statBases>
+			<WorkToMake>180000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<Mass>3.175</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.68</AccuracyShort>
+			<AccuracyMedium>0.43</AccuracyMedium>
+			<AccuracyLong>0.32</AccuracyLong>
+			<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>75</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<PFSuperconductor>2</PFSuperconductor>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFSpecialEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFMultiplasRifle</defaultProjectile>
+				<warmupTime>1.80</warmupTime>
+				<range>18</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<soundCast>ShotPlasmaPistol</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+</Defs>

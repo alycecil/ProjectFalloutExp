@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<RecipeDef>
+		<defName>PFMakeHerbalMedsFromHerbs</defName>
+		<label>Make herbal medicine</label>
+		<description>Makes herbal medicine by combining Broc Flowers and Xander root.</description>
+		<jobString>Making herbal medicine.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>1600</workAmount>
+		<workSkill>Medicine</workSkill>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PFBrocFlowerItem</li>					
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PFXanderRootItem</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PFBrocFlowerItem</li>
+				<li>PFXanderRootItem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MedicineHerbal>1</MedicineHerbal>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>PFMakeStimpakFromStuff</defName>
+		<label>Make stimpak</label>
+		<description>Makes a stimpak by extracting chemicals from Xander Root and Broc Flowers and putting them into a hypdermic syringe.</description>
+		<jobString>Making stimpak.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>3200</workAmount>
+		<workSkill>Medicine</workSkill>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PFBrocFlowerItem</li>					
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PFXanderRootItem</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PFEmptySyringe</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PFBrocFlowerItem</li>
+				<li>PFXanderRootItem</li>
+				<li>PFEmptySyringe</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PFStimpak>1</PFStimpak>
+		</products>
+	</RecipeDef>
+	
+</Defs>

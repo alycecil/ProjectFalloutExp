@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<ThingDef ParentName="MakeableChemBase">
+<defName>PFSteady</defName>
+<label>Steady</label>
+<description>A hard combat drug made from a cocktail of chemicals, it provides the user with deadshot aim, at the cost of being extraordinarily addictive.</description>
+<graphicData>
+<texPath>Things/Fallout/Chems/Steady</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<rotatable>false</rotatable>
+<statBases>
+<WorkToMake>800</WorkToMake>
+<MarketValue>200</MarketValue>
+<Mass>0.04</Mass>
+</statBases>
+<techLevel>Industrial</techLevel>
+<ingestible>
+<foodType>Processed</foodType>
+<joy>0.1</joy>
+<drugCategory>Hard</drugCategory>
+<baseIngestTicks>300</baseIngestTicks>
+<ingestSound>Ingest_Snort</ingestSound>
+<ingestHoldUsesTable>false</ingestHoldUsesTable>
+<ingestCommandString>Inhale {0}</ingestCommandString>
+<ingestReportString>Inhaling {0}.</ingestReportString>
+<outcomeDoers>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFSteadied</hediffDef>
+<severity>0.75</severity>
+<toleranceChemical>PFSteadyC</toleranceChemical>
+</li>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFSteadyTolerance</hediffDef>
+<severity>0.044</severity>
+</li>
+</outcomeDoers>
+</ingestible>
+<recipeMaker>
+<researchPrerequisite>PFChemProduction</researchPrerequisite>
+<recipeUsers>
+<li>DrugLab</li>
+</recipeUsers>
+</recipeMaker>
+<costList>
+<Neutroamine>4</Neutroamine>
+<Yayo>1</Yayo>
+<MedicineIndustrial>2</MedicineIndustrial>
+</costList>
+<comps>
+<li Class="CompProperties_Drug">
+<chemical>PFSteadyC</chemical>
+<addictiveness>0.75</addictiveness>
+<minToleranceToAddict>0.05</minToleranceToAddict>
+<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+<needLevelOffset>1</needLevelOffset>
+<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+<listOrder>2004</listOrder>
+<overdoseSeverityOffset>
+<min>0.20</min>
+<max>0.40</max>
+</overdoseSeverityOffset>
+</li>
+</comps>
+</ThingDef>
+
+<HediffDef>
+<defName>PFSteadied</defName>
+<hediffClass>HediffWithComps</hediffClass>
+<label>Steadied by Steady</label>
+<defaultLabelColor>(1,0,0,5)</defaultLabelColor>
+<scenarioCanAdd>false</scenarioCanAdd>
+<maxSeverity>1.0</maxSeverity>
+<comps>
+<li Class="HediffCompProperties_severityPerDay">
+<severityPerDay>-1.0</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+<capMods>
+<li>
+<capacity>Sight</capacity>
+<offset>0.5</offset>
+</li>
+<li>
+<capacity>Consciousness</capacity>
+<offset>0.25</offset>
+</li>
+<li>
+<capacity>Manipulation</capacity>
+<offset>0.5</offset>
+</li>
+</capMods>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFSteadyHigh</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFSteadied</hediff>
+<stages>
+<li>
+<label>Steadied by Steady</label>
+<description>I could totally shoot a bullseye, through a window, from a few hundred feet away.</description>
+<baseMoodEffect>5</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+<ChemicalDef>
+<defName>PFSteadyC</defName>
+<label>Steady</label>
+<addictionHediff>PFSteadyAddiction</addictionHediff>
+<toleranceHediff>PFSteadyTolerance</toleranceHediff>
+<canBinge>false</canBinge>
+</ChemicalDef>
+
+<NeedDef ParentName="ChemAddictionNeedBase">
+<defName>Chemical_PFSteady</defName>
+<needClass>Need_Chemical</needClass>
+<label>Steady</label>
+<description>Because of an addiction to Steady, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+<listPriority>45</listPriority>
+</NeedDef>
+
+<HediffDef ParentName="ChemToleranceBase">
+<defName>PFSteadyTolerance</defName>
+<label>Steady tolerance</label>
+<comps>
+<li Class="HediffCompProperties_severityPerDay">
+<severityPerDay>-0.03</severityPerDay>
+</li>
+<li Class="HediffCompProperties_DrugEffectFactor">
+<chemical>PFSteadyC</chemical>
+</li>
+</comps>
+<hediffGivers>
+<li Class="HediffGiver_RandomDrugEffect">
+<hediff>Carcinoma</hediff>
+<baseMtbDays>180</baseMtbDays>
+<minSeverity>0.40</minSeverity>
+<partsToAffect>
+<li>Lung</li>
+<li>Lung</li>
+</partsToAffect>
+<countToAffect>1</countToAffect>
+</li>
+</hediffGivers>
+</HediffDef>
+
+<HediffDef ParentName="ChemAddictionBase">
+<defName>PFSteadyAddiction</defName>
+<hediffClass>Hediff_Addiction</hediffClass>
+<label>Steady addiction</label>
+<causesNeed>Chemical_PFSteady</causesNeed>
+<comps>
+<li Class="HediffCompProperties_severityPerDay">
+<severityPerDay>-0.02</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+</li>
+<li>
+<label>Withdrawal</label>
+<capMods>
+<li>
+<capacity>Consciousness</capacity>
+<offset>-0.2</offset>
+</li>
+<li>
+<capacity>Manipulation</capacity>
+<offset>-0.4</offset>
+</li>
+<li>
+<capacity>Sight</capacity>
+<offset>-0.2</offset>
+</li>
+</capMods>
+<mentalStateGivers>
+<li>
+<mentalState>Wander_Psychotic</mentalState>
+<mtbDays>4</mtbDays>
+</li>
+</mentalStateGivers>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFSteadyWithdrawal</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFSteadyAddiction</hediff>
+<stages>
+<li>
+<visible>false</visible>
+</li>
+<li>
+<label>Steady withdrawal</label>
+<description>Everything is so shaky, even my eyes are rattling around.</description>
+<baseMoodEffect>-10</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+</Defs>

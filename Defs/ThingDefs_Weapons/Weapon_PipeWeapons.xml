@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <ThingDef Name="BasePipeMakeableGun" ParentName="BaseGun" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+		<li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+	<ThingDef Abstract="True" Name="BasePipeMakeableHumanGun" ParentName="BasePipeMakeableGun">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+	</ThingDef>
+  
+<ThingDef ParentName="BaseBullet">
+<defName>Bullet_PFPipePistol</defName>
+<label>.38 Bullet</label>
+<graphicData>
+<texPath>Things/Projectile/Bullet_Small</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<projectile>
+<flyOverhead>false</flyOverhead>
+<damageDef>Bullet</damageDef>
+<damageAmountBase>8</damageAmountBase>
+<speed>70</speed>
+</projectile>
+</ThingDef>
+
+<ThingDef ParentName="BasePipeMakeableHumanGun">
+<defName>Gun_PFPipePistol</defName>
+<label>Pipe Pistol</label>
+<description>A makeshift pistol, it's simple to make but doesn't hit very hard.</description>
+<graphicData>
+<texPath>Things/Fallout/Weapons/Guns/PipePistol</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<statBases>
+<WorkToMake>12000</WorkToMake>
+<MarketValue>125</MarketValue>
+<Mass>1.05</Mass>
+<AccuracyTouch>0.80</AccuracyTouch>
+<AccuracyShort>0.72</AccuracyShort>
+<AccuracyMedium>0.56</AccuracyMedium>
+<AccuracyLong>0.23</AccuracyLong>
+<RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
+</statBases>
+<costList>
+<Steel>20</Steel>
+<ComponentIndustrial>2</ComponentIndustrial>
+</costList>
+<verbs>
+<li>
+<verbClass>Verb_Shoot</verbClass>
+<hasStandardCommand>true</hasStandardCommand>
+<defaultProjectile>Bullet_PFPipePistol</defaultProjectile>
+<warmupTime>0.40</warmupTime>
+<range>24</range>
+<soundCast>Shot_Autopistol</soundCast>
+<!-- Above is a Placeholder Sound -->
+<soundCastTail>GunTail_Light</soundCastTail>
+<muzzleFlashScale>9</muzzleFlashScale>
+</li>
+</verbs>
+
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+<defName>Bullet_PFPipeRevolver</defName>
+<label>.38 Bullet</label>
+<graphicData>
+<texPath>Things/Projectile/Bullet_Small</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<projectile>
+<flyOverhead>false</flyOverhead>
+<damageDef>Bullet</damageDef>
+<damageAmountBase>10</damageAmountBase>
+<speed>70</speed>
+</projectile>
+</ThingDef>
+
+<ThingDef ParentName="BasePipeMakeableHumanGun">
+<defName>Gun_PFPipeRevolver</defName>
+<label>Pipe Revolver</label>
+<description>A makeshift revolver, it's simple to make and hits a bit harder than the normal pistol.</description>
+<graphicData>
+<texPath>Things/Fallout/Weapons/Guns/PipeRevolver</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<statBases>
+<WorkToMake>17500</WorkToMake>
+<MarketValue>165</MarketValue>
+<Mass>1.9</Mass>
+<AccuracyTouch>0.85</AccuracyTouch>
+<AccuracyShort>0.74</AccuracyShort>
+<AccuracyMedium>0.55</AccuracyMedium>
+<AccuracyLong>0.24</AccuracyLong>
+<RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+</statBases>
+<costList>
+<Steel>30</Steel>
+<ComponentIndustrial>2</ComponentIndustrial>
+</costList>
+<verbs>
+<li>
+<verbClass>Verb_Shoot</verbClass>
+<hasStandardCommand>true</hasStandardCommand>
+<defaultProjectile>Bullet_PFPipeRevolver</defaultProjectile>
+<warmupTime>0.50</warmupTime>
+<range>26</range>
+<soundCast>Shot_Revolver</soundCast>
+<!-- Above is a Placeholder Sound -->
+<soundCastTail>GunTail_Light</soundCastTail>
+<muzzleFlashScale>9</muzzleFlashScale>
+</li>
+</verbs>
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+<defName>Bullet_PFPipeRifle</defName>
+<label>.38 Bullet</label>
+<graphicData>
+<texPath>Things/Projectile/Bullet_Small</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<projectile>
+<flyOverhead>false</flyOverhead>
+<damageDef>Bullet</damageDef>
+<damageAmountBase>9</damageAmountBase>
+<speed>70</speed>
+</projectile>
+</ThingDef>
+
+<ThingDef ParentName="BasePipeMakeableHumanGun">
+<defName>Gun_PFPipeRifle</defName>
+<label>Pipe Rifle</label>
+<description>A makeshift rifle, it's simple to make but is more accurate than the pistol.</description>
+<graphicData>
+<texPath>Things/Fallout/Weapons/Guns/PipeRifle</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<statBases>
+<WorkToMake>22000</WorkToMake>
+<MarketValue>215</MarketValue>
+<Mass>1.35</Mass>
+<AccuracyTouch>0.77</AccuracyTouch>
+<AccuracyShort>0.75</AccuracyShort>
+<AccuracyMedium>0.59</AccuracyMedium>
+<AccuracyLong>0.3</AccuracyLong>
+<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+</statBases>
+<costList>
+<Steel>35</Steel>
+<ComponentIndustrial>3</ComponentIndustrial>
+</costList>
+<verbs>
+<li>
+<verbClass>Verb_Shoot</verbClass>
+<hasStandardCommand>true</hasStandardCommand>
+<defaultProjectile>Bullet_PFPipeRifle</defaultProjectile>
+<warmupTime>0.60</warmupTime>
+<range>28</range>
+<soundCast>Shot_Autopistol</soundCast>
+<!-- Above is a Placeholder Sound -->
+<soundCastTail>GunTail_Light</soundCastTail>
+<muzzleFlashScale>9</muzzleFlashScale>
+</li>
+</verbs>
+
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+<defName>Bullet_PFPipeSMG</defName>
+<label>.38 Bullet</label>
+<graphicData>
+<texPath>Things/Projectile/Bullet_Small</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<projectile>
+<flyOverhead>false</flyOverhead>
+<damageDef>Bullet</damageDef>
+<damageAmountBase>8</damageAmountBase>
+<speed>70</speed>
+</projectile>
+</ThingDef>
+
+<ThingDef ParentName="BasePipeMakeableHumanGun">
+<defName>Gun_PFPipeSMG</defName>
+<label>Pipe SMG</label>
+<description>A makeshift submachine gun, it's simple to make but fires quickly.</description>
+<graphicData>
+<texPath>Things/Fallout/Weapons/Guns/PipeSMG</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<statBases>
+<WorkToMake>20000</WorkToMake>
+<MarketValue>190</MarketValue>
+<Mass>1.22</Mass>
+<AccuracyTouch>0.68</AccuracyTouch>
+<AccuracyShort>0.55</AccuracyShort>
+<AccuracyMedium>0.29</AccuracyMedium>
+<AccuracyLong>0.18</AccuracyLong>
+<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+</statBases>
+<costList>
+<Steel>30</Steel>
+<ComponentIndustrial>3</ComponentIndustrial>
+</costList>
+<verbs>
+<li>
+<verbClass>Verb_Shoot</verbClass>
+<hasStandardCommand>true</hasStandardCommand>
+<defaultProjectile>Bullet_PFPipeSMG</defaultProjectile>
+<warmupTime>0.45</warmupTime>
+<range>20</range>
+<burstShotCount>4</burstShotCount>
+<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+<soundCast>Shot_Autopistol</soundCast>
+<!-- Above is a Placeholder Sound -->
+<soundCastTail>GunTail_Light</soundCastTail>
+<muzzleFlashScale>9</muzzleFlashScale>
+</li>
+</verbs>
+
+</ThingDef>
+
+
+
+
+
+
+
+</Defs>

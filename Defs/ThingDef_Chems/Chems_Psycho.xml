@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<ThingDef ParentName="MakeableChemBase">
+<defName>PFPsycho</defName>
+<label>Psycho</label>
+<description>A rejected military sterioid that increases physical strength, but decreasing mental capacity, it is fairly addictive.</description>
+<graphicData>
+<texPath>Things/Fallout/Chems/Psycho</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<rotatable>false</rotatable>
+<statBases>
+<WorkToMake>400</WorkToMake>
+<MarketValue>50</MarketValue>
+<Mass>0.04</Mass>
+</statBases>
+<techLevel>Industrial</techLevel>
+<ingestible>
+<foodType>Processed</foodType>
+<joy>0.05</joy>
+<drugCategory>Hard</drugCategory>
+<baseIngestTicks>250</baseIngestTicks>
+<ingestHoldUsesTable>false</ingestHoldUsesTable>
+<ingestCommandString>Inject {0}</ingestCommandString>
+<ingestReportString>Injecting {0}.</ingestReportString>
+<outcomeDoers>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFEnraged</hediffDef>
+<severity>0.75</severity>
+<toleranceChemical>PFPsychoC</toleranceChemical>
+</li>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFPsychoTolerance</hediffDef>
+<severity>0.044</severity>
+</li>
+</outcomeDoers>
+</ingestible>
+<recipeMaker>
+<researchPrerequisite>PFChemProduction</researchPrerequisite>
+<recipeUsers>
+<li>DrugLab</li>
+</recipeUsers>
+</recipeMaker>
+<costList>
+<Neutroamine>3</Neutroamine>
+<PsychoidLeaves>5</PsychoidLeaves>
+</costList>
+<comps>
+<li Class="CompProperties_Drug">
+<chemical>PFPsychoC</chemical>
+<addictiveness>0.10</addictiveness>
+<minToleranceToAddict>0.05</minToleranceToAddict>
+<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+<needLevelOffset>1</needLevelOffset>
+<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+<listOrder>2003</listOrder>
+<overdoseSeverityOffset>
+<min>0.20</min>
+<max>0.40</max>
+</overdoseSeverityOffset>
+</li>
+</comps>
+</ThingDef>
+
+<HediffDef>
+<defName>PFEnraged</defName>
+<hediffClass>HediffWithComps</hediffClass>
+<label>Enraged by Psycho</label>
+<labelNoun>a Psycho 'roid rage</labelNoun>
+<defaultLabelColor>(1,0,0,5)</defaultLabelColor>
+<scenarioCanAdd>false</scenarioCanAdd>
+<maxSeverity>1.0</maxSeverity>
+<isBad>false</isBad>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-1.0</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+<painFactor>0.80</painFactor>
+<capMods>
+<li>
+<capacity>Moving</capacity>
+<offset>0.15</offset>
+</li>
+<li>
+<capacity>Manipulation</capacity>
+<offset>0.40</offset>
+</li>
+<li>
+<capacity>Consciousness</capacity>
+<offset>-0.10</offset>
+</li>
+</capMods>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFPsychoHigh</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFEnraged</hediff>
+<stages>
+<li>
+<label>Enraged by Psycho</label>
+<description>I WANT TO KILL STUFF, GAAAAHHH.</description>
+<baseMoodEffect>2</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+<ChemicalDef>
+<defName>PFPsychoC</defName>
+<label>Psycho</label>
+<addictionHediff>PFPsychoAddiction</addictionHediff>
+<toleranceHediff>PFPsychoTolerance</toleranceHediff>
+<canBinge>false</canBinge>
+</ChemicalDef>
+
+<NeedDef ParentName="ChemAddictionNeedBase">
+<defName>Chemical_PFPsycho</defName>
+<needClass>Need_Chemical</needClass>
+<label>Psycho</label>
+<description>Because of an addiction to Psycho, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+<listPriority>45</listPriority>
+</NeedDef>
+
+<HediffDef ParentName="ChemToleranceBase">
+<defName>PFPsychoTolerance</defName>
+<label>Psycho tolerance</label>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.015</severityPerDay>
+</li>
+<li Class="HediffCompProperties_DrugEffectFactor">
+<chemical>PFPsychoC</chemical>
+</li>
+</comps>
+</HediffDef>
+
+<HediffDef ParentName="ChemAddictionBase">
+<defName>PFPsychoAddiction</defName>
+<hediffClass>Hediff_Addiction</hediffClass>
+<label>Psycho addiction</label>
+<causesNeed>Chemical_PFPsycho</causesNeed>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.02</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+</li>
+<li>
+<label>Withdrawal</label>
+<painFactor>2</painFactor>
+<socialFightChanceFactor>5</socialFightChanceFactor>
+<hungerRateFactor>1.5</hungerRateFactor>
+<capMods>
+<li>
+<capacity>Manipulation</capacity>
+<offset>-0.2</offset>
+</li>
+<li>
+<capacity>Moving</capacity>
+<offset>-0.1</offset>
+</li>
+</capMods>
+<mentalStateGivers>
+<li>
+<mentalState>Berserk</mentalState>
+<mtbDays>2</mtbDays>
+</li>
+</mentalStateGivers>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFPsychoWithdrawal</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFPsychoAddiction</hediff>
+<stages>
+<li>
+<visible>false</visible>
+</li>
+<li>
+<label>Psycho withdrawal</label>
+<description>I'm so angry...and everything hurts.</description>
+<baseMoodEffect>-25</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+</Defs>

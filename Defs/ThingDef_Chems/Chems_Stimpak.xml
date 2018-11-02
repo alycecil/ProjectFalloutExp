@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<ThingDef ParentName="ChemBase">
+<defName>PFStimpak</defName>
+<label>Stimpak</label>
+<description>A syringe containing high grade medicine and drugs that quickly heal injuries.</description>
+<graphicData>
+<texPath>Things/Fallout/Chems/Stimpak</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<rotatable>false</rotatable>
+<statBases>
+<MarketValue>100</MarketValue>
+<Mass>0.04</Mass>
+<WorkToMake>1000</WorkToMake>
+</statBases>
+<techLevel>Spacer</techLevel>
+<ingestible>
+<foodType>Processed</foodType>
+<drugCategory>Medical</drugCategory>
+<baseIngestTicks>120</baseIngestTicks>
+<ingestHoldUsesTable>false</ingestHoldUsesTable>
+<ingestCommandString>Inject {0}</ingestCommandString>
+<ingestReportString>Injecting {0}.</ingestReportString>
+<outcomeDoers>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFStimpakHeal</hediffDef>
+<severity>0.01</severity>
+<toleranceChemical>PFStimpackTolerance</toleranceChemical>
+</li>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFStimpakTolerance</hediffDef>
+<severity>0.01</severity>
+<divideByBodySize>true</divideByBodySize>
+</li>
+</outcomeDoers>
+</ingestible>
+<recipeMaker>
+	<researchPrerequisite>PFChemProduction</researchPrerequisite>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<skillRequirements>
+		<Medicine>8</Medicine>
+	</skillRequirements>
+</recipeMaker>
+<costList>
+<PFXanderRootItem>2</PFXanderRootItem>
+<PFBrocFlowerItem>2</PFBrocFlowerItem>
+<PFEmptySyringe>1</PFEmptySyringe>
+</costList>
+<comps>
+<li Class="CompProperties_Drug">
+<chemical>PFStimpakC</chemical>
+<addictiveness>0</addictiveness>
+<minToleranceToAddict>0.9</minToleranceToAddict>
+<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+<needLevelOffset>1</needLevelOffset>
+<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+<listOrder>2005</listOrder>
+</li>
+</comps>
+</ThingDef>
+
+<HediffDef>
+<defName>PFStimpakHigh</defName>
+<hediffClass>HediffWithComps</hediffClass>
+<label>High on Stimpak</label>
+<labelNoun>a Stimpak high</labelNoun>
+<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+<scenarioCanAdd>false</scenarioCanAdd>
+<maxSeverity>1.0</maxSeverity>
+<isBad>false</isBad>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.5</severityPerDay>
+</li>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>1000</min>
+					<max>2000</max>
+				</disappearsAfterTicks>
+			</li>
+</comps>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFStimpakHigh</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFStimpakHeal</hediff>
+<stages>
+<li>
+<label>Healing from Stimpak</label>
+<description>All of my injuries are healing, I'll be back to full strength in no time!</description>
+<baseMoodEffect>0</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+<ChemicalDef>
+<defName>PFStimpakC</defName>
+<label>Stimpak</label>
+<addictionHediff>PFStimpakAddiction</addictionHediff>
+<toleranceHediff>PFStimpakTolerance</toleranceHediff>
+<canBinge>false</canBinge>
+</ChemicalDef>
+
+<NeedDef ParentName="ChemAddictionNeedBase">
+<defName>Chemical_PFStimpak</defName>
+<needClass>Need_Chemical</needClass>
+<label>Stimpak</label>
+<description>This shouldn't be a thing</description>
+<listPriority>45</listPriority>
+</NeedDef>
+
+<HediffDef ParentName="ChemToleranceBase">
+<defName>PFStimpakTolerance</defName>
+<label>Stimpak tolerance</label>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.5</severityPerDay>
+</li>
+<li Class="HediffCompProperties_DrugEffectFactor">
+<chemical>PFStimpakC</chemical>
+</li>
+</comps>
+</HediffDef>
+
+<HediffDef ParentName="ChemAddictionBase">
+<defName>PFStimpakAddiction</defName>
+<hediffClass>Hediff_Addiction</hediffClass>
+<label>Stimpak addiction</label>
+<causesNeed>Chemical_PFStimpak</causesNeed>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.02</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+</li>
+<li>
+<label>Withdrawal</label>
+<capMods>
+</capMods>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFStimpakWithdrawal</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFStimpakAddiction</hediff>
+<stages>
+<li>
+<visible>false</visible>
+</li>
+<li>
+<label>You shouldn't be seeing this</label>
+<description>Stimpaks don't even have a withdrawl</description>
+<baseMoodEffect>0</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+</Defs>

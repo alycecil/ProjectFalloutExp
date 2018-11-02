@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Abstract="True" Name="BaseLaserGun" ParentName="BaseGun">
+		<weaponTags>
+				<li>Gun</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="BaseLaserMakeableGun" ParentName="BaseMakeableGun">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFAEPLaserRifle</defName>
+		<label>MF Cell</label>
+		<projectile>
+			<damageDef>PFLaser</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<speed>125</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Laser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFAEPLaser_Rifle</defName>
+		<label>AEP9 Laser Rifle</label>
+		<description>The AEP9 laser rifle fires intense lasers to inflict damage upon the user's target. This is the more modern version that replaced the early Wattz 2000 model of laser rifles.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/LaserRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPFLaserRifle</soundInteract>
+		<statBases>
+			<WorkToMake>80000</WorkToMake>
+			<MarketValue>1100</MarketValue>
+			<Mass>3.6</Mass>
+			<AccuracyTouch>0.82</AccuracyTouch>
+			<AccuracyShort>0.89</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<PFFocusLens>1</PFFocusLens>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>PFBrotherhoodNorm</li>
+			<li>PFLaserGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFAEPLaserRifle</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>28</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<soundCast>ShotPFLaserRifle</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFTBLaserRifle</defName>
+		<label>MF Cell</label>
+		<projectile>
+			<damageDef>PFLaser</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<speed>125</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Laser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFTri-Beam_Laser_Rifle</defName>
+		<label>Tri-Beam Laser Rifle</label>
+		<description>A triple barreled laser rifle, it acts like a scattergun, firing 3 lasers at once. It lacks the range and accuracy of other laser weapons, but makes up for it in damage.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/TBLaserRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPFLaserRifle</soundInteract>
+		<statBases>
+			<WorkToMake>125000</WorkToMake>
+			<MarketValue>1475</MarketValue>
+			<Mass>4.1</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.66</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<PFFocusLens>3</PFFocusLens>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>PFBrotherhoodSpec</li>
+			<li>PFLaserGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFTBLaserRifle</defaultProjectile>
+				<warmupTime>1.33</warmupTime>
+				<range>18</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<soundCast>ShotPFLaserRifle</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFW2000LaserRifle</defName>
+		<label>MF Cell</label>
+		<projectile>
+			<damageDef>PFLaser</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<speed>125</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/WattzLaser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFWLaser_Rifle</defName>
+		<label>Wattz 2000 Laser Rifle</label>
+		<description>The Wattz 2000 laser rifle fires percise lasers to take down targets. This outdated model was replaced by the AEP9, which had a higher fire rate and was much more durable.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/Wattz2000</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPFLaserRifle</soundInteract>
+		<statBases>
+			<WorkToMake>80000</WorkToMake>
+			<MarketValue>1150</MarketValue>
+			<Mass>7.75</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.81</AccuracyShort>
+			<AccuracyMedium>0.88</AccuracyMedium>
+			<AccuracyLong>0.68</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<PFFocusLens>1</PFFocusLens>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>PFBrotherhoodNorm</li>
+			<li>PFLaserGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFW2000LaserRifle</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>35</range>
+				<soundCast>ShotPFLaserRifle</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFAEPLaserPistol</defName>
+		<label>MF Cell</label>
+		<projectile>
+			<damageDef>PFLaser</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<speed>125</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Laser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFAEPLaser_Pistol</defName>
+		<label>AEP7 Laser Pistol</label>
+		<description>The AEP7 laser pistol fires intense beams of concentrated light.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/LaserPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPFLaserRifle</soundInteract>
+		<statBases>
+			<WorkToMake>55000</WorkToMake>
+			<MarketValue>750</MarketValue>
+			<Mass>1.35</Mass>
+			<AccuracyTouch>0.92</AccuracyTouch>
+			<AccuracyShort>0.79</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<PFFocusLens>1</PFFocusLens>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>PFBrotherhoodNorm</li>
+			<li>PFLaserGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFAEPLaserPistol</defaultProjectile>
+				<warmupTime>0.50</warmupTime>
+				<range>25</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>ShotPFLaserRifle</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PewPew</defName>
+		<label>MF Cell</label>
+		<projectile>
+			<damageDef>PFLaser</damageDef>
+			<damageAmountBase>34</damageAmountBase>
+			<speed>125</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/IntenseLaser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserGun">
+		<defName>Laser_PewPew</defName>
+		<label>Pew Pew</label>
+		<description>A unique variant of the AEP7 laser pistol that fires an extremely strong laser at the cost of it's normally high fire rate.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/PewPew</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPFLaserRifle</soundInteract>
+		<thingSetMakerTags>
+		<li>RewardSpecial</li>
+		</thingSetMakerTags>>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<Mass>1.35</Mass>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.78</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>PFLaserGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PewPew</defaultProjectile>
+				<warmupTime>0.75</warmupTime>
+				<range>26</range>
+				<soundCast>ShotPFLaserRifle</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFW1000LaserPistol</defName>
+		<label>Small E-Cell</label>
+			<projectile>
+				<damageDef>PFLaser</damageDef>
+				<damageAmountBase>10</damageAmountBase>
+				<speed>125</speed>
+			</projectile>
+		<graphicData>
+			<texPath>Effects/WattzLaser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFW1000Laser_Pistol</defName>
+		<label>Wattz 1000 Laser Pistol</label>
+		<description>The civilian grade Wattz 1000 laser pistol fires focused beams of light, however its lower wattage and lack of a focusing array leave it weaker than the military grade AEP7.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/Wattz1000</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPFLaserRifle</soundInteract>
+		<statBases>
+			<WorkToMake>55000</WorkToMake>
+			<MarketValue>600</MarketValue>
+			<Mass>1.35</Mass>
+			<AccuracyTouch>0.92</AccuracyTouch>
+			<AccuracyShort>0.83</AccuracyShort>
+			<AccuracyMedium>0.64</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>PFBrotherhoodNorm</li>
+			<li>PFLaserGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFW1000LaserPistol</defaultProjectile>
+				<warmupTime>0.40</warmupTime>
+				<range>20</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>ShotPFLaserRifle</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LaserGatling</defName>
+		<label>MFC</label>
+		<projectile>
+			<damageDef>PFLaser</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>125</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Laser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>PFGatlingLaser</defName>
+		<label>Gatling Laser</label>
+		<description>The L30 Gatling laser fires rapid inaccurate bursts of concentrated energy. The best friend of any self-respecting Paladin.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/LaserGatling</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractLaserGatling</soundInteract>
+		<statBases>
+			<WorkToMake>100000</WorkToMake>
+			<MarketValue>2250</MarketValue>
+			<Mass>8.2</Mass>
+			<AccuracyTouch>0.58</AccuracyTouch>
+			<AccuracyShort>0.5</AccuracyShort>
+			<AccuracyMedium>0.28</AccuracyMedium>
+			<AccuracyLong>0.16</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<Plasteel>75</Plasteel>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<PFFocusLens>1</PFFocusLens>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFSpecialEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>GunHeavy</li>
+			<li>PFBrotherhoodSpec</li>
+			<li>PFLaserGun</li>
+		</weaponTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.20</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_LaserGatling</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>35</range>
+				<burstShotCount>20</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>ShotLaserGatling</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_PFLaserSniper</defName>
+		<label>MFC</label>
+		<projectile>
+			<damageDef>PFLaser</damageDef>
+			<damageAmountBase>45</damageAmountBase>
+			<speed>125</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Laser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>Laser_PFSniper</defName>
+		<label>Laser Sniper</label>
+		<description>A modified laser rifle with a second focusing lens to further enhance accuracy, damage, and range.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/LaserSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPFLaserRifle</soundInteract>
+		<statBases>
+			<WorkToMake>275000</WorkToMake>
+			<MarketValue>1650</MarketValue>
+			<Mass>2.75</Mass>
+			<AccuracyTouch>0.54</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.88</AccuracyMedium>
+			<AccuracyLong>0.79</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>85</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<PFFocusLens>2</PFFocusLens>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFSpecialEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>SniperRifle</li>
+			<li>PFBrotherhoodSpec</li>
+			<li>PFLaserGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_PFLaserSniper</defaultProjectile>
+				<warmupTime>1.85</warmupTime>
+				<range>42</range>
+				<soundCast>ShotPFLaserRifle</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_LaserMusket</defName>
+		<label>MFC</label>
+		<projectile>
+			<damageDef>PFLaser</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<speed>125</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Effects/Laser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseLaserMakeableGun">
+		<defName>Laser_Musket</defName>
+		<label>Laser Musket</label>
+		<description>A makeshift hand crank operated laser rifle. It has moderate accuracy at all ranges, serving as a very well balanced weapon for any well armed militia.</description>
+		<graphicData>
+			<texPath>Things/Fallout/Weapons/Guns/LaserMusket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPFLaserRifle</soundInteract>
+		<statBases>
+			<WorkToMake>175000</WorkToMake>
+			<MarketValue>1250</MarketValue>
+			<Mass>5.45</Mass>
+			<AccuracyTouch>0.74</AccuracyTouch>
+			<AccuracyShort>0.79</AccuracyShort>
+			<AccuracyMedium>0.84</AccuracyMedium>
+			<AccuracyLong>0.69</AccuracyLong>
+			<RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Steel>50</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<PFFocusLens>1</PFFocusLens>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PFEnergyWeapons</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>PFLaserGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_LaserMusket</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>35</range>
+				<soundCast>ShotPFLaserRifle</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

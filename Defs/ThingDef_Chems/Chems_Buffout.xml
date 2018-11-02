@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<ThingDef ParentName="MakeableChemPillBase">
+<defName>PFBuffout</defName>
+<label>Buffout</label>
+<description>An advanced pre-war sterioid, that aides in physical tasks, it is fairly addictive.</description>
+<graphicData>
+<texPath>Things/Fallout/Chems/Buffout</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<rotatable>false</rotatable>
+<stackLimit>25</stackLimit>
+<statBases>
+<WorkToMake>400</WorkToMake>
+<MarketValue>45</MarketValue>
+<Mass>0.04</Mass>
+</statBases>
+<techLevel>Industrial</techLevel>
+<ingestible>
+<joy>0.2</joy>
+<drugCategory>Medical</drugCategory>
+<foodType>Processed</foodType>
+<baseIngestTicks>300</baseIngestTicks>
+<ingestHoldUsesTable>false</ingestHoldUsesTable>
+<ingestCommandString>Take {0}</ingestCommandString>
+<ingestReportString>Taking {0}.</ingestReportString>
+<outcomeDoers>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFBuffed</hediffDef>
+<severity>0.75</severity>
+<toleranceChemical>PFBuffoutC</toleranceChemical>
+</li>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>PFBuffoutTolerance</hediffDef>
+<severity>0.044</severity>
+<divideByBodySize>true</divideByBodySize>
+</li>
+</outcomeDoers>
+</ingestible>
+<recipeMaker>
+<researchPrerequisite>PFChemProduction</researchPrerequisite>
+<recipeUsers>
+<li>DrugLab</li>
+</recipeUsers>
+</recipeMaker>
+<costList>
+<Neutroamine>2</Neutroamine>
+<MedicineIndustrial>1</MedicineIndustrial>
+</costList>
+<comps>
+<li Class="CompProperties_Drug">
+<chemical>PFBuffoutC</chemical>
+<addictiveness>0.1</addictiveness>
+<minToleranceToAddict>0.05</minToleranceToAddict>
+<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+<needLevelOffset>1</needLevelOffset>
+<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+<listOrder>2002</listOrder>
+<overdoseSeverityOffset>
+<min>0.20</min>
+<max>0.40</max>
+</overdoseSeverityOffset>
+<largeOverdoseChance>0.005</largeOverdoseChance>
+</li>
+</comps>
+</ThingDef>
+
+<HediffDef>
+<defName>PFBuffed</defName>
+<hediffClass>HediffWithComps</hediffClass>
+<label>Strengthened by Buffout</label>
+<labelNoun>a Buffout high</labelNoun>
+<defaultLabelColor>(1,0,0,5)</defaultLabelColor>
+<scenarioCanAdd>false</scenarioCanAdd>
+<maxSeverity>1.0</maxSeverity>
+<isBad>false</isBad>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.70</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+<painFactor>0.75</painFactor>
+<capMods>
+<li>
+<capacity>Moving</capacity>
+<offset>0.15</offset>
+</li>
+<li>
+<capacity>Manipulation</capacity>
+<offset>0.25</offset>
+</li>
+</capMods>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFBuffoutHigh</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFBuffed</hediff>
+<validWhileDespawned>true</validWhileDespawned>
+<stages>
+<li>
+<label>Strengthened by Buffout</label>
+<description>I feel strong, I think I should go lift some stuff...</description>
+<baseMoodEffect>5</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+<ChemicalDef>
+<defName>PFBuffoutC</defName>
+<label>Buffout</label>
+<addictionHediff>PFBuffoutAddiction</addictionHediff>
+<toleranceHediff>PFBuffoutTolerance</toleranceHediff>
+<canBinge>false</canBinge>
+</ChemicalDef>
+
+<NeedDef ParentName="ChemAddictionNeedBase">
+<defName>Chemical_PFBuffout</defName>
+<needClass>Need_Chemical</needClass>
+<label>Buffout</label>
+<description>Because of an addiction to Buffout, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+<listPriority>45</listPriority>
+</NeedDef>
+
+<HediffDef ParentName="ChemToleranceBase">
+<defName>PFBuffoutTolerance</defName>
+<label>Buffout tolerance</label>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.015</severityPerDay>
+</li>
+<li Class="HediffCompProperties_DrugEffectFactor">
+<chemical>PFBuffoutC</chemical>
+</li>
+</comps>
+</HediffDef>
+
+<HediffDef ParentName="ChemAddictionBase">
+<defName>PFBuffoutAddiction</defName>
+<hediffClass>Hediff_Addiction</hediffClass>
+<label>Buffout addiction</label>
+<causesNeed>Chemical_PFBuffout</causesNeed>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.02</severityPerDay>
+</li>
+</comps>
+<stages>
+<li>
+</li>
+<li>
+<label>Withdrawal</label>
+<socialFightChanceFactor>2</socialFightChanceFactor>
+<hungerRateFactor>2</hungerRateFactor>
+<capMods>
+<li>
+<capacity>Manipulation</capacity>
+<offset>-0.25</offset>
+</li>
+<li>
+<capacity>Moving</capacity>
+<offset>-0.2</offset>
+</li>
+</capMods>
+<mentalStateGivers>
+<li>
+<mentalState>Berserk</mentalState>
+<mtbDays>7</mtbDays>
+</li>
+</mentalStateGivers>
+</li>
+</stages>
+</HediffDef>
+
+<ThoughtDef>
+<defName>PFBuffoutWithdrawal</defName>
+<workerClass>ThoughtWorker_Hediff</workerClass>
+<hediff>PFBuffoutAddiction</hediff>
+<stages>
+<li>
+<visible>false</visible>
+</li>
+<li>
+<label>Buffout withdrawal</label>
+<description>My muscles are sore and weak, I can't even walk properly, let alone do any heavy lifting.</description>
+<baseMoodEffect>-20</baseMoodEffect>
+</li>
+</stages>
+</ThoughtDef>
+
+</Defs>

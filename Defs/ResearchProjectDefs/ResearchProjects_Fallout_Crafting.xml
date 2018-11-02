@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>PFAdvancedPowerArmor</defName>
+		<label>Advanced Power Armor</label>
+		<description>Further advancements in Power Armor technology allow for production of highly technological and more heavily armored suits. Allows you to build X-01 Power Armor.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>PoweredArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>10</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+
+<ResearchProjectDef>
+
+<defName>PFEnergyWeapons</defName>
+<label>Energy Weaponry</label>
+<description>High powered beams of pure energy focused through lenses and superheated plasma passed down a superconducting shaft could prove effective in weaponry. Allows you to build basic energy weapons.</description>
+<baseCost>2000</baseCost>
+<techLevel>Spacer</techLevel>
+<prerequisites>
+<li>ChargedShot</li>
+</prerequisites>
+<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+<requiredResearchFacilities>
+<li>MultiAnalyzer</li>
+</requiredResearchFacilities>
+<researchViewX>10</researchViewX>
+<researchViewY>4</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+
+<defName>PFSpecialEnergyWeapons</defName>
+<label>Specialized Energy Weaponry</label>
+<description>Using more percise focuses and stronger magnets energy weapons can output far more energy in weapons specialized for different roles. Allows you to build stronger energy weapons.</description>
+<baseCost>2500</baseCost>
+<techLevel>Spacer</techLevel>
+<prerequisites>
+<li>PFEnergyWeapons</li>
+</prerequisites>
+<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+<requiredResearchFacilities>
+<li>MultiAnalyzer</li>
+</requiredResearchFacilities>
+<researchViewX>11</researchViewX>
+<researchViewY>4</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+
+<defName>PFabricAug</defName>
+<label>Fabric Augmentation</label>
+<description>Advancements in tailoring have allowed you to reach Vault-Tech's safety standards for clothing. Allows you to craft Vault Jumpsuits.</description>
+<baseCost>800</baseCost>
+<techLevel>Spacer</techLevel>
+<prerequisites>
+<li>Electricity</li>
+<li>ComplexClothing</li>
+</prerequisites>
+<researchViewX>1</researchViewX>
+<researchViewY>3</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+
+<defName>PFChemProduction</defName>
+<label>Chem Production</label>
+<description>After rigorous testing, several chemical formulas have been developed for various  drugs. Allows you to craft basic Chems.</description>
+<baseCost>800</baseCost>
+<techLevel>Industrial</techLevel>
+<prerequisites>
+<li>MedicineProduction</li>
+</prerequisites>
+<researchViewX>8</researchViewX>
+<researchViewY>0</researchViewY>
+</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PFBasicTurrets</defName>
+		<label>Basic Turrets</label>
+		<description>Using basic programming, better turrets have been designed, despite lacking much complexity they are a significant improvement. Allows you to build the Machinegun Turret and Heavy Machinegun Turret.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>PoweredArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>10</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

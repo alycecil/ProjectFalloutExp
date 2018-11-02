@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>PFCraftingResources</defName>
+		<label>FalloutCraftingResources</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
+	
+</Defs>

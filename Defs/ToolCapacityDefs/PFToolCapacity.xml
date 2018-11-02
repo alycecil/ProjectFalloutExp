@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ToolCapacityDef>
+		<defName>PFShishDamage</defName>
+		<label>slicing</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>PFScorpPoison</defName>
+		<label>stinging</label>
+	</ToolCapacityDef>
+	
+</Defs>

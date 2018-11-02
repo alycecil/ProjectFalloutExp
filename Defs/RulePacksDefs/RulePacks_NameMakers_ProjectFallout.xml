@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<RulePackDef>
+		<defName>PFNamerFactionVaults</defName>
+		<rulePack>
+				<rulesStrings>
+				<li>name->Vault 13</li>
+				<li>name->Vault 101</li>
+				<li>name->Vault 111</li>
+				<li>name->Vault 87</li>
+				<li>name->Vault City</li>
+				<li>name->Vault 19</li>
+				<li>name->Vault 28</li>
+				<li>name->Vault 29</li>
+				<li>name->Vault 43</li>
+				<li>name->Vault 75</li>
+				<li>name->Vault 76</li>
+				<li>name->Vault 81</li>
+				<li>name->Vault 42</li>
+				<li>name->Vault 55</li>
+				<li>name->Vault 56</li>
+				<li>name->Vault 70</li>
+				<li>name->Vault 32</li>
+				<li>name->Vault 117</li>
+				<li>name->Vault 123</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PFNamerFactionBrotherhood</defName>
+		<rulePack>
+				<rulesStrings>
+				<li>name->Lost Hills</li>
+				<li>name->The Citadel</li>
+				<li>name->Hidden Valley</li>
+				<li>name->Fort Independence</li>
+				<li>name->Bunker Alpha</li>
+				<li>name->Bunker Beta</li>
+				<li>name->Bunker Gamma</li>
+				<li>name->Bunker Delta</li>
+				<li>name->Bunker Epsilon</li>
+				<li>name->The Den</li>
+				<li>name->HELIOS One</li>
+				<li>name->Waypoint Echo</li>
+				<li>name->Bunker 13</li>
+				<li>name->Safehouse Alpha</li>
+				<li>name->Safehouse Beta</li>
+				<li>name->Safehouse Gamma</li>
+				<li>name->Safehouse Delta</li>
+				<li>name->Safehouse Epsilon</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PFNamerFactionVaultFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->Vault City</li>
+				<li>name->Vault-tec</li>
+				<li>name->Vault Dwellers</li>
+				<li>name->Vaults</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerFactionPFBrotherhood</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->The Brotherhood of Steel</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+
+</Defs>

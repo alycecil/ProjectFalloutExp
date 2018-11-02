@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<RecipeDef Name="SurgeryFlesh" Abstract="True">
+<effectWorking>Surgery</effectWorking>
+<soundWorking>Recipe_Surgery</soundWorking>
+<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+<workSkill>Medicine</workSkill>
+<workSkillLearnFactor>16</workSkillLearnFactor>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+<defName>PFInstallVATS</defName>
+<label>Install VATS Implant</label>
+<description>Installs a VATS Implant.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Installing VATS Implant</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>PFVATSImplant</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>PFVATSImplant</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Brain</li>
+</appliedOnFixedBodyParts>
+<addsHediff>PFVATS</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+<defName>PFInstallAgility</defName>
+<label>Install Agility Implant</label>
+<description>Installs an Agility Implant.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Installing Agility Implant</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>PFAgilityImplant</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>PFAgilityImplant</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Torso</li>
+</appliedOnFixedBodyParts>
+<addsHediff>PFAgility</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+<defName>PFInstallCharisma</defName>
+<label>Install Charisma Implant</label>
+<description>Installs a Charisma Implant.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Installing Charisma Implant</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>PFCharismaImplant</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>PFCharismaImplant</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Brain</li>
+</appliedOnFixedBodyParts>
+<addsHediff>PFCharisma</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+<defName>PFInstallEndurance</defName>
+<label>Install Endurance Implant</label>
+<description>Installs an Endurance Implant.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Installing Endurance Implant</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>PFEnduranceImplant</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>PFEnduranceImplant</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Torso</li>
+</appliedOnFixedBodyParts>
+<addsHediff>PFEndurance</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+<defName>PFInstallIntelligence</defName>
+<label>Install Intelligence Implant</label>
+<description>Installs an Intelligence Implant.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Installing Intelligence Implant</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>PFIntelligenceImplant</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>PFIntelligenceImplant</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Brain</li>
+</appliedOnFixedBodyParts>
+<addsHediff>PFIntelligence</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+<defName>PFInstallPerception</defName>
+<label>Install Perception Implant</label>
+<description>Installs a Perception Implant.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Installing Perception Implant</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>PFPerceptionImplant</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>PFPerceptionImplant</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Brain</li>
+</appliedOnFixedBodyParts>
+<addsHediff>PFPerception</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+<defName>PFInstallStrength</defName>
+<label>Install Strength Implant</label>
+<description>Installs a Strength Implant.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Installing Stength Implant</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>PFStrengthImplant</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>PFStrengthImplant</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Torso</li>
+</appliedOnFixedBodyParts>
+<addsHediff>PFStrength</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+<defName>PFInstallPMB</defName>
+<label>Install Phoenix Monocyte Breeder Implant</label>
+<description>Installs a Phoenix Monocyte Breeder Implant.</description>
+<workerClass>Recipe_InstallImplant</workerClass>
+<jobString>Installing Phoenix Monocyte Breeder Implant</jobString>
+<recipeUsers>
+<li>Human</li>
+</recipeUsers>
+<workAmount>2000</workAmount>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Medicine</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>PFPMBImplant</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<fixedIngredientFilter>
+<categories>
+<li>Medicine</li>
+</categories>
+<thingDefs>
+<li>PFPMBImplant</li>
+</thingDefs>
+</fixedIngredientFilter>
+<appliedOnFixedBodyParts>
+<li>Torso</li>
+</appliedOnFixedBodyParts>
+<addsHediff>PFPMB</addsHediff>
+</RecipeDef>
+
+</Defs>
