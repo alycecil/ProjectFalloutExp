@@ -2,214 +2,218 @@
 
 <Defs>
 
-<ThingDef Abstract="True" Name="MealBase">
-<thingClass>ThingWithComps</thingClass>
-<category>Item</category>
-<useHitPoints>true</useHitPoints>
-<selectable>true</selectable>
-<statBases>
-<MaxHitPoints>50</MaxHitPoints>
-<Flammability>1.0</Flammability>
-</statBases>
-<altitudeLayer>Item</altitudeLayer>
-<stackLimit>10</stackLimit>
-<tickerType>Rare</tickerType>
-<socialPropernessMatters>true</socialPropernessMatters>
-<thingCategories>
-<li>FoodMeals</li>
-</thingCategories>
-<alwaysHaulable>true</alwaysHaulable>
-<comps>
-<li Class="CompProperties_Forbiddable"/>
-<li Class="CompProperties_Ingredients"/>
-<li Class="CompProperties_FoodPoisonable"/>
-</comps>
-<pathCost>15</pathCost>
-<resourceReadoutPriority>Last</resourceReadoutPriority>
-<drawGUIOverlay>true</drawGUIOverlay>
-<ingestible>
-<foodType>Meal, Processed</foodType>
-<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-</ingestible>
-</ThingDef>
+    <ThingDef Abstract="True" Name="MealBase">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>10</stackLimit>
+        <tickerType>Rare</tickerType>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <thingCategories>
+            <li>FoodMeals</li>
+        </thingCategories>
+        <alwaysHaulable>true</alwaysHaulable>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Ingredients"/>
+            <li Class="CompProperties_FoodPoisonable"/>
+        </comps>
+        <pathCost>15</pathCost>
+        <resourceReadoutPriority>Last</resourceReadoutPriority>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <ingestible>
+            <foodType>Meal, Processed</foodType>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+        </ingestible>
+    </ThingDef>
 
-<ThingDef Abstract="True" Name="MealRottable" ParentName="MealBase">
-<comps>
-<li Class="CompProperties_Rottable">
-<daysToRotStart>4</daysToRotStart>
-<rotDestroys>true</rotDestroys>
-</li>
-</comps>
-</ThingDef>
+    <ThingDef Abstract="True" Name="MealRottable" ParentName="MealBase">
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>4</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
 
-<ThingDef ParentName="MealBase">
-<defName>MealPFNukaCola</defName>
-<label>Nuka-Cola</label>
-<description>A slightly radioactive and popular cola soft drink.</description>
-<graphicData>
-<texPath>Things/Fallout/Food/NukaCola</texPath>
-<graphicClass>Graphic_StackCount</graphicClass>
-</graphicData>
-<stackLimit>25</stackLimit>
-<statBases>
-<DeteriorationRate>0.00</DeteriorationRate>
-<MarketValue>15</MarketValue>
-<Mass>0.45</Mass>
-<Nutrition>0.4</Nutrition>
-</statBases>
-<ingestible>
-<preferability>MealFine</preferability>
-<foodType>Fluid, Processed</foodType>
-<joy>0.25</joy>
-<joyKind>Gluttonous</joyKind>
-<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-<ingestSound>Ingest_Beer</ingestSound>
-<ingestCommandString>Drink {0}</ingestCommandString>
-<ingestReportString>Drinking {0}.</ingestReportString>
-<outcomeDoers>
-<li Class="IngestionOutcomeDoer_OffsetNeed">
-<need>Rest</need>
-<offset>0.18</offset>
-</li>
-</outcomeDoers>
-</ingestible>
-</ThingDef>
+    <ThingDef ParentName="MealBase">
+        <defName>MealPFNukaCola</defName>
+        <label>Nuka-Cola</label>
+        <description>A slightly radioactive and popular cola soft drink.</description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/NukaCola</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>25</stackLimit>
+        <statBases>
+            <DeteriorationRate>0.00</DeteriorationRate>
+            <MarketValue>15</MarketValue>
+            <Mass>0.45</Mass>
+            <Nutrition>0.4</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealFine</preferability>
+            <foodType>Fluid, Processed</foodType>
+            <joy>0.25</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <ingestSound>Ingest_Beer</ingestSound>
+            <ingestCommandString>Drink {0}</ingestCommandString>
+            <ingestReportString>Drinking {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>0.18</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
 
-<ThingDef ParentName="MealBase">
-<defName>MealPFSunsetSarsaparilla</defName>
-<label>Sunset Sarsaparilla</label>
-<description>A refreshing sarsaparilla flavored soft drink that predates even Nuka-Cola.</description>
-<graphicData>
-<texPath>Things/Fallout/Food/Sunset</texPath>
-<graphicClass>Graphic_StackCount</graphicClass>
-</graphicData>
-<stackLimit>25</stackLimit>
-<statBases>
-<DeteriorationRate>0.00</DeteriorationRate>
-<MarketValue>18</MarketValue>
-<Mass>0.45</Mass>
-<Nutrition>0.5</Nutrition>
-</statBases>
-<ingestible>
-<preferability>MealFine</preferability>
-<foodType>Fluid, Processed</foodType>
-<joy>0.3</joy>
-<joyKind>Gluttonous</joyKind>
-<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-<ingestSound>Ingest_Beer</ingestSound>
-<ingestCommandString>Drink {0}</ingestCommandString>
-<ingestReportString>Drinking {0}.</ingestReportString>
-<outcomeDoers>
-<li Class="IngestionOutcomeDoer_OffsetNeed">
-<need>Rest</need>
-<offset>0.12</offset>
-</li>
-</outcomeDoers>
-</ingestible>
-</ThingDef>
+    <ThingDef ParentName="MealBase">
+        <defName>MealPFSunsetSarsaparilla</defName>
+        <label>Sunset Sarsaparilla</label>
+        <description>A refreshing sarsaparilla flavored soft drink that predates even Nuka-Cola.</description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/Sunset</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>25</stackLimit>
+        <statBases>
+            <DeteriorationRate>0.00</DeteriorationRate>
+            <MarketValue>18</MarketValue>
+            <Mass>0.45</Mass>
+            <Nutrition>0.5</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealFine</preferability>
+            <foodType>Fluid, Processed</foodType>
+            <joy>0.3</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <ingestSound>Ingest_Beer</ingestSound>
+            <ingestCommandString>Drink {0}</ingestCommandString>
+            <ingestReportString>Drinking {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>0.12</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
 
-<ThingDef ParentName="MealBase">
-<defName>MealPFNukaQuantum</defName>
-<label>Nuka-Cola Quantum</label>
-<description>A variant of Nuka-Cola with even more radiation and the twice the calories! It glows blue due to a mildly radioactive isotope of Strontium-90.</description>
-<graphicData>
-<texPath>Things/Fallout/Food/NukaQuantum</texPath>
-<graphicClass>Graphic_StackCount</graphicClass>
-</graphicData>
-<stackLimit>25</stackLimit>
-<statBases>
-<DeteriorationRate>0.00</DeteriorationRate>
-<MarketValue>40</MarketValue>
-<Mass>0.45</Mass>
-<Nutrition>0.8</Nutrition>
-</statBases>
-<ingestible>
-<preferability>MealLavish</preferability>
-<foodType>Fluid, Processed</foodType>
-<joy>0.4</joy>
-<joyKind>Gluttonous</joyKind>
-<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-<ingestSound>Ingest_Beer</ingestSound>
-<ingestCommandString>Drink {0}</ingestCommandString>
-<ingestReportString>Drinking {0}.</ingestReportString>
-<outcomeDoers>
-<li Class="IngestionOutcomeDoer_OffsetNeed">
-<need>Rest</need>
-<offset>0.25</offset>
-</li>
-</outcomeDoers>
-</ingestible>
-</ThingDef>
+    <ThingDef ParentName="MealBase">
+        <defName>MealPFNukaQuantum</defName>
+        <label>Nuka-Cola Quantum</label>
+        <description>A variant of Nuka-Cola with even more radiation and the twice the calories! It glows blue due to a
+            mildly radioactive isotope of Strontium-90.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/NukaQuantum</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>25</stackLimit>
+        <statBases>
+            <DeteriorationRate>0.00</DeteriorationRate>
+            <MarketValue>40</MarketValue>
+            <Mass>0.45</Mass>
+            <Nutrition>0.8</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealLavish</preferability>
+            <foodType>Fluid, Processed</foodType>
+            <joy>0.4</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <ingestSound>Ingest_Beer</ingestSound>
+            <ingestCommandString>Drink {0}</ingestCommandString>
+            <ingestReportString>Drinking {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>0.25</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
 
-<ThingDef ParentName="MealBase">
-<defName>MealPFNukaQuartz</defName>
-<label>Nuka-Cola Quartz</label>
-<description>A variant of Nuka-Cola in a milky white bottle. It acts as a mild painkiller, and enhances eyesight temporarily.</description>
-<graphicData>
-<texPath>Things/Fallout/Food/NukaQuartz</texPath>
-<graphicClass>Graphic_StackCount</graphicClass>
-</graphicData>
-<stackLimit>25</stackLimit>
-<statBases>
-<DeteriorationRate>0.00</DeteriorationRate>
-<MarketValue>30</MarketValue>
-<Mass>0.45</Mass>
-<Nutrition>0.6</Nutrition>
-</statBases>
-<ingestible>
-<preferability>MealFine</preferability>
-<foodType>Fluid, Processed</foodType>
-<joy>0.35</joy>
-<joyKind>Gluttonous</joyKind>
-<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-<ingestSound>Ingest_Beer</ingestSound>
-<ingestCommandString>Drink {0}</ingestCommandString>
-<ingestReportString>Drinking {0}.</ingestReportString>
-<outcomeDoers>
-<li Class="IngestionOutcomeDoer_GiveHediff">
-<hediffDef>QuartzBuff</hediffDef>
-<severity>1.0</severity>
-</li>
-<li Class="IngestionOutcomeDoer_OffsetNeed">
-<need>Rest</need>
-<offset>0.2</offset>
-</li>
-</outcomeDoers>
-</ingestible>
-</ThingDef>
+    <ThingDef ParentName="MealBase">
+        <defName>MealPFNukaQuartz</defName>
+        <label>Nuka-Cola Quartz</label>
+        <description>A variant of Nuka-Cola in a milky white bottle. It acts as a mild painkiller, and enhances eyesight
+            temporarily.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/NukaQuartz</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>25</stackLimit>
+        <statBases>
+            <DeteriorationRate>0.00</DeteriorationRate>
+            <MarketValue>30</MarketValue>
+            <Mass>0.45</Mass>
+            <Nutrition>0.6</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealFine</preferability>
+            <foodType>Fluid, Processed</foodType>
+            <joy>0.35</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <ingestSound>Ingest_Beer</ingestSound>
+            <ingestCommandString>Drink {0}</ingestCommandString>
+            <ingestReportString>Drinking {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>QuartzBuff</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>0.2</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
 
-<ThingDef ParentName="MealBase">
-<defName>MealPFNukaCherry</defName>
-<label>Nuka-Cherry</label>
-<description>A cherry flavored Nuka-Cola in a bright red bottle.</description>
-<graphicData>
-<texPath>Things/Fallout/Food/NukaCherry</texPath>
-<graphicClass>Graphic_StackCount</graphicClass>
-</graphicData>
-<stackLimit>25</stackLimit>
-<statBases>
-<DeteriorationRate>0.00</DeteriorationRate>
-<MarketValue>30</MarketValue>
-<Mass>0.45</Mass>
-<Nutrition>0.6</Nutrition>
-</statBases>
-<ingestible>
-<preferability>MealFine</preferability>
-<foodType>Fluid, Processed</foodType>
-<joy>0.4</joy>
-<joyKind>Gluttonous</joyKind>
-<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-<ingestSound>Ingest_Beer</ingestSound>
-<ingestCommandString>Drink {0}</ingestCommandString>
-<ingestReportString>Drinking {0}.</ingestReportString>
-<outcomeDoers>
-<li Class="IngestionOutcomeDoer_OffsetNeed">
-<need>Rest</need>
-<offset>0.18</offset>
-</li>
-</outcomeDoers>
+    <ThingDef ParentName="MealBase">
+        <defName>MealPFNukaCherry</defName>
+        <label>Nuka-Cherry</label>
+        <description>A cherry flavored Nuka-Cola in a bright red bottle.</description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/NukaCherry</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>25</stackLimit>
+        <statBases>
+            <DeteriorationRate>0.00</DeteriorationRate>
+            <MarketValue>30</MarketValue>
+            <Mass>0.45</Mass>
+            <Nutrition>0.6</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealFine</preferability>
+            <foodType>Fluid, Processed</foodType>
+            <joy>0.4</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <ingestSound>Ingest_Beer</ingestSound>
+            <ingestCommandString>Drink {0}</ingestCommandString>
+            <ingestReportString>Drinking {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>0.18</offset>
+                </li>
+            </outcomeDoers>
 
-</ingestible>
-</ThingDef>
+        </ingestible>
+    </ThingDef>
 
 </Defs>

@@ -2,303 +2,309 @@
 
 <Defs>
 
-<ThingDef Abstract="True" Name="ApparelBase">
-<thingClass>Apparel</thingClass>
-<category>Item</category>
-<selectable>True</selectable>
-<pathCost>10</pathCost>
-<useHitPoints>True</useHitPoints>
-<graphicData>
-<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
-</graphicData>
-<drawGUIOverlay>true</drawGUIOverlay>
-<statBases>
-<MaxHitPoints>100</MaxHitPoints>
-<Flammability>1.0</Flammability>
-<DeteriorationRate>2</DeteriorationRate>
-<SellPriceFactor>0.5</SellPriceFactor>
-</statBases>
-<altitudeLayer>Item</altitudeLayer>
-<alwaysHaulable>True</alwaysHaulable>
-<tickerType>Never</tickerType>
-<comps>
-<li Class="CompProperties_Forbiddable"/>
-<li>
-<compClass>CompColorable</compClass>
-</li>
-<li>
-<compClass>CompQuality</compClass>
-</li>
-</comps>
-</ThingDef>
+    <ThingDef Abstract="True" Name="ApparelBase">
+        <thingClass>Apparel</thingClass>
+        <category>Item</category>
+        <selectable>True</selectable>
+        <pathCost>10</pathCost>
+        <useHitPoints>True</useHitPoints>
+        <graphicData>
+            <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+        </graphicData>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <SellPriceFactor>0.5</SellPriceFactor>
+        </statBases>
+        <altitudeLayer>Item</altitudeLayer>
+        <alwaysHaulable>True</alwaysHaulable>
+        <tickerType>Never</tickerType>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+    </ThingDef>
 
-<ThingDef Abstract="True" Name="ApparelMakeableBase" ParentName="ApparelBase">
-<recipeMaker>
-<workSpeedStat>TailoringSpeed</workSpeedStat>
-<workSkill>Crafting</workSkill>
-<effectWorking>Tailor</effectWorking>
-<soundWorking>Recipe_Tailor</soundWorking>
-<recipeUsers>
-<li>ElectricTailoringBench</li>
-<li>HandTailoringBench</li>
-</recipeUsers>
-<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-</recipeMaker>
-</ThingDef>
+    <ThingDef Abstract="True" Name="ApparelMakeableBase" ParentName="ApparelBase">
+        <recipeMaker>
+            <workSpeedStat>TailoringSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
 
-<ThingDef Abstract="True" Name="ArmorMakeableBase" ParentName="ApparelBase">
-<recipeMaker>
-<workSpeedStat>SmithingSpeed</workSpeedStat>
-<workSkill>Crafting</workSkill>
-<effectWorking>Smith</effectWorking>
-<soundWorking>Recipe_Machining</soundWorking>
-<recipeUsers>
-<li>TableMachining</li>
-</recipeUsers>
-<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-</recipeMaker>
-</ThingDef>
+    <ThingDef Abstract="True" Name="ArmorMakeableBase" ParentName="ApparelBase">
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
 
-<ThingDef ParentName="ArmorMakeableBase">
-<defName>X-01_PowerArmor</defName>
-<label>X-01 Power Armor</label>
-<description>The X-01 series of power armor was designed by the Enclave after the great war and was more heavily armored than previous models.</description>
-<techLevel>Spacer</techLevel>
-<recipeMaker>
-<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-<researchPrerequisite>PFAdvancedPowerArmor</researchPrerequisite>
-</recipeMaker>
-<graphicData>
-<texPath>Things/Fallout/Apparel/PowerArmor/X-01/Armor/X-01_Fat_front</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<WorkToMake>275000</WorkToMake>
-<Mass>10</Mass>
-<MaxHitPoints>750</MaxHitPoints>
-<MarketValue>7500</MarketValue>
-<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-<ArmorRating_Heat>0.8</ArmorRating_Heat>
-<Insulation_Cold>-40</Insulation_Cold>
-</statBases>
-<equippedStatOffsets>
-<MoveSpeed>-0.25</MoveSpeed>
-<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
-<ToxicSensitivity>-0.5</ToxicSensitivity>
-</equippedStatOffsets>
-<thingCategories>
-<li>Apparel</li>
-</thingCategories>
-<costList>
-<ComponentIndustrial>25</ComponentIndustrial>
-<ComponentSpacer>2</ComponentSpacer>
-<Plasteel>250</Plasteel>
-</costList>
-<apparel>
-<bodyPartGroups>
-<li>Torso</li>
-<li>Shoulders</li>
-<li>Arms</li>
-<li>Legs</li>
-<li>Feet</li>
-</bodyPartGroups>
-<wornGraphicPath>Things/Fallout/Apparel/PowerArmor/X-01/Armor/X-01</wornGraphicPath>
-<layers>
-<li>Middle</li>
-<li>Shell</li>
-</layers>
-<tags>
-<li>Spacer</li>
-<li>Military</li>
-</tags>
-<defaultOutfitTags>
-<li>Soldier</li>
-</defaultOutfitTags>
-</apparel>
+    <ThingDef ParentName="ArmorMakeableBase">
+        <defName>X-01_PowerArmor</defName>
+        <label>X-01 Power Armor</label>
+        <description>The X-01 series of power armor was designed by the Enclave after the great war and was more heavily
+            armored than previous models.
+        </description>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>PFAdvancedPowerArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Fallout/Apparel/PowerArmor/X-01/Armor/X-01_Fat_front</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>275000</WorkToMake>
+            <Mass>10</Mass>
+            <MaxHitPoints>750</MaxHitPoints>
+            <MarketValue>7500</MarketValue>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.8</ArmorRating_Heat>
+            <Insulation_Cold>-40</Insulation_Cold>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+            <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+            <ToxicSensitivity>-0.5</ToxicSensitivity>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <costList>
+            <ComponentIndustrial>25</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Plasteel>250</Plasteel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Feet</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Fallout/Apparel/PowerArmor/X-01/Armor/X-01</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>Spacer</li>
+                <li>Military</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
 
 
+    </ThingDef>
 
-</ThingDef>
+    <ThingDef ParentName="ArmorMakeableBase">
+        <defName>Raider_PowerArmor</defName>
+        <label>Raider Power Armor</label>
+        <description>A makeshift suit of power armor, it'll protect you, but won't last very long. Mostly used by
+            raiders and mercenaries.
+        </description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>Machining</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Fallout/Apparel/PowerArmor/Raider/Armor/RaiderPA_Fat_front</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>75000</WorkToMake>
+            <Mass>12</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>800</MarketValue>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+            <Insulation_Cold>-20</Insulation_Cold>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.15</MoveSpeed>
+            <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+            <ToxicSensitivity>-0.3</ToxicSensitivity>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <costList>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <Steel>250</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Feet</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Fallout/Apparel/PowerArmor/Raider/Armor/RaiderPA</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>Outlander</li>
+                <li>Military</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
 
-<ThingDef ParentName="ArmorMakeableBase">
-<defName>Raider_PowerArmor</defName>
-<label>Raider Power Armor</label>
-<description>A makeshift suit of power armor, it'll protect you, but won't last very long. Mostly used by raiders and mercenaries.</description>
-<techLevel>Industrial</techLevel>
-<recipeMaker>
-<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-<researchPrerequisite>Machining</researchPrerequisite>
-</recipeMaker>
-<graphicData>
-<texPath>Things/Fallout/Apparel/PowerArmor/Raider/Armor/RaiderPA_Fat_front</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<WorkToMake>75000</WorkToMake>
-<Mass>12</Mass>
-<MaxHitPoints>100</MaxHitPoints>
-<MarketValue>800</MarketValue>
-<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-<ArmorRating_Heat>0.35</ArmorRating_Heat>
-<Insulation_Cold>-20</Insulation_Cold>
-</statBases>
-<equippedStatOffsets>
-<MoveSpeed>-0.15</MoveSpeed>
-<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
-<ToxicSensitivity>-0.3</ToxicSensitivity>
-</equippedStatOffsets>
-<thingCategories>
-<li>Apparel</li>
-</thingCategories>
-<costList>
-<ComponentIndustrial>10</ComponentIndustrial>
-<Steel>250</Steel>
-</costList>
-<apparel>
-<bodyPartGroups>
-<li>Torso</li>
-<li>Shoulders</li>
-<li>Arms</li>
-<li>Legs</li>
-<li>Feet</li>
-</bodyPartGroups>
-<wornGraphicPath>Things/Fallout/Apparel/PowerArmor/Raider/Armor/RaiderPA</wornGraphicPath>
-<layers>
-<li>Middle</li>
-<li>Shell</li>
-</layers>
-<tags>
-<li>Outlander</li>
-<li>Military</li>
-</tags>
-<defaultOutfitTags>
-<li>Soldier</li>
-</defaultOutfitTags>
-</apparel>
+    </ThingDef>
 
-</ThingDef>
+    <ThingDef ParentName="ArmorMakeableBase">
+        <defName>PFT-45PowerArmor</defName>
+        <label>T-45 Power Armor</label>
+        <description>The earliest model of power armor that was successfully deployed during the pre-war era and severed
+            well for medium and heavy troopers alike. It does however have less advanced servos, so it limits a wearer's
+            movements.
+        </description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>PoweredArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Fallout/Apparel/PowerArmor/T-45/Suit/T-45PA_Thin_front</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>150000</WorkToMake>
+            <Mass>10</Mass>
+            <MaxHitPoints>300</MaxHitPoints>
+            <MarketValue>2500</MarketValue>
+            <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <Insulation_Cold>-25</Insulation_Cold>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.40</MoveSpeed>
+            <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+            <ToxicSensitivity>-0.4</ToxicSensitivity>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <costList>
+            <ComponentIndustrial>15</ComponentIndustrial>
+            <Plasteel>100</Plasteel>
+            <Steel>150</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Feet</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Fallout/Apparel/PowerArmor/T-45/Suit/T-45PA</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>Outlander</li>
+                <li>Military</li>
+                <li>PFBrotherhoodKnight</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
 
-<ThingDef ParentName="ArmorMakeableBase">
-<defName>PFT-45PowerArmor</defName>
-<label>T-45 Power Armor</label>
-<description>The earliest model of power armor that was successfully deployed during the pre-war era and severed well for medium and heavy troopers alike. It does however have less advanced servos, so it limits a wearer's movements.</description>
-<techLevel>Industrial</techLevel>
-<recipeMaker>
-<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-<researchPrerequisite>PoweredArmor</researchPrerequisite>
-</recipeMaker>
-<graphicData>
-<texPath>Things/Fallout/Apparel/PowerArmor/T-45/Suit/T-45PA_Thin_front</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<WorkToMake>150000</WorkToMake>
-<Mass>10</Mass>
-<MaxHitPoints>300</MaxHitPoints>
-<MarketValue>2500</MarketValue>
-<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
-<ArmorRating_Heat>0.5</ArmorRating_Heat>
-<Insulation_Cold>-25</Insulation_Cold>
-</statBases>
-<equippedStatOffsets>
-<MoveSpeed>-0.40</MoveSpeed>
-<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
-<ToxicSensitivity>-0.4</ToxicSensitivity>
-</equippedStatOffsets>
-<thingCategories>
-<li>Apparel</li>
-</thingCategories>
-<costList>
-<ComponentIndustrial>15</ComponentIndustrial>
-<Plasteel>100</Plasteel>
-<Steel>150</Steel>
-</costList>
-<apparel>
-<bodyPartGroups>
-<li>Torso</li>
-<li>Shoulders</li>
-<li>Arms</li>
-<li>Legs</li>
-<li>Feet</li>
-</bodyPartGroups>
-<wornGraphicPath>Things/Fallout/Apparel/PowerArmor/T-45/Suit/T-45PA</wornGraphicPath>
-<layers>
-<li>Middle</li>
-<li>Shell</li>
-</layers>
-<tags>
-<li>Outlander</li>
-<li>Military</li>
-<li>PFBrotherhoodKnight</li>
-</tags>
-<defaultOutfitTags>
-<li>Soldier</li>
-</defaultOutfitTags>
-</apparel>
+    </ThingDef>
 
-</ThingDef>
-
-<!-- <ThingDef ParentName="ArmorMakeableBase">
-<defName>PFT-51PowerArmor</defName>
-<label>T-51 Power Armor</label>
-<description>The most successful model of power armor that was deployed during the pre-war era and severed well for medium and heavy troopers alike. It is fitted with advanced hydraulic systems, so it controls better than the T-45</description>
-<techLevel>Industrial</techLevel>
-<recipeMaker>
-<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-<researchPrerequisite>PFAdvancedPowerArmor</researchPrerequisite>
-</recipeMaker>
-<graphicData>
-<texPath>Things/Fallout/Apparel/PowerArmor/T-51/Suit/T-51PA_Fat_front</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<WorkToMake>175000</WorkToMake>
-<Mass>10</Mass>
-<MaxHitPoints>450</MaxHitPoints>
-<MarketValue>4000</MarketValue>
-<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
-<ArmorRating_Heat>0.6</ArmorRating_Heat>
-<Insulation_Cold>-30</Insulation_Cold>
-</statBases>
-<equippedStatOffsets>
-<MoveSpeed>-0.25</MoveSpeed>
-<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
-<ToxicSensitivity>-0.45</ToxicSensitivity>
-</equippedStatOffsets>
-<thingCategories>
-<li>Apparel</li>
-</thingCategories>
-<costList>
-<ComponentIndustrial>20</ComponentIndustrial>
-<Plasteel>150</Plasteel>
-<Steel>100</Steel>
-</costList>
-<apparel>
-<bodyPartGroups>
-<li>Torso</li>
-<li>Shoulders</li>
-<li>Arms</li>
-<li>Legs</li>
-<li>Feet</li>
-</bodyPartGroups>
-<wornGraphicPath>Things/Fallout/Apparel/PowerArmor/T-51/Suit/T-51PA</wornGraphicPath>
-<layers>
-<li>Middle</li>
-<li>Shell</li>
-</layers>
-<tags>
-<li>Outlander</li>
-<li>Military</li>
-</tags>
-<defaultOutfitTags>
-<li>Soldier</li>
-</defaultOutfitTags>
-</apparel>
-
-</ThingDef> -->
+    <!-- <ThingDef ParentName="ArmorMakeableBase">
+    <defName>PFT-51PowerArmor</defName>
+    <label>T-51 Power Armor</label>
+    <description>The most successful model of power armor that was deployed during the pre-war era and severed well for medium and heavy troopers alike. It is fitted with advanced hydraulic systems, so it controls better than the T-45</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+    <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    <researchPrerequisite>PFAdvancedPowerArmor</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+    <texPath>Things/Fallout/Apparel/PowerArmor/T-51/Suit/T-51PA_Fat_front</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+    <WorkToMake>175000</WorkToMake>
+    <Mass>10</Mass>
+    <MaxHitPoints>450</MaxHitPoints>
+    <MarketValue>4000</MarketValue>
+    <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+    <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+    <ArmorRating_Heat>0.6</ArmorRating_Heat>
+    <Insulation_Cold>-30</Insulation_Cold>
+    </statBases>
+    <equippedStatOffsets>
+    <MoveSpeed>-0.25</MoveSpeed>
+    <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+    <ToxicSensitivity>-0.45</ToxicSensitivity>
+    </equippedStatOffsets>
+    <thingCategories>
+    <li>Apparel</li>
+    </thingCategories>
+    <costList>
+    <ComponentIndustrial>20</ComponentIndustrial>
+    <Plasteel>150</Plasteel>
+    <Steel>100</Steel>
+    </costList>
+    <apparel>
+    <bodyPartGroups>
+    <li>Torso</li>
+    <li>Shoulders</li>
+    <li>Arms</li>
+    <li>Legs</li>
+    <li>Feet</li>
+    </bodyPartGroups>
+    <wornGraphicPath>Things/Fallout/Apparel/PowerArmor/T-51/Suit/T-51PA</wornGraphicPath>
+    <layers>
+    <li>Middle</li>
+    <li>Shell</li>
+    </layers>
+    <tags>
+    <li>Outlander</li>
+    <li>Military</li>
+    </tags>
+    <defaultOutfitTags>
+    <li>Soldier</li>
+    </defaultOutfitTags>
+    </apparel>
+    
+    </ThingDef> -->
 
 </Defs>

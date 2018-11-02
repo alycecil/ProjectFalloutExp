@@ -2,186 +2,193 @@
 
 <Defs>
 
-<ThingDef ParentName="PlantBase">
-<defName>PFPlantTato</defName>
-<label>Tato Plant</label>
-<description>A mutated hybrid of potatoes and tomatoes. It tastes horrible raw, and not much better cooked, but in the wasteland you can't complain.</description>
-<statBases>
-<MaxHitPoints>120</MaxHitPoints>
-<Nutrition>0.05</Nutrition>
-</statBases>
-<graphicData>
-<texPath>Things/Fallout/Plants/TatoPlant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<selectable>true</selectable>
-<pathCost>15</pathCost>
-<ingestible/>
-<plant>
-<fertilitySensitivity>0.5</fertilitySensitivity>
-<dieIfLeafless>true</dieIfLeafless>
-<harvestTag>Standard</harvestTag>
-<harvestedThingDef>PFRawTatos</harvestedThingDef>
-<harvestYield>10</harvestYield>
-<sowTags>
-<li>Ground</li>
-<li>Hydroponic</li>
-</sowTags>
-<topWindExposure>0.1</topWindExposure>
-<growDays>3.25</growDays>
-<visualSizeRange>
-<min>0.3</min>
-<max>1.05</max>
-</visualSizeRange>
-<purpose>Food</purpose>
-</plant>
-</ThingDef>
+    <ThingDef ParentName="PlantBase">
+        <defName>PFPlantTato</defName>
+        <label>Tato Plant</label>
+        <description>A mutated hybrid of potatoes and tomatoes. It tastes horrible raw, and not much better cooked, but
+            in the wasteland you can't complain.
+        </description>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Fallout/Plants/TatoPlant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>15</pathCost>
+        <ingestible/>
+        <plant>
+            <fertilitySensitivity>0.5</fertilitySensitivity>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>PFRawTatos</harvestedThingDef>
+            <harvestYield>10</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <growDays>3.25</growDays>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.05</max>
+            </visualSizeRange>
+            <purpose>Food</purpose>
+        </plant>
+    </ThingDef>
 
-<ThingDef ParentName="PlantBase">
-<defName>PFPlantRazorgrain</defName>
-<label>Razorgrain Plant</label>
-<description>A distant descendant of wheat, it is able to grow in the harsh wasteland.</description>
-<statBases>
-<MaxHitPoints>100</MaxHitPoints>
-<Beauty>1</Beauty>
-<Nutrition>0.05</Nutrition>
-</statBases>
-<graphicData>
-<texPath>Things/Fallout/Plants/RazorgrainPlant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<selectable>true</selectable>
-<pathCost>10</pathCost>
-<ingestible/>
-<plant>
-<fertilitySensitivity>0.75</fertilitySensitivity>
-<dieIfLeafless>true</dieIfLeafless>
-<harvestTag>Standard</harvestTag>
-<harvestedThingDef>PFRazorgrain</harvestedThingDef>
-<harvestYield>15</harvestYield>
-<sowMinSkill>4</sowMinSkill>
-<sowTags>
-<li>Ground</li>
-<li>Hydroponic</li>
-</sowTags>
-<topWindExposure>0.1</topWindExposure>
-<growDays>3.5</growDays>
-<visualSizeRange>
-<min>0.3</min>
-<max>1.4</max>
-</visualSizeRange>
-<purpose>Food</purpose>
-</plant>
-</ThingDef>
+    <ThingDef ParentName="PlantBase">
+        <defName>PFPlantRazorgrain</defName>
+        <label>Razorgrain Plant</label>
+        <description>A distant descendant of wheat, it is able to grow in the harsh wasteland.</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>1</Beauty>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Fallout/Plants/RazorgrainPlant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible/>
+        <plant>
+            <fertilitySensitivity>0.75</fertilitySensitivity>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>PFRazorgrain</harvestedThingDef>
+            <harvestYield>15</harvestYield>
+            <sowMinSkill>4</sowMinSkill>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <growDays>3.5</growDays>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.4</max>
+            </visualSizeRange>
+            <purpose>Food</purpose>
+        </plant>
+    </ThingDef>
 
-<ThingDef ParentName="PlantBase">
-<defName>PFPlantMutfruit</defName>
-<label>Mutfruit Plant</label>
-<description>A mutated descendant of blueberries and blackberries, this crunchy berry is one of the best finds for hungry travellers.</description>
-<statBases>
-<MaxHitPoints>100</MaxHitPoints>
-<Beauty>2</Beauty>
-<Nutrition>0.07</Nutrition>
-</statBases>
-<graphicData>
-<texPath>Things/Fallout/Plants/MutfruitPlant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<selectable>true</selectable>
-<pathCost>10</pathCost>
-<ingestible/>
-<plant>
-<fertilitySensitivity>0.6</fertilitySensitivity>
-<dieIfLeafless>true</dieIfLeafless>
-<harvestTag>Standard</harvestTag>
-<harvestedThingDef>PFMutfruit</harvestedThingDef>
-<harvestYield>8</harvestYield>
-<sowTags>
-<li>Ground</li>
-<li>Hydroponic</li>
-</sowTags>
-<topWindExposure>0.1</topWindExposure>
-<growDays>3.3</growDays>
-<visualSizeRange>
-<min>0.3</min>
-<max>1.05</max>
-</visualSizeRange>
-<purpose>Food</purpose>
-</plant>
-</ThingDef>
+    <ThingDef ParentName="PlantBase">
+        <defName>PFPlantMutfruit</defName>
+        <label>Mutfruit Plant</label>
+        <description>A mutated descendant of blueberries and blackberries, this crunchy berry is one of the best finds
+            for hungry travellers.
+        </description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>2</Beauty>
+            <Nutrition>0.07</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Fallout/Plants/MutfruitPlant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible/>
+        <plant>
+            <fertilitySensitivity>0.6</fertilitySensitivity>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>PFMutfruit</harvestedThingDef>
+            <harvestYield>8</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <growDays>3.3</growDays>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.05</max>
+            </visualSizeRange>
+            <purpose>Food</purpose>
+        </plant>
+    </ThingDef>
 
-<ThingDef ParentName="PlantBase">
-<defName>PFPlantTarberry</defName>
-<label>Tarberry Plant</label>
-<description>A descendant of cranberries, Tarberries are clusters of small purple berries. They are very hard to cultivate, but is very nutritious.</description>
-<statBases>
-<MaxHitPoints>100</MaxHitPoints>
-<Beauty>2</Beauty>
-<Nutrition>0.07</Nutrition>
-</statBases>
-<graphicData>
-<texPath>Things/Fallout/Plants/TarberryPlant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<selectable>true</selectable>
-<pathCost>10</pathCost>
-<ingestible/>
-<plant>
-<fertilitySensitivity>0.8</fertilitySensitivity>
-<dieIfLeafless>true</dieIfLeafless>
-<harvestTag>Standard</harvestTag>
-<harvestedThingDef>PFTarberry</harvestedThingDef>
-<fertilityMin>1.0</fertilityMin>
-<harvestYield>20</harvestYield>
-<sowMinSkill>15</sowMinSkill>
-<sowTags>
-<li>Ground</li>
-</sowTags>
-<topWindExposure>0.1</topWindExposure>
-<growDays>4</growDays>
-<visualSizeRange>
-<min>0.3</min>
-<max>1.05</max>
-</visualSizeRange>
-<purpose>Food</purpose>
-</plant>
-</ThingDef>
+    <ThingDef ParentName="PlantBase">
+        <defName>PFPlantTarberry</defName>
+        <label>Tarberry Plant</label>
+        <description>A descendant of cranberries, Tarberries are clusters of small purple berries. They are very hard to
+            cultivate, but is very nutritious.
+        </description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>2</Beauty>
+            <Nutrition>0.07</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Fallout/Plants/TarberryPlant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible/>
+        <plant>
+            <fertilitySensitivity>0.8</fertilitySensitivity>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>PFTarberry</harvestedThingDef>
+            <fertilityMin>1.0</fertilityMin>
+            <harvestYield>20</harvestYield>
+            <sowMinSkill>15</sowMinSkill>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <growDays>4</growDays>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.05</max>
+            </visualSizeRange>
+            <purpose>Food</purpose>
+        </plant>
+    </ThingDef>
 
-	<ThingDef ParentName="PlantBase">
-		<defName>PFPlantBarrelCactus</defName>
-		<label>Barrel Cactus</label>
-		<description>A hardy cactus that can grow in most climates. It produces little edible food, but its fruit are quite nutritious.</description>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Beauty>1</Beauty>
-			<Nutrition>0.05</Nutrition>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Fallout/Plants/BarrelCactus</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<selectable>true</selectable>
-		<pathCost>10</pathCost>
-		<ingestible/>
-		<plant>
-			<fertilitySensitivity>0.1</fertilitySensitivity>
-			<dieIfLeafless>false</dieIfLeafless>
-			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>PFBarrelCactusFruit</harvestedThingDef>
-			<harvestYield>5</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
-			<topWindExposure>0.1</topWindExposure>
-			<growDays>2.5</growDays>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.05</max>
-			</visualSizeRange>
-			<purpose>Food</purpose>
-		</plant>
-	</ThingDef>
-
+    <ThingDef ParentName="PlantBase">
+        <defName>PFPlantBarrelCactus</defName>
+        <label>Barrel Cactus</label>
+        <description>A hardy cactus that can grow in most climates. It produces little edible food, but its fruit are
+            quite nutritious.
+        </description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>1</Beauty>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Fallout/Plants/BarrelCactus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible/>
+        <plant>
+            <fertilitySensitivity>0.1</fertilitySensitivity>
+            <dieIfLeafless>false</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>PFBarrelCactusFruit</harvestedThingDef>
+            <harvestYield>5</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <growDays>2.5</growDays>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.05</max>
+            </visualSizeRange>
+            <purpose>Food</purpose>
+        </plant>
+    </ThingDef>
 
 
 </Defs>

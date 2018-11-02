@@ -1,144 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-<ThingDef Abstract="True" Name="PFImplantBase">
-<label>Implant</label>
-<thingClass>ThingWithComps</thingClass>
-<category>Item</category>
-<useHitPoints>true</useHitPoints>
-<selectable>true</selectable>
-<statBases>
-<MaxHitPoints>50</MaxHitPoints>
-<Flammability>1.0</Flammability>
-</statBases>
-<altitudeLayer>Item</altitudeLayer>
-<tickerType>Never</tickerType>
-<alwaysHaulable>true</alwaysHaulable>
-<isTechHediff>true</isTechHediff>
-<techLevel>Spacer</techLevel>
-<tradeTags>
-<li>TechHediff</li>
-</tradeTags>
-<comps>
-<li Class="CompProperties_Forbiddable"/>
-</comps>
-<thingCategories>
-<li>BodyPartsArtificial</li>
-</thingCategories>
-<pathCost>10</pathCost>
-</ThingDef>
+    <ThingDef Abstract="True" Name="PFImplantBase">
+        <label>Implant</label>
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <altitudeLayer>Item</altitudeLayer>
+        <tickerType>Never</tickerType>
+        <alwaysHaulable>true</alwaysHaulable>
+        <isTechHediff>true</isTechHediff>
+        <techLevel>Spacer</techLevel>
+        <tradeTags>
+            <li>TechHediff</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <thingCategories>
+            <li>BodyPartsArtificial</li>
+        </thingCategories>
+        <pathCost>10</pathCost>
+    </ThingDef>
 
-<ThingDef ParentName="PFImplantBase">
-<defName>PFVATSImplant</defName>
-<label>VATS Implant</label>
-<description>A variation of the VaultTec Assisted Targeting System that is implanted directly into the user's brain.</description>
-<graphicData>
-<texPath>Things/Fallout/Implants/Implant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<MarketValue>3250</MarketValue>
-<Mass>1</Mass>
-</statBases>
-<techHediffsTags>
-      <li>Advanced</li>
-    </techHediffsTags>
-</ThingDef>
+    <ThingDef ParentName="PFImplantBase">
+        <defName>PFVATSImplant</defName>
+        <label>VATS Implant</label>
+        <description>A variation of the VaultTec Assisted Targeting System that is implanted directly into the user's
+            brain.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Implants/Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>3250</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
 
-<ThingDef ParentName="PFImplantBase">
-<defName>PFAgilityImplant</defName>
-<label>Agility Implant</label>
-<description>An advanced reflex booster implant that enhances the user's agility, allowing them to move and react faster.</description>
-<graphicData>
-<texPath>Things/Fallout/Implants/Implant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<MarketValue>1250</MarketValue>
-<Mass>1</Mass>
-</statBases>
-</ThingDef>
-<ThingDef ParentName="PFImplantBase">
-<defName>PFCharismaImplant</defName>
-<label>Charisma Implant</label>
-<description>An advanced empathy synthesizer implant that enhances the user's charisma, allowing them to negotiate and persuade easier.</description>
-<graphicData>
-<texPath>Things/Fallout/Implants/Implant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<MarketValue>1500</MarketValue>
-<Mass>1</Mass>
-</statBases>
-</ThingDef>
+    <ThingDef ParentName="PFImplantBase">
+        <defName>PFAgilityImplant</defName>
+        <label>Agility Implant</label>
+        <description>An advanced reflex booster implant that enhances the user's agility, allowing them to move and
+            react faster.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Implants/Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="PFImplantBase">
+        <defName>PFCharismaImplant</defName>
+        <label>Charisma Implant</label>
+        <description>An advanced empathy synthesizer implant that enhances the user's charisma, allowing them to
+            negotiate and persuade easier.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Implants/Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1500</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
 
-<ThingDef ParentName="PFImplantBase">
-<defName>PFEnduranceImplant</defName>
-<label>Endurance Implant</label>
-<description>An advanced nociception regulator implant that enhances the user's endurance, allowing them to resist pain and overcome disease or infections more easily.</description>
-<graphicData>
-<texPath>Things/Fallout/Implants/Implant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<MarketValue>1750</MarketValue>
-<Mass>1</Mass>
-</statBases>
-</ThingDef>
+    <ThingDef ParentName="PFImplantBase">
+        <defName>PFEnduranceImplant</defName>
+        <label>Endurance Implant</label>
+        <description>An advanced nociception regulator implant that enhances the user's endurance, allowing them to
+            resist pain and overcome disease or infections more easily.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Implants/Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1750</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
 
-<ThingDef ParentName="PFImplantBase">
-<defName>PFIntelligenceImplant</defName>
-<label>Intelligence Implant</label>
-<description>An advanced logic co-processor implant that enhances the user's intelligence, allowing them to learn new skills more quickly and speeds up their mental processes.</description>
-<graphicData>
-<texPath>Things/Fallout/Implants/Implant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<MarketValue>2500</MarketValue>
-<Mass>1</Mass>
-</statBases>
-</ThingDef>
+    <ThingDef ParentName="PFImplantBase">
+        <defName>PFIntelligenceImplant</defName>
+        <label>Intelligence Implant</label>
+        <description>An advanced logic co-processor implant that enhances the user's intelligence, allowing them to
+            learn new skills more quickly and speeds up their mental processes.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Implants/Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>2500</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
 
-<ThingDef ParentName="PFImplantBase">
-<defName>PFPerceptionImplant</defName>
-<label>Perception Implant</label>
-<description>An advanced optics enhancer implant that augments the user's perecption, allowing them to see more clearly and shoot more accurately.</description>
-<graphicData>
-<texPath>Things/Fallout/Implants/Implant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<MarketValue>1250</MarketValue>
-<Mass>1</Mass>
-</statBases>
-</ThingDef>
+    <ThingDef ParentName="PFImplantBase">
+        <defName>PFPerceptionImplant</defName>
+        <label>Perception Implant</label>
+        <description>An advanced optics enhancer implant that augments the user's perecption, allowing them to see more
+            clearly and shoot more accurately.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Implants/Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
 
-<ThingDef ParentName="PFImplantBase">
-<defName>PFStrengthImplant</defName>
-<label>Strength Implant</label>
-<description>An advanced hypertrophy accelerator implant that enhances the user's strength, allowing them to lift and haul more and heavier things.</description>
-<graphicData>
-<texPath>Things/Fallout/Implants/Implant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<MarketValue>1500</MarketValue>
-<Mass>1</Mass>
-</statBases>
-</ThingDef>
+    <ThingDef ParentName="PFImplantBase">
+        <defName>PFStrengthImplant</defName>
+        <label>Strength Implant</label>
+        <description>An advanced hypertrophy accelerator implant that enhances the user's strength, allowing them to
+            lift and haul more and heavier things.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Implants/Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1500</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
 
-<ThingDef ParentName="PFImplantBase">
-<defName>PFPMBImplant</defName>
-<label>Phoenix Monocyte Breeder Implant</label>
-<description>An advanced implant that enhances the user's metabolism efficiency and filtration of blood, allowing them to recover from disease and have to eat less often.</description>
-<graphicData>
-<texPath>Things/Fallout/Implants/Implant</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<MarketValue>1750</MarketValue>
-<Mass>1</Mass>
-</statBases>
-</ThingDef>
+    <ThingDef ParentName="PFImplantBase">
+        <defName>PFPMBImplant</defName>
+        <label>Phoenix Monocyte Breeder Implant</label>
+        <description>An advanced implant that enhances the user's metabolism efficiency and filtration of blood,
+            allowing them to recover from disease and have to eat less often.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Implants/Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1750</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
 
 </Defs>

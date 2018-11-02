@@ -2,184 +2,191 @@
 
 <Defs>
 
-<ThingDef ParentName="MakeableChemBase">
-<defName>PFMedX</defName>
-<label>Med-X</label>
-<description>A potent painkiller, similar to morphene, that allows a user to shrug off even severe pain, it is fairly addictive.</description>
-<graphicData>
-<texPath>Things/Fallout/Chems/Med-X</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<rotatable>false</rotatable>
-<statBases>
-<WorkToMake>360</WorkToMake>
-<MarketValue>25</MarketValue>
-<Mass>0.04</Mass>
-</statBases>
-<techLevel>Industrial</techLevel>
-<ingestible>
-<foodType>Processed</foodType>
-<Nutrition>0.2</Nutrition>
-<joy>0.05</joy>
-<drugCategory>Medical</drugCategory>
-<baseIngestTicks>90</baseIngestTicks>
-<ingestHoldUsesTable>false</ingestHoldUsesTable>
-<ingestCommandString>Inject {0}</ingestCommandString>
-<ingestReportString>Injecting {0}.</ingestReportString>
-<outcomeDoers>
-<li Class="IngestionOutcomeDoer_GiveHediff">
-<hediffDef>PFNumbed</hediffDef>
-<severity>0.75</severity>
-<toleranceChemical>PFMedXC</toleranceChemical>
-</li>
-<li Class="IngestionOutcomeDoer_GiveHediff">
-<hediffDef>PFMedXTolerance</hediffDef>
-<severity>0.044</severity>
-</li>
-</outcomeDoers>
-</ingestible>
-<recipeMaker>
-<researchPrerequisite>PFChemProduction</researchPrerequisite>
-<recipeUsers>
-<li>DrugLab</li>
-</recipeUsers>
-</recipeMaker>
-<costList>
-<Neutroamine>2</Neutroamine>
-</costList>
-<comps>
-<li Class="CompProperties_Drug">
-<chemical>PFMedXC</chemical>
-<addictiveness>0.075</addictiveness>
-<minToleranceToAddict>0.05</minToleranceToAddict>
-<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-<needLevelOffset>1</needLevelOffset>
-<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
-<listOrder>2004</listOrder>
-<overdoseSeverityOffset>
-<min>0.20</min>
-<max>0.40</max>
-</overdoseSeverityOffset>
-<largeOverdoseChance>0.001</largeOverdoseChance>
-</li>
-</comps>
-</ThingDef>
+    <ThingDef ParentName="MakeableChemBase">
+        <defName>PFMedX</defName>
+        <label>Med-X</label>
+        <description>A potent painkiller, similar to morphene, that allows a user to shrug off even severe pain, it is
+            fairly addictive.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Chems/Med-X</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>360</WorkToMake>
+            <MarketValue>25</MarketValue>
+            <Mass>0.04</Mass>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <Nutrition>0.2</Nutrition>
+            <joy>0.05</joy>
+            <drugCategory>Medical</drugCategory>
+            <baseIngestTicks>90</baseIngestTicks>
+            <ingestHoldUsesTable>false</ingestHoldUsesTable>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>PFNumbed</hediffDef>
+                    <severity>0.75</severity>
+                    <toleranceChemical>PFMedXC</toleranceChemical>
+                </li>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>PFMedXTolerance</hediffDef>
+                    <severity>0.044</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>PFChemProduction</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>2</Neutroamine>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>PFMedXC</chemical>
+                <addictiveness>0.075</addictiveness>
+                <minToleranceToAddict>0.05</minToleranceToAddict>
+                <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+                <needLevelOffset>1</needLevelOffset>
+                <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+                <listOrder>2004</listOrder>
+                <overdoseSeverityOffset>
+                    <min>0.20</min>
+                    <max>0.40</max>
+                </overdoseSeverityOffset>
+                <largeOverdoseChance>0.001</largeOverdoseChance>
+            </li>
+        </comps>
+    </ThingDef>
 
-<HediffDef>
-<defName>PFNumbed</defName>
-<hediffClass>HediffWithComps</hediffClass>
-<label>Numbed by Med-X</label>
-<labelNoun>a Med-X numbing</labelNoun>
-<defaultLabelColor>(1,0,0,5)</defaultLabelColor>
-<scenarioCanAdd>false</scenarioCanAdd>
-<maxSeverity>1.0</maxSeverity>
-<isBad>false</isBad>
-<comps>
-<li Class="HediffCompProperties_SeverityPerDay">
-<severityPerDay>-0.375</severityPerDay>
-</li>
-</comps>
-<stages>
-<li>
-<painFactor>0.1</painFactor>
-</li>
-</stages>
-</HediffDef>
+    <HediffDef>
+        <defName>PFNumbed</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Numbed by Med-X</label>
+        <labelNoun>a Med-X numbing</labelNoun>
+        <defaultLabelColor>(1,0,0,5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.375</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painFactor>0.1</painFactor>
+            </li>
+        </stages>
+    </HediffDef>
 
-<ThoughtDef>
-<defName>PFMedXHigh</defName>
-<workerClass>ThoughtWorker_Hediff</workerClass>
-<hediff>PFNumbed</hediff>
-<validWhileDespawned>true</validWhileDespawned>
-<stages>
-<li>
-<label>Numbed by Med-X</label>
-<description>I can't feel anything, I should probably be careful I don't accidentally hurt myself</description>
-<baseMoodEffect>2</baseMoodEffect>
-</li>
-</stages>
-</ThoughtDef>
+    <ThoughtDef>
+        <defName>PFMedXHigh</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PFNumbed</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Numbed by Med-X</label>
+                <description>I can't feel anything, I should probably be careful I don't accidentally hurt myself
+                </description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 
-<ChemicalDef>
-<defName>PFMedXC</defName>
-<label>Med-X</label>
-<addictionHediff>PFMedXAddiction</addictionHediff>
-<toleranceHediff>PFMedXTolerance</toleranceHediff>
-<canBinge>false</canBinge>
-</ChemicalDef>
+    <ChemicalDef>
+        <defName>PFMedXC</defName>
+        <label>Med-X</label>
+        <addictionHediff>PFMedXAddiction</addictionHediff>
+        <toleranceHediff>PFMedXTolerance</toleranceHediff>
+        <canBinge>false</canBinge>
+    </ChemicalDef>
 
-<NeedDef ParentName="ChemAddictionNeedBase">
-<defName>Chemical_PFMedX</defName>
-<needClass>Need_Chemical</needClass>
-<label>Med-X</label>
-<description>Because of an addiction to Med-X, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
-<listPriority>45</listPriority>
-</NeedDef>
+    <NeedDef ParentName="ChemAddictionNeedBase">
+        <defName>Chemical_PFMedX</defName>
+        <needClass>Need_Chemical</needClass>
+        <label>Med-X</label>
+        <description>Because of an addiction to Med-X, this person needs to regularly consume the drug to avoid
+            withdrawal symptoms.
+        </description>
+        <listPriority>45</listPriority>
+    </NeedDef>
 
-<HediffDef ParentName="ChemToleranceBase">
-<defName>PFMedXTolerance</defName>
-<label>Med-X tolerance</label>
-<comps>
-<li Class="HediffCompProperties_SeverityPerDay">
-<severityPerDay>-0.03</severityPerDay>
-</li>
-<li Class="HediffCompProperties_DrugEffectFactor">
-<chemical>PFMedXC</chemical>
-</li>
-</comps>
-</HediffDef>
+    <HediffDef ParentName="ChemToleranceBase">
+        <defName>PFMedXTolerance</defName>
+        <label>Med-X tolerance</label>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.03</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_DrugEffectFactor">
+                <chemical>PFMedXC</chemical>
+            </li>
+        </comps>
+    </HediffDef>
 
-<HediffDef ParentName="ChemAddictionBase">
-<defName>PFMedXAddiction</defName>
-<hediffClass>Hediff_Addiction</hediffClass>
-<label>Med-X addiction</label>
-<causesNeed>Chemical_PFMedX</causesNeed>
-<comps>
-<li Class="HediffCompProperties_SeverityPerDay">
-<severityPerDay>-0.02</severityPerDay>
-</li>
-</comps>
-<stages>
-<li>
-</li>
-<li>
-<label>Withdrawal</label>
-<painFactor>3</painFactor>
-<hungerRateFactor>1.1</hungerRateFactor>
-<capMods>
-<li>
-<capacity>Consciousness</capacity>
-<offset>-0.05</offset>
-</li>
-<li>
-<capacity>Sight</capacity>
-<offset>-0.1</offset>
-</li>
-</capMods>
-<mentalStateGivers>
-<li>
-<mentalState>Wander_Psychotic</mentalState>
-<mtbDays>4</mtbDays>
-</li>
-</mentalStateGivers>
-</li>
-</stages>
-</HediffDef>
+    <HediffDef ParentName="ChemAddictionBase">
+        <defName>PFMedXAddiction</defName>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <label>Med-X addiction</label>
+        <causesNeed>Chemical_PFMedX</causesNeed>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.02</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+            </li>
+            <li>
+                <label>Withdrawal</label>
+                <painFactor>3</painFactor>
+                <hungerRateFactor>1.1</hungerRateFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
+                <mentalStateGivers>
+                    <li>
+                        <mentalState>Wander_Psychotic</mentalState>
+                        <mtbDays>4</mtbDays>
+                    </li>
+                </mentalStateGivers>
+            </li>
+        </stages>
+    </HediffDef>
 
-<ThoughtDef>
-<defName>PFMedXWithdrawal</defName>
-<workerClass>ThoughtWorker_Hediff</workerClass>
-<hediff>PFMedXAddiction</hediff>
-<stages>
-<li>
-<visible>false</visible>
-</li>
-<li>
-<label>Med-X withdrawal</label>
-<description>I'm so sensitive, even the slightest scratch hurts immensely, it's hard to focus on anything else.</description>
-<baseMoodEffect>-5</baseMoodEffect>
-</li>
-</stages>
-</ThoughtDef>
+    <ThoughtDef>
+        <defName>PFMedXWithdrawal</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PFMedXAddiction</hediff>
+        <stages>
+            <li>
+                <visible>false</visible>
+            </li>
+            <li>
+                <label>Med-X withdrawal</label>
+                <description>I'm so sensitive, even the slightest scratch hurts immensely, it's hard to focus on
+                    anything else.
+                </description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 
 </Defs>

@@ -2,230 +2,233 @@
 
 <Defs>
 
-<ThingDef Abstract="True" ParentName="ApparelBase" Name="HatBase">
-<thingCategories>
-<li>Headgear</li>
-</thingCategories>
-</ThingDef>
+    <ThingDef Abstract="True" ParentName="ApparelBase" Name="HatBase">
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+    </ThingDef>
 
-<ThingDef Abstract="True" ParentName="ApparelMakeableBase" Name="HatMakeableBase">
-<thingCategories>
-<li>Headgear</li>
-</thingCategories>
-</ThingDef>
+    <ThingDef Abstract="True" ParentName="ApparelMakeableBase" Name="HatMakeableBase">
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+    </ThingDef>
 
-<ThingDef Abstract="True" ParentName="ArmorMakeableBase" Name="ArmorHelmetMakeableBase">
-<thingCategories>
-<li>Headgear</li>
-</thingCategories>
-</ThingDef>
+    <ThingDef Abstract="True" ParentName="ArmorMakeableBase" Name="ArmorHelmetMakeableBase">
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+    </ThingDef>
 
-<ThingDef ParentName="ArmorHelmetMakeableBase">
-<defName>Apparel_X-01_Helmet</defName>
-<label>X-01 Power Armor Helmet</label>
-<description>A post-war power armor helmet developed by the Enclave.</description>
-<techLevel>Spacer</techLevel>
-<recipeMaker>
-<researchPrerequisite>PFAdvancedPowerArmor</researchPrerequisite>
-</recipeMaker>
-<graphicData>
-<texPath>Things/Fallout/Apparel/PowerArmor/X-01/Helmet/X-01Helm_front</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<WorkToMake>75000</WorkToMake>
-<Mass>1.5</Mass>
-<MaxHitPoints>300</MaxHitPoints>
-<MarketValue>3250</MarketValue>
-<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-<ArmorRating_Heat>0.8</ArmorRating_Heat>
-<Insulation_Cold>-6</Insulation_Cold>
-<Insulation_Heat>6</Insulation_Heat>
-</statBases>
-<equippedStatOffsets>
-<MoveSpeed>-0.15</MoveSpeed>
-<PsychicSensitivity>-0.25</PsychicSensitivity>
-<ToxicSensitivity>-0.2</ToxicSensitivity>
-</equippedStatOffsets>
-<costList>
-<ComponentIndustrial>12</ComponentIndustrial>
-<ComponentSpacer>1</ComponentSpacer>
-<Plasteel>125</Plasteel>
-</costList>
-<apparel>
-<bodyPartGroups>
-<li>FullHead</li>
-</bodyPartGroups>
-<wornGraphicPath>Things/Fallout/Apparel/PowerArmor/X-01/Helmet/X-01Helm</wornGraphicPath>
-<layers>
-<li>Overhead</li>
-</layers>
-<tags>
-<li>Military</li>
-<li>Enclave</li>
-</tags>
-<defaultOutfitTags>
-<li>Soldier</li>
-</defaultOutfitTags>
-</apparel>
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>Apparel_X-01_Helmet</defName>
+        <label>X-01 Power Armor Helmet</label>
+        <description>A post-war power armor helmet developed by the Enclave.</description>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>PFAdvancedPowerArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Fallout/Apparel/PowerArmor/X-01/Helmet/X-01Helm_front</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>75000</WorkToMake>
+            <Mass>1.5</Mass>
+            <MaxHitPoints>300</MaxHitPoints>
+            <MarketValue>3250</MarketValue>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.8</ArmorRating_Heat>
+            <Insulation_Cold>-6</Insulation_Cold>
+            <Insulation_Heat>6</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.15</MoveSpeed>
+            <PsychicSensitivity>-0.25</PsychicSensitivity>
+            <ToxicSensitivity>-0.2</ToxicSensitivity>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentIndustrial>12</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>125</Plasteel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Fallout/Apparel/PowerArmor/X-01/Helmet/X-01Helm</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Military</li>
+                <li>Enclave</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
 
-</ThingDef>
+    </ThingDef>
 
-<ThingDef ParentName="ArmorHelmetMakeableBase">
-<defName>Apparel_RaiderPA_Helmet</defName>
-<label>Raider Power Armor Helmet</label>
-<description>A makeshift helmet with good protection, however it won't last very long.</description>
-<techLevel>Spacer</techLevel>
-<recipeMaker>
-<researchPrerequisite>Machining</researchPrerequisite>
-</recipeMaker>
-<graphicData>
-<texPath>Things/Fallout/Apparel/PowerArmor/Raider/Helmet/RaiderPAHelmet_front</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<WorkToMake>20000</WorkToMake>
-<Mass>2</Mass>
-<MaxHitPoints>50</MaxHitPoints>
-<MarketValue>375</MarketValue>
-<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-<ArmorRating_Heat>0.3</ArmorRating_Heat>
-<Insulation_Cold>-3</Insulation_Cold>
-<Insulation_Heat>3</Insulation_Heat>
-</statBases>
-<equippedStatOffsets>
-<MoveSpeed>-0.05</MoveSpeed>
-<PsychicSensitivity>-0.05</PsychicSensitivity>
-<ToxicSensitivity>-0.10</ToxicSensitivity>
-</equippedStatOffsets>
-<costList>
-<ComponentIndustrial>4</ComponentIndustrial>
-<Steel>125</Steel>
-</costList>
-<apparel>
-<bodyPartGroups>
-<li>FullHead</li>
-</bodyPartGroups>
-<wornGraphicPath>Things/Fallout/Apparel/PowerArmor/Raider/Helmet/RaiderPAHelmet</wornGraphicPath>
-<layers>
-<li>Overhead</li>
-</layers>
-<tags>
-<li>Outlander</li>
-</tags>
-<defaultOutfitTags>
-<li>Soldier</li>
-</defaultOutfitTags>
-</apparel>
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>Apparel_RaiderPA_Helmet</defName>
+        <label>Raider Power Armor Helmet</label>
+        <description>A makeshift helmet with good protection, however it won't last very long.</description>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>Machining</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Fallout/Apparel/PowerArmor/Raider/Helmet/RaiderPAHelmet_front</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>20000</WorkToMake>
+            <Mass>2</Mass>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>375</MarketValue>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <Insulation_Cold>-3</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.05</MoveSpeed>
+            <PsychicSensitivity>-0.05</PsychicSensitivity>
+            <ToxicSensitivity>-0.10</ToxicSensitivity>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <Steel>125</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Fallout/Apparel/PowerArmor/Raider/Helmet/RaiderPAHelmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Outlander</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
 
-</ThingDef>
+    </ThingDef>
 
-<ThingDef ParentName="ArmorHelmetMakeableBase">
-<defName>Apparel_PFT-45PA_Helmet</defName>
-<label>T-45 Power Armor Helmet</label>
-<description>The earliest model of power armor that was successfully deployed during the pre-war era and severed well for medium and heavy troopers alike. It does however have less advanced servos, so it limits a wearer's movements.</description>
-<techLevel>Industrial</techLevel>
-<recipeMaker>
-<researchPrerequisite>PoweredArmor</researchPrerequisite>
-</recipeMaker>
-<graphicData>
-<texPath>Things/Fallout/Apparel/PowerArmor/T-45/Helmet/T-45PAHelm_front</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<WorkToMake>30000</WorkToMake>
-<Mass>1.5</Mass>
-<MaxHitPoints>150</MaxHitPoints>
-<MarketValue>1425</MarketValue>
-<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
-<ArmorRating_Heat>0.5</ArmorRating_Heat>
-<Insulation_Cold>-4</Insulation_Cold>
-<Insulation_Heat>4</Insulation_Heat>
-</statBases>
-<equippedStatOffsets>
-<MoveSpeed>-0.25</MoveSpeed>
-<PsychicSensitivity>-0.15</PsychicSensitivity>
-<ToxicSensitivity>-0.15</ToxicSensitivity>
-</equippedStatOffsets>
-<costList>
-<ComponentIndustrial>6</ComponentIndustrial>
-<Plasteel>50</Plasteel>
-<Steel>80</Steel>
-</costList>
-<apparel>
-<bodyPartGroups>
-<li>FullHead</li>
-</bodyPartGroups>
-<wornGraphicPath>Things/Fallout/Apparel/PowerArmor/T-45/Helmet/T-45PAHelm</wornGraphicPath>
-<layers>
-<li>Overhead</li>
-</layers>
-<tags>
-<li>Outlander</li>
-<li>Military</li>
-<li>PFBrotherhoodPaladin</li>
-</tags>
-<defaultOutfitTags>
-<li>Soldier</li>
-</defaultOutfitTags>
-</apparel>
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>Apparel_PFT-45PA_Helmet</defName>
+        <label>T-45 Power Armor Helmet</label>
+        <description>The earliest model of power armor that was successfully deployed during the pre-war era and severed
+            well for medium and heavy troopers alike. It does however have less advanced servos, so it limits a wearer's
+            movements.
+        </description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>PoweredArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Fallout/Apparel/PowerArmor/T-45/Helmet/T-45PAHelm_front</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <Mass>1.5</Mass>
+            <MaxHitPoints>150</MaxHitPoints>
+            <MarketValue>1425</MarketValue>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <Insulation_Cold>-4</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+            <PsychicSensitivity>-0.15</PsychicSensitivity>
+            <ToxicSensitivity>-0.15</ToxicSensitivity>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentIndustrial>6</ComponentIndustrial>
+            <Plasteel>50</Plasteel>
+            <Steel>80</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Fallout/Apparel/PowerArmor/T-45/Helmet/T-45PAHelm</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Outlander</li>
+                <li>Military</li>
+                <li>PFBrotherhoodPaladin</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
 
-</ThingDef>
+    </ThingDef>
 
-<!-- <ThingDef ParentName="ArmorHelmetMakeableBase">
-<defName>Apparel_PFT-51PA_Helmet</defName>
-<label>T-51 Power Armor Helmet</label>
-<description>The most successful model of power armor that was deployed during the pre-war era and severed well for medium and heavy troopers alike. It is fitted with advanced hydraulic systems, so it controls better than the T-45</description>
-<techLevel>Industrial</techLevel>
-<recipeMaker>
-<researchPrerequisite>PFAdvancedPowerArmor</researchPrerequisite>
-</recipeMaker>
-<graphicData>
-<texPath>Things/Fallout/Apparel/PowerArmor/T-51/Helmet/T-51PAHelm_front</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<statBases>
-<WorkToMake>30000</WorkToMake>
-<Mass>1.5</Mass>
-<MaxHitPoints>200</MaxHitPoints>
-<MarketValue>2150</MarketValue>
-<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-<ArmorRating_Heat>0.6</ArmorRating_Heat>
-<Insulation_Cold>-4</Insulation_Cold>
-<Insulation_Heat>4</Insulation_Heat>
-</statBases>
-<equippedStatOffsets>
-<MoveSpeed>-0.20</MoveSpeed>
-<PsychicSensitivity>-0.15</PsychicSensitivity>
-<ToxicSensitivity>-0.15</ToxicSensitivity>
-</equippedStatOffsets>
-<costList>
-<ComponentIndustrial>8</ComponentIndustrial>
-<Plasteel>75</Plasteel>
-<Steel>55</Steel>
-</costList>
-<apparel>
-<bodyPartGroups>
-<li>FullHead</li>
-</bodyPartGroups>
-<wornGraphicPath>Things/Fallout/Apparel/PowerArmor/T-51/Helmet/T-51PAHelm</wornGraphicPath>
-<layers>
-<li>Overhead</li>
-</layers>
-<tags>
-<li>Outlander</li>
-<li>Military</li>
-<li>PFBrotherhoodPaladin</li>
-</tags>
-<defaultOutfitTags>
-<li>Soldier</li>
-</defaultOutfitTags>
-</apparel>
-
-</ThingDef> -->
+    <!-- <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_PFT-51PA_Helmet</defName>
+    <label>T-51 Power Armor Helmet</label>
+    <description>The most successful model of power armor that was deployed during the pre-war era and severed well for medium and heavy troopers alike. It is fitted with advanced hydraulic systems, so it controls better than the T-45</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+    <researchPrerequisite>PFAdvancedPowerArmor</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+    <texPath>Things/Fallout/Apparel/PowerArmor/T-51/Helmet/T-51PAHelm_front</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+    <WorkToMake>30000</WorkToMake>
+    <Mass>1.5</Mass>
+    <MaxHitPoints>200</MaxHitPoints>
+    <MarketValue>2150</MarketValue>
+    <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+    <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+    <ArmorRating_Heat>0.6</ArmorRating_Heat>
+    <Insulation_Cold>-4</Insulation_Cold>
+    <Insulation_Heat>4</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+    <MoveSpeed>-0.20</MoveSpeed>
+    <PsychicSensitivity>-0.15</PsychicSensitivity>
+    <ToxicSensitivity>-0.15</ToxicSensitivity>
+    </equippedStatOffsets>
+    <costList>
+    <ComponentIndustrial>8</ComponentIndustrial>
+    <Plasteel>75</Plasteel>
+    <Steel>55</Steel>
+    </costList>
+    <apparel>
+    <bodyPartGroups>
+    <li>FullHead</li>
+    </bodyPartGroups>
+    <wornGraphicPath>Things/Fallout/Apparel/PowerArmor/T-51/Helmet/T-51PAHelm</wornGraphicPath>
+    <layers>
+    <li>Overhead</li>
+    </layers>
+    <tags>
+    <li>Outlander</li>
+    <li>Military</li>
+    <li>PFBrotherhoodPaladin</li>
+    </tags>
+    <defaultOutfitTags>
+    <li>Soldier</li>
+    </defaultOutfitTags>
+    </apparel>
+    
+    </ThingDef> -->
 
 </Defs>

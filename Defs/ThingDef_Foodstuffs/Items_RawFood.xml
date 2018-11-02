@@ -2,189 +2,203 @@
 
 <Defs>
 
-<ThingDef ParentName="PlantFoodRawBase">
-<defName>PFRawTatos</defName>
-<label>Tatos</label>
-<description>A mutated hybrid between potatoes and tomatoes. It tastes horrible raw, and not much better when cooked, but in the wasteland you can't complain.</description>
-<graphicData>
-<texPath>Things/Fallout/Food/RawPlants/Tato</texPath>
-</graphicData>
-<statBases>
-<MarketValue>1.5</MarketValue>
-<Mass>0.15</Mass>
-			<Nutrition>0.05</Nutrition>
-</statBases>
-<ingestible>
-<foodType>VegetableOrFruit</foodType>
-</ingestible>
-<comps>
-<li Class="CompProperties_Rottable">
-<daysToRotStart>40</daysToRotStart>
-</li>
-</comps>
-</ThingDef>
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>PFRawTatos</defName>
+        <label>Tatos</label>
+        <description>A mutated hybrid between potatoes and tomatoes. It tastes horrible raw, and not much better when
+            cooked, but in the wasteland you can't complain.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/RawPlants/Tato</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.5</MarketValue>
+            <Mass>0.15</Mass>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>40</daysToRotStart>
+            </li>
+        </comps>
+    </ThingDef>
 
-<ThingDef ParentName="PlantFoodRawBase">
-<defName>PFRazorgrain</defName>
-<label>Razorgrain</label>
-<description>A distant descendant of wheat, it is able to grow in the harsh wasteland.</description>
-<soundInteract>Grain_Drop</soundInteract>
-<soundDrop>Grain_Drop</soundDrop>
-<graphicData>
-<texPath>Things/Fallout/Food/RawPlants/Razorgrain</texPath>
-</graphicData>
-<statBases>
-<MarketValue>1.2</MarketValue>
-<Mass>0.05</Mass>
-<Nutrition>0.05</Nutrition>
-</statBases>
-<ingestible>
-<foodType>Seed</foodType>
-</ingestible>
-<comps>
-<li Class="CompProperties_Rottable">
-<daysToRotStart>45</daysToRotStart>
-</li>
-</comps>
-</ThingDef>
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>PFRazorgrain</defName>
+        <label>Razorgrain</label>
+        <description>A distant descendant of wheat, it is able to grow in the harsh wasteland.</description>
+        <soundInteract>Grain_Drop</soundInteract>
+        <soundDrop>Grain_Drop</soundDrop>
+        <graphicData>
+            <texPath>Things/Fallout/Food/RawPlants/Razorgrain</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.05</Mass>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <ingestible>
+            <foodType>Seed</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>45</daysToRotStart>
+            </li>
+        </comps>
+    </ThingDef>
 
-<ThingDef ParentName="PlantFoodRawBase">
-<defName>PFMutfruit</defName>
-<label>Mutfruit</label>
-<description>A large mutated descendant of blueberries, it tastes good and won't kill you, a must have for farmers in the wastelands.</description>
-<graphicData>
-<texPath>Things/Fallout/Food/RawPlants/Mutfruit</texPath>
-</graphicData>
-<statBases>
-<MarketValue>2.4</MarketValue>
-<Mass>0.05</Mass>
-<Nutrition>0.05</Nutrition>
-</statBases>
-<ingestible>
-<preferability>RawTasty</preferability>
-<tasteThought/>
-<foodType>VegetableOrFruit</foodType>
-<joy>0.005</joy>
-<joyKind>Gluttonous</joyKind>
-</ingestible>
-<comps>
-<li Class="CompProperties_Rottable">
-<daysToRotStart>27</daysToRotStart>
-</li>
-</comps>
-</ThingDef>
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>PFMutfruit</defName>
+        <label>Mutfruit</label>
+        <description>A large mutated descendant of blueberries, it tastes good and won't kill you, a must have for
+            farmers in the wastelands.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/RawPlants/Mutfruit</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.4</MarketValue>
+            <Mass>0.05</Mass>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <tasteThought/>
+            <foodType>VegetableOrFruit</foodType>
+            <joy>0.005</joy>
+            <joyKind>Gluttonous</joyKind>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>27</daysToRotStart>
+            </li>
+        </comps>
+    </ThingDef>
 
-<ThingDef ParentName="PlantFoodRawBase">
-<defName>PFTarberry</defName>
-<label>Tarberries</label>
-<description>A cluster of small purple berries, very similar to cranberries. They taste great and have some other uses other than consumption.</description>
-<graphicData>
-<texPath>Things/Fallout/Food/RawPlants/Tarberry</texPath>
-</graphicData>
-<statBases>
-<MarketValue>2.75</MarketValue>
-<Mass>0.05</Mass>
-<Nutrition>0.05</Nutrition>
-</statBases>
-<ingestible>
-<preferability>RawTasty</preferability>
-<tasteThought/>
-<foodType>VegetableOrFruit</foodType>
-<joy>0.005</joy>
-<joyKind>Gluttonous</joyKind>
-</ingestible>
-<comps>
-<li Class="CompProperties_Rottable">
-<daysToRotStart>27</daysToRotStart>
-</li>
-</comps>
-</ThingDef>
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>PFTarberry</defName>
+        <label>Tarberries</label>
+        <description>A cluster of small purple berries, very similar to cranberries. They taste great and have some
+            other uses other than consumption.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/RawPlants/Tarberry</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.75</MarketValue>
+            <Mass>0.05</Mass>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <tasteThought/>
+            <foodType>VegetableOrFruit</foodType>
+            <joy>0.005</joy>
+            <joyKind>Gluttonous</joyKind>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>27</daysToRotStart>
+            </li>
+        </comps>
+    </ThingDef>
 
-	<ThingDef ParentName="PlantFoodRawBase">
-		<defName>PFBarrelCactusFruit</defName>
-		<label>Barrel Cactus Fruit</label>
-		<description>A slimy and slightly sour fruit that comes from the flower of a barrel cactus. They aren't particularly tasty, but make a nutritious food in a pinch and do not spoil quickly.</description>
-		<graphicData>
-			<texPath>Things/Fallout/Food/RawPlants/BarrelCactusItem</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>2.5</MarketValue>
-			<Mass>0.05</Mass>
-			<Nutrition>0.05</Nutrition>
-		</statBases>
-		<ingestible>
-			<preferability>RawTasty</preferability>
-			<tasteThought/>
-			<foodType>VegetableOrFruit</foodType>
-			<joy>0.004</joy>
-			<joyKind>Gluttonous</joyKind>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
-			</li>
-		</comps>
-	</ThingDef>
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>PFBarrelCactusFruit</defName>
+        <label>Barrel Cactus Fruit</label>
+        <description>A slimy and slightly sour fruit that comes from the flower of a barrel cactus. They aren't
+            particularly tasty, but make a nutritious food in a pinch and do not spoil quickly.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/RawPlants/BarrelCactusItem</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.5</MarketValue>
+            <Mass>0.05</Mass>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <tasteThought/>
+            <foodType>VegetableOrFruit</foodType>
+            <joy>0.004</joy>
+            <joyKind>Gluttonous</joyKind>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+            </li>
+        </comps>
+    </ThingDef>
 
-	<ThingDef ParentName="RoughPlantBase">
-		<defName>PFXanderRootItem</defName>
-		<label>Xander Root</label>
-		<description>A large turnip-like root with mild healing properties. When combined with a Broc Flower it can create herbal medicine or stimpaks.</description>
-		<graphicData>
-			<texPath>Things/Fallout/Food/RawPlants/XanderRootItem</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>5</MarketValue>
-			<Mass>0.05</Mass>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>120</daysToRotStart>
-			</li>
-		</comps>
-		<thingCategories>
-			<li>PlantMatter</li>
-		</thingCategories>
-	</ThingDef>
-	
-	<ThingDef ParentName="RoughPlantBase">
-		<defName>PFBrocFlowerItem</defName>
-		<label>Broc Flower</label>
-		<description>A small orange flower with slight medicinal properties. When combined with a Xander Root it can create herbal medicine or stimpaks.</description>
-		<graphicData>
-			<texPath>Things/Fallout/Food/RawPlants/BrocFlowerItem</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>5</MarketValue>
-			<Mass>0.05</Mass>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>120</daysToRotStart>
-			</li>
-		</comps>
-		<thingCategories>
-			<li>PlantMatter</li>
-		</thingCategories>
-	</ThingDef>
-	
-	<ThingDef ParentName="EggFertBase">
-		<defName>PFGiantGeckoEgg</defName>
-		<label>Giant Gecko egg (fert.)</label>
-		<description>Fertilized giant gecko egg. If all goes well, it should hatch into a baby giant gecko. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
-			<color>(245,245,245)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>30</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>4</hatcherDaystoHatch>
-				<hatcherPawn>PFGiantGecko</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
-	
+    <ThingDef ParentName="RoughPlantBase">
+        <defName>PFXanderRootItem</defName>
+        <label>Xander Root</label>
+        <description>A large turnip-like root with mild healing properties. When combined with a Broc Flower it can
+            create herbal medicine or stimpaks.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/RawPlants/XanderRootItem</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>120</daysToRotStart>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>PlantMatter</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="RoughPlantBase">
+        <defName>PFBrocFlowerItem</defName>
+        <label>Broc Flower</label>
+        <description>A small orange flower with slight medicinal properties. When combined with a Xander Root it can
+            create herbal medicine or stimpaks.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Food/RawPlants/BrocFlowerItem</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>120</daysToRotStart>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>PlantMatter</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="EggFertBase">
+        <defName>PFGiantGeckoEgg</defName>
+        <label>Giant Gecko egg (fert.)</label>
+        <description>Fertilized giant gecko egg. If all goes well, it should hatch into a baby giant gecko. It can be
+            eaten raw, but it's much better cooked.
+        </description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <color>(245,245,245)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>30</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>4</hatcherDaystoHatch>
+                <hatcherPawn>PFGiantGecko</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+
 </Defs>

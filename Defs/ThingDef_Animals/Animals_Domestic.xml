@@ -2,440 +2,444 @@
 
 <Defs>
 
-	<ThingDef Abstract="True" Name="BasePawn">
-		<thingClass>Pawn</thingClass>
-		<category>Pawn</category>
-		<selectable>true</selectable>
-		<tickerType>Normal</tickerType>
-		<altitudeLayer>Pawn</altitudeLayer>
-		<useHitPoints>false</useHitPoints>
-		<hasTooltip>true</hasTooltip>
-		<soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
-		<inspectorTabs>
-			<li>ITab_Pawn_Health</li>
-			<li>ITab_Pawn_Needs</li>
-			<li>ITab_Pawn_Character</li>
-			<li>ITab_Pawn_Training</li>
-			<li>ITab_Pawn_Gear</li>
-			<li>ITab_Pawn_Guest</li>
-			<li>ITab_Pawn_Prisoner</li>
-			<li>ITab_Pawn_Social</li>
-		</inspectorTabs>
-		<comps>
-			<li>
-				<compClass>CompAttachBase</compClass>
-			</li>
-		</comps>
-		<drawGUIOverlay>true</drawGUIOverlay>
-	</ThingDef>
+    <ThingDef Abstract="True" Name="BasePawn">
+        <thingClass>Pawn</thingClass>
+        <category>Pawn</category>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Pawn</altitudeLayer>
+        <useHitPoints>false</useHitPoints>
+        <hasTooltip>true</hasTooltip>
+        <soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
+        <inspectorTabs>
+            <li>ITab_Pawn_Health</li>
+            <li>ITab_Pawn_Needs</li>
+            <li>ITab_Pawn_Character</li>
+            <li>ITab_Pawn_Training</li>
+            <li>ITab_Pawn_Gear</li>
+            <li>ITab_Pawn_Guest</li>
+            <li>ITab_Pawn_Prisoner</li>
+            <li>ITab_Pawn_Social</li>
+        </inspectorTabs>
+        <comps>
+            <li>
+                <compClass>CompAttachBase</compClass>
+            </li>
+        </comps>
+        <drawGUIOverlay>true</drawGUIOverlay>
+    </ThingDef>
 
 
-	<ThingDef Abstract="True" Name="AnimalThingBase" ParentName="BasePawn">
-		<statBases>
-			<Flammability>1.0</Flammability>
-			<LeatherAmount>20</LeatherAmount>
-		</statBases>
-		<race>
-			<thinkTreeMain>Animal</thinkTreeMain>
-			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
-			<hasGenders>true</hasGenders>
-			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
-			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
-			<manhunterOnDamageChance>0.0125</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.005</manhunterOnTameFailChance>
-			<nameOnNuzzleChance>0.5</nameOnNuzzleChance>
-			<hediffGiverSets>
-				<li>OrganicStandard</li>
-			</hediffGiverSets>
-		</race>
-		<recipes>
-			<li>ExciseCarcinoma</li>
-			<li>RemoveBodyPart</li>
-			<li>Euthanize</li>
-		</recipes>
-	</ThingDef>
-	
-	<PawnKindDef Abstract="True" Name="AnimalKindBase"/>
-	
-	<ThingDef ParentName="AnimalThingBase">
-		<defName>PFBrahmin</defName>
-		<label>Brahmin</label>
-		<description>A distant descendent of cows, this two-headed mutated bovine is used for meat and milk in the wasteland.</description>
-		<statBases>
-			<MoveSpeed>3</MoveSpeed>
-			<ComfyTemperatureMin>-18</ComfyTemperatureMin>
-			<MarketValue>375</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Milkable">
-				<milkDef>Milk</milkDef>
-				<milkIntervalDays>1</milkIntervalDays>
-				<milkAmount>10</milkAmount>
-			</li>
-		</comps>
-		<tools>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<defaultCooldownTime>2.4</defaultCooldownTime>
-				<power>8</power>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.6</chanceFactor>
-			</li>
-			<li>
-				<label>horn</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>2.5</cooldownTime>
-				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.3</chanceFactor>
-			</li>
-			<li>
-				<label>left hoof</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>right hoof</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<race>
-			<body>QuadrupedAnimalWithTwoHeadsHoovesAndHorn</body>
-			<herdAnimal>true</herdAnimal>
-			<baseBodySize>1.75</baseBodySize>
-			<baseHungerRate>0.8</baseHungerRate>
-			<baseHealthScale>1.75</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0.1</wildness>
-			<gestationPeriodDays>55</gestationPeriodDays>
-			<lifeExpectancy>25</lifeExpectancy>
-			<trainability>Advanced</trainability>
-			<meatLabel>beef</meatLabel>
-			<wildBiomes>
-				<AridShrubland>0.05</AridShrubland>
-				<TemperateForest>0.1</TemperateForest>
-			</wildBiomes>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5,0)</li>
-					<li>(1,1)</li>
-					<li>(3,1)</li>
-					<li>(3.5,0)</li>
-				</points>
-			</litterSizeCurve>
-			<packAnimal>true</packAnimal>
-			<lifeStageAges>
-			<li>
-				<def>AnimalBaby</def>
-				<minAge>0</minAge>
-			</li>
-			<li>
-				<def>AnimalJuvenile</def>
-				<minAge>0.25</minAge>
-			</li>
-			<li>
-				<def>AnimalAdult</def>
-				<minAge>1.1</minAge>
-				<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
-				<soundDeath>Pawn_Muffalo_Death</soundDeath>
-				<soundCall>Pawn_Muffalo_Call</soundCall>
-				<soundAngry>Pawn_Muffalo_Angry</soundAngry>
-			</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalCommon</li>
-			<li>AnimalFarm</li>
-		</tradeTags>
-	</ThingDef>
+    <ThingDef Abstract="True" Name="AnimalThingBase" ParentName="BasePawn">
+        <statBases>
+            <Flammability>1.0</Flammability>
+            <LeatherAmount>20</LeatherAmount>
+        </statBases>
+        <race>
+            <thinkTreeMain>Animal</thinkTreeMain>
+            <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+            <hasGenders>true</hasGenders>
+            <nameGenerator>NamerAnimalGenericMale</nameGenerator>
+            <nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+            <manhunterOnDamageChance>0.0125</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.005</manhunterOnTameFailChance>
+            <nameOnNuzzleChance>0.5</nameOnNuzzleChance>
+            <hediffGiverSets>
+                <li>OrganicStandard</li>
+            </hediffGiverSets>
+        </race>
+        <recipes>
+            <li>ExciseCarcinoma</li>
+            <li>RemoveBodyPart</li>
+            <li>Euthanize</li>
+        </recipes>
+    </ThingDef>
 
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>PFBrahmin</defName>
-		<label>Brahmin</label>
-		<race>PFBrahmin</race>
-		<combatPower>65</combatPower>
-		<ecoSystemWeight>0.5</ecoSystemWeight>
-		<labelMale>Brahmin Bull</labelMale>
-		<labelFemale>Brahmin</labelFemale>
-		<wildGroupSize>
-			<min>3</min>
-			<max>7</max>
-		</wildGroupSize>
-		<lifeStages>
-			<li>
-				<label>Brahmin Calf</label>
-				<labelPlural>Brahmin Calves</labelPlural>
-				<bodyGraphicData>
-					<texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
-					<drawSize>1.25</drawSize>
-					<shadowData>
-						<volume>(0.4,0.3,0.3)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<femaleGraphicData>
-					<texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
-					<drawSize>1.2</drawSize>
-					<shadowData>
-						<volume>(0.4,0.3,0.3)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</femaleGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-					<drawSize>1.25</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Fallout/Animals/Brahmin</texPath>
-					<drawSize>2.10</drawSize>
-					<shadowData>
-						<volume>(0.6,0.45,0.45</volume>
-						<offset>(0,0,-0.25</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<femaleGraphicData>
-					<texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
-					<drawSize>1.95</drawSize>
-					<shadowData>
-						<volume>(0.6,0.45,0.45</volume>
-						<offset>(0,0,-0.25</offset>
-					</shadowData>
-				</femaleGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-					<drawSize>2.10</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
-					<drawSize>2.65</drawSize>
-					<shadowData>
-						<volume>(0.8,0.6,0.6</volume>
-						<offset>(0,0,-0.3</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<femaleGraphicData>
-					<texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
-					<drawSize>2.55</drawSize>
-					<shadowData>
-						<volume>(0.8,0.6,0.6</volume>
-						<offset>(0,0,-0.3</offset>
-					</shadowData>
-				</femaleGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-					<drawSize>2.65</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
+    <PawnKindDef Abstract="True" Name="AnimalKindBase"/>
 
-<ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>PFBrahmin</defName>
+        <label>Brahmin</label>
+        <description>A distant descendent of cows, this two-headed mutated bovine is used for meat and milk in the
+            wasteland.
+        </description>
+        <statBases>
+            <MoveSpeed>3</MoveSpeed>
+            <ComfyTemperatureMin>-18</ComfyTemperatureMin>
+            <MarketValue>375</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>1</milkIntervalDays>
+                <milkAmount>10</milkAmount>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <defaultCooldownTime>2.4</defaultCooldownTime>
+                <power>8</power>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.6</chanceFactor>
+            </li>
+            <li>
+                <label>horn</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.3</chanceFactor>
+            </li>
+            <li>
+                <label>left hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithTwoHeadsHoovesAndHorn</body>
+            <herdAnimal>true</herdAnimal>
+            <baseBodySize>1.75</baseBodySize>
+            <baseHungerRate>0.8</baseHungerRate>
+            <baseHealthScale>1.75</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Plain</leatherDef>
+            <wildness>0.1</wildness>
+            <gestationPeriodDays>55</gestationPeriodDays>
+            <lifeExpectancy>25</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <meatLabel>beef</meatLabel>
+            <wildBiomes>
+                <AridShrubland>0.05</AridShrubland>
+                <TemperateForest>0.1</TemperateForest>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5,0)</li>
+                    <li>(1,1)</li>
+                    <li>(3,1)</li>
+                    <li>(3.5,0)</li>
+                </points>
+            </litterSizeCurve>
+            <packAnimal>true</packAnimal>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.25</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.1</minAge>
+                    <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+                    <soundDeath>Pawn_Muffalo_Death</soundDeath>
+                    <soundCall>Pawn_Muffalo_Call</soundCall>
+                    <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalCommon</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
+    </ThingDef>
 
-<defName>PFBighorner</defName>
-<label>Bighorner</label>
-<description>A distant descendent of bighorn sheep, this aggresive mutated animal is a good source of meat in the wasteland.</description>
-<statBases>
-<MoveSpeed>3.25</MoveSpeed>
-<ComfyTemperatureMin>-18</ComfyTemperatureMin>
-<MarketValue>455</MarketValue>
-</statBases>
-		<tools>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<defaultCooldownTime>2.4</defaultCooldownTime>
-				<power>8</power>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.6</chanceFactor>
-			</li>
-			<li>
-				<label>horn</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>2.5</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.3</chanceFactor>
-			</li>
-			<li>
-				<label>left hoof</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>right hoof</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-			</li>
-		</tools>
-<race>
-<body>QuadrupedAnimalWithTwoHorns</body>
-<baseBodySize>1.85</baseBodySize>
-<baseHungerRate>0.50</baseHungerRate>
-<baseHealthScale>2</baseHealthScale>
-<foodType>VegetarianRoughAnimal</foodType>
-<leatherDef>Leather_Plain</leatherDef>
-<gestationPeriodDays>45</gestationPeriodDays>
-<wildness>0.2</wildness>
-<trainability>Intermediate</trainability>
-<meatLabel>bighorner meat</meatLabel>
-		<wildBiomes>
-			<AridShrubland>0.1</AridShrubland>
-			<TemperateForest>0.05</TemperateForest>
-		</wildBiomes>
-<litterSizeCurve>
-<points>
-<li>(0.5,0)</li>
-<li>(1,1)</li>
-<li>(3,1)</li>
-<li>(3.5,0)</li>
-</points>
-</litterSizeCurve>
-<lifeExpectancy>30</lifeExpectancy>
-<lifeStageAges>
-<li>
-<def>AnimalBaby</def>
-<minAge>0</minAge>
-</li>
-<li>
-<def>AnimalJuvenile</def>
-<minAge>0.25</minAge>
-</li>
-<li>
-<def>AnimalAdult</def>
-<minAge>0.8</minAge>
-<soundWounded>Pawn_Deer_Wounded</soundWounded>
-<soundDeath>Pawn_Deer_Death</soundDeath>
-<soundCall>Pawn_Deer_Call</soundCall>
-<soundAngry>Pawn_Deer_Angry</soundAngry>
-</li>
-</lifeStageAges>
-<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-</race>
-<tradeTags>
-<li>AnimalCommon</li>
-</tradeTags>
-</ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>PFBrahmin</defName>
+        <label>Brahmin</label>
+        <race>PFBrahmin</race>
+        <combatPower>65</combatPower>
+        <ecoSystemWeight>0.5</ecoSystemWeight>
+        <labelMale>Brahmin Bull</labelMale>
+        <labelFemale>Brahmin</labelFemale>
+        <wildGroupSize>
+            <min>3</min>
+            <max>7</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>Brahmin Calf</label>
+                <labelPlural>Brahmin Calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
+                    <drawSize>1.25</drawSize>
+                    <shadowData>
+                        <volume>(0.4,0.3,0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
+                    <drawSize>1.2</drawSize>
+                    <shadowData>
+                        <volume>(0.4,0.3,0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.25</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Fallout/Animals/Brahmin</texPath>
+                    <drawSize>2.10</drawSize>
+                    <shadowData>
+                        <volume>(0.6,0.45,0.45</volume>
+                        <offset>(0,0,-0.25</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
+                    <drawSize>1.95</drawSize>
+                    <shadowData>
+                        <volume>(0.6,0.45,0.45</volume>
+                        <offset>(0,0,-0.25</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>2.10</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
+                    <drawSize>2.65</drawSize>
+                    <shadowData>
+                        <volume>(0.8,0.6,0.6</volume>
+                        <offset>(0,0,-0.3</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Fallout/Animals/Brahmin/Brahmin</texPath>
+                    <drawSize>2.55</drawSize>
+                    <shadowData>
+                        <volume>(0.8,0.6,0.6</volume>
+                        <offset>(0,0,-0.3</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>2.65</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
 
-<PawnKindDef ParentName="AnimalKindBase">
-<defName>PFBighorner</defName>
-<label>Bighorner</label>
-<race>PFBighorner</race>
-<combatPower>75</combatPower>
-<ecoSystemWeight>0.5</ecoSystemWeight>
-<labelMale>Bighorner Bull</labelMale>
-<labelFemale>Bighorner</labelFemale>
-<lifeStages>
-<li>
-<label>Bighorner Calf</label>
-<bodyGraphicData>
-<texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
-<drawSize>1.35</drawSize>
-<shadowData>
-<volume>(0.4,0.3,0.3)</volume>
-<offset>(0,0,-0.2)</offset>
-</shadowData>
-</bodyGraphicData>
-<femaleGraphicData>
-<texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
-<drawSize>1.25</drawSize>
-<shadowData>
-<volume>(0.4,0.3,0.3)</volume>
-<offset>(0,0,-0.2)</offset>
-</shadowData>
-</femaleGraphicData>
-<dessicatedBodyGraphicData>
-<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-<drawSize>1.35</drawSize>
-</dessicatedBodyGraphicData>
-</li>
-<li>
-<bodyGraphicData>
-<texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
-<drawSize>2.25</drawSize>
-<shadowData>
-<volume>(0.6,0.45,0.45</volume>
-<offset>(0,0,-0.25</offset>
-</shadowData>
-</bodyGraphicData>
-<femaleGraphicData>
-<texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
-<drawSize>2.15</drawSize>
-<shadowData>
-<volume>(0.6,0.45,0.45</volume>
-<offset>(0,0,-0.25</offset>
-</shadowData>
-</femaleGraphicData>
-<dessicatedBodyGraphicData>
-<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-<drawSize>2.25</drawSize>
-</dessicatedBodyGraphicData>
-</li>
-<li>
-<bodyGraphicData>
-<texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
-<drawSize>2.75</drawSize>
-<shadowData>
-<volume>(0.8,0.6,0.6</volume>
-<offset>(0,0,-0.3</offset>
-</shadowData>
-</bodyGraphicData>
-<femaleGraphicData>
-<texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
-<drawSize>2.65</drawSize>
-<shadowData>
-<volume>(0.8,0.6,0.6</volume>
-<offset>(0,0,-0.3</offset>
-</shadowData>
-</femaleGraphicData>
-<dessicatedBodyGraphicData>
-<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-<drawSize>2.75</drawSize>
-</dessicatedBodyGraphicData>
-</li>
-</lifeStages>
+    <ThingDef ParentName="AnimalThingBase">
 
-</PawnKindDef>
+        <defName>PFBighorner</defName>
+        <label>Bighorner</label>
+        <description>A distant descendent of bighorn sheep, this aggresive mutated animal is a good source of meat in
+            the wasteland.
+        </description>
+        <statBases>
+            <MoveSpeed>3.25</MoveSpeed>
+            <ComfyTemperatureMin>-18</ComfyTemperatureMin>
+            <MarketValue>455</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <defaultCooldownTime>2.4</defaultCooldownTime>
+                <power>8</power>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.6</chanceFactor>
+            </li>
+            <li>
+                <label>horn</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.3</chanceFactor>
+            </li>
+            <li>
+                <label>left hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithTwoHorns</body>
+            <baseBodySize>1.85</baseBodySize>
+            <baseHungerRate>0.50</baseHungerRate>
+            <baseHealthScale>2</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Plain</leatherDef>
+            <gestationPeriodDays>45</gestationPeriodDays>
+            <wildness>0.2</wildness>
+            <trainability>Intermediate</trainability>
+            <meatLabel>bighorner meat</meatLabel>
+            <wildBiomes>
+                <AridShrubland>0.1</AridShrubland>
+                <TemperateForest>0.05</TemperateForest>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5,0)</li>
+                    <li>(1,1)</li>
+                    <li>(3,1)</li>
+                    <li>(3.5,0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>30</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.25</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.8</minAge>
+                    <soundWounded>Pawn_Deer_Wounded</soundWounded>
+                    <soundDeath>Pawn_Deer_Death</soundDeath>
+                    <soundCall>Pawn_Deer_Call</soundCall>
+                    <soundAngry>Pawn_Deer_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalCommon</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>PFBighorner</defName>
+        <label>Bighorner</label>
+        <race>PFBighorner</race>
+        <combatPower>75</combatPower>
+        <ecoSystemWeight>0.5</ecoSystemWeight>
+        <labelMale>Bighorner Bull</labelMale>
+        <labelFemale>Bighorner</labelFemale>
+        <lifeStages>
+            <li>
+                <label>Bighorner Calf</label>
+                <bodyGraphicData>
+                    <texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
+                    <drawSize>1.35</drawSize>
+                    <shadowData>
+                        <volume>(0.4,0.3,0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
+                    <drawSize>1.25</drawSize>
+                    <shadowData>
+                        <volume>(0.4,0.3,0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.35</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
+                    <drawSize>2.25</drawSize>
+                    <shadowData>
+                        <volume>(0.6,0.45,0.45</volume>
+                        <offset>(0,0,-0.25</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
+                    <drawSize>2.15</drawSize>
+                    <shadowData>
+                        <volume>(0.6,0.45,0.45</volume>
+                        <offset>(0,0,-0.25</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>2.25</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
+                    <drawSize>2.75</drawSize>
+                    <shadowData>
+                        <volume>(0.8,0.6,0.6</volume>
+                        <offset>(0,0,-0.3</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Fallout/Animals/Bighorner/Bighorner</texPath>
+                    <drawSize>2.65</drawSize>
+                    <shadowData>
+                        <volume>(0.8,0.6,0.6</volume>
+                        <offset>(0,0,-0.3</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>2.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+
+    </PawnKindDef>
 
 </Defs>

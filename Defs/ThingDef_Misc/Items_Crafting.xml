@@ -2,185 +2,192 @@
 
 <Defs>
 
-<ThingDef Abstract="True" Name="ResourceCraftBase">
-<thingClass>ThingWithComps</thingClass>
-<label>unspecified resource</label>
-<category>Item</category>
-<resourceReadoutPriority>Middle</resourceReadoutPriority>
-<useHitPoints>true</useHitPoints>
-<selectable>true</selectable>
-<altitudeLayer>Item</altitudeLayer>
-<stackLimit>75</stackLimit>
-<comps>
-<li Class="CompProperties_Forbiddable"/>
-</comps>
-<alwaysHaulable>true</alwaysHaulable>
-<drawGUIOverlay>true</drawGUIOverlay>
-<rotatable>false</rotatable>
-<pathCost>15</pathCost>
-</ThingDef>
+    <ThingDef Abstract="True" Name="ResourceCraftBase">
+        <thingClass>ThingWithComps</thingClass>
+        <label>unspecified resource</label>
+        <category>Item</category>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>75</stackLimit>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>15</pathCost>
+    </ThingDef>
 
-<ThingDef Abstract="True" ParentName="ResourceCraftBase" Name="PFLeatherBase">
-<recipeMaker>
-<workSpeedStat>TailoringSpeed</workSpeedStat>
-<workSkill>Crafting</workSkill>
-<effectWorking>Tailor</effectWorking>
-<soundWorking>Recipe_Tailor</soundWorking>
-<recipeUsers>
-<li>ElectricTailoringBench</li>
-<li>HandTailoringBench</li>
-</recipeUsers>
-<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-</recipeMaker>
-</ThingDef>
+    <ThingDef Abstract="True" ParentName="ResourceCraftBase" Name="PFLeatherBase">
+        <recipeMaker>
+            <workSpeedStat>TailoringSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
 
-<ThingDef Abstract="True" ParentName="ResourceBase" Name="PFMetalCraftBase">
-<recipeMaker>
-<workSpeedStat>SmithingSpeed</workSpeedStat>
-<workSkill>Crafting</workSkill>
-<effectWorking>Smelt</effectWorking>
-<soundWorking>Recipe_Smelt</soundWorking>
-<recipeUsers>
-<li>TableMachining</li>
-</recipeUsers>
-<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-</recipeMaker>
-</ThingDef>
+    <ThingDef Abstract="True" ParentName="ResourceBase" Name="PFMetalCraftBase">
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smelt</effectWorking>
+            <soundWorking>Recipe_Smelt</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
 
-<ThingDef Abstract="True" ParentName="ResourceCraftBase" Name="PFSyringeBase">
-<recipeMaker>
-<workSpeedStat>SmithingSpeed</workSpeedStat>
-<workSkill>Crafting</workSkill>
-<effectWorking>Smelt</effectWorking>
-<soundWorking>Recipe_Smelt</soundWorking>
-<recipeUsers>
-<li>DrugLab</li>
-</recipeUsers>
-<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-</recipeMaker>
-</ThingDef>
+    <ThingDef Abstract="True" ParentName="ResourceCraftBase" Name="PFSyringeBase">
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smelt</effectWorking>
+            <soundWorking>Recipe_Smelt</soundWorking>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
 
-<ThingDef ParentName="PFMetalCraftBase">
-<defName>PFFocusLens</defName>
-<label>Focusing Lens</label>
-<description>A lens that highly focuses light into a concentrated beam. It has use in the production of laser weaponry.</description>
-<graphicData>
-<texPath>Things/Fallout/Crafting/FocusLens</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<resourceReadoutPriority>Middle</resourceReadoutPriority>
-<soundInteract>Metal_Drop</soundInteract>
-<soundDrop>Metal_Drop</soundDrop>
-<stackLimit>1</stackLimit>
-<useHitPoints>true</useHitPoints>
-<statBases>
-<MarketValue>125</MarketValue>
-<MaxHitPoints>100</MaxHitPoints>
-<Mass>0.33</Mass>
-<WorkToMake>5000</WorkToMake>
-</statBases>
-<costList>
-<Steel>25</Steel>
-<ComponentIndustrial>5</ComponentIndustrial>
-<Gold>2</Gold>
-</costList>
-<thingCategories>
-<li>Items</li>
-</thingCategories>
-<drawGUIOverlay>false</drawGUIOverlay>
-<tradeTags>
-<li>PFCraftingResources</li>
-</tradeTags>
-</ThingDef>
+    <ThingDef ParentName="PFMetalCraftBase">
+        <defName>PFFocusLens</defName>
+        <label>Focusing Lens</label>
+        <description>A lens that highly focuses light into a concentrated beam. It has use in the production of laser
+            weaponry.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Crafting/FocusLens</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>125</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.33</Mass>
+            <WorkToMake>5000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <Gold>2</Gold>
+        </costList>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeTags>
+            <li>PFCraftingResources</li>
+        </tradeTags>
+    </ThingDef>
 
-<ThingDef ParentName="PFMetalCraftBase">
-<defName>PFSuperconductor</defName>
-<label>Superconductor</label>
-<description>A material able to conduct electricity with no resistance, when used in the barrel of a gun it stabilizes the projectile using magnetism. It has use in the production of plasma weaponry.</description>
-<graphicData>
-<texPath>Things/Fallout/Crafting/Superconductor</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<resourceReadoutPriority>Middle</resourceReadoutPriority>
-<soundInteract>Metal_Drop</soundInteract>
-<soundDrop>Metal_Drop</soundDrop>
-<stackLimit>1</stackLimit>
-<useHitPoints>true</useHitPoints>
-<statBases>
-<MarketValue>200</MarketValue>
-<MaxHitPoints>100</MaxHitPoints>
-<Mass>2</Mass>
-<WorkToMake>5000</WorkToMake>
-</statBases>
-<costList>
-<Plasteel>15</Plasteel>
-<ComponentIndustrial>3</ComponentIndustrial>
-<Uranium>1</Uranium>
-</costList>
-<thingCategories>
-<li>Items</li>
-</thingCategories>
-<drawGUIOverlay>false</drawGUIOverlay>
-<tradeTags>
-<li>PFCraftingResources</li>
-</tradeTags>
-</ThingDef>
+    <ThingDef ParentName="PFMetalCraftBase">
+        <defName>PFSuperconductor</defName>
+        <label>Superconductor</label>
+        <description>A material able to conduct electricity with no resistance, when used in the barrel of a gun it
+            stabilizes the projectile using magnetism. It has use in the production of plasma weaponry.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Crafting/Superconductor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>200</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>2</Mass>
+            <WorkToMake>5000</WorkToMake>
+        </statBases>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Uranium>1</Uranium>
+        </costList>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeTags>
+            <li>PFCraftingResources</li>
+        </tradeTags>
+    </ThingDef>
 
-<ThingDef ParentName="PFSyringeBase">
-<defName>PFEmptySyringe</defName>
-<label>Empty Syringe</label>
-<description>An empty hypodermic syringe. Used in making stimpaks (and soon to be new chem recipes)</description>
-<graphicData>
-<texPath>Things/Fallout/Crafting/EmptySyringe</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<costList>
-<Steel>5</Steel>
-</costList>
-<resourceReadoutPriority>Middle</resourceReadoutPriority>
-<soundInteract>Metal_Drop</soundInteract>
-<soundDrop>Metal_Drop</soundDrop>
-<stackLimit>200</stackLimit>
-<useHitPoints>true</useHitPoints>
-<statBases>
-<WorkToMake>120</WorkToMake>
-<MarketValue>8</MarketValue>
-<MaxHitPoints>100</MaxHitPoints>
-<Mass>0.05</Mass>
-</statBases>
-<thingCategories>
-<li>Items</li>
-</thingCategories>
-<tradeTags>
-<li>PFCraftingResources</li>
-</tradeTags>
-</ThingDef>
+    <ThingDef ParentName="PFSyringeBase">
+        <defName>PFEmptySyringe</defName>
+        <label>Empty Syringe</label>
+        <description>An empty hypodermic syringe. Used in making stimpaks (and soon to be new chem recipes)
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Crafting/EmptySyringe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>200</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <WorkToMake>120</WorkToMake>
+            <MarketValue>8</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.05</Mass>
+        </statBases>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <tradeTags>
+            <li>PFCraftingResources</li>
+        </tradeTags>
+    </ThingDef>
 
-<ThingDef ParentName="PFLeatherBase">
-<defName>PFHardenedLeather</defName>
-<label>Hardened Leather</label>
-<description>Leather that has been reinforced for use in light armor. (Currently only used for Armored Vault Jumpsuit)</description>
-<graphicData>
-<texPath>Things/Fallout/Crafting/HardLeather</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<costStuffCount>2</costStuffCount>
-<stuffCategories>
-<li>Leathery</li>
-</stuffCategories>
-<resourceReadoutPriority>Middle</resourceReadoutPriority>
-<stackLimit>75</stackLimit>
-<useHitPoints>true</useHitPoints>
-<statBases>
-<WorkToMake>20</WorkToMake>
-<MaxHitPoints>100</MaxHitPoints>
-<Flammability>1</Flammability>
-<MarketValue>7.5</MarketValue>
-<Mass>0.2</Mass>
-</statBases>
-<thingCategories>
-<li>Textiles</li>
-</thingCategories>
-</ThingDef>
+    <ThingDef ParentName="PFLeatherBase">
+        <defName>PFHardenedLeather</defName>
+        <label>Hardened Leather</label>
+        <description>Leather that has been reinforced for use in light armor. (Currently only used for Armored Vault
+            Jumpsuit)
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Crafting/HardLeather</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>2</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>75</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <WorkToMake>20</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1</Flammability>
+            <MarketValue>7.5</MarketValue>
+            <Mass>0.2</Mass>
+        </statBases>
+        <thingCategories>
+            <li>Textiles</li>
+        </thingCategories>
+    </ThingDef>
 
 </Defs>

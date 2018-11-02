@@ -2,73 +2,77 @@
 
 <Defs>
 
-	<ThingDef ParentName="PlantBase">
-		<defName>PFPlantXanderRoot</defName>
-		<label>Xander Root</label>
-		<description>A large turnip-like root with mild healing properties. When combined with a Broc Flower it can create herbal medicine or stimpaks.</description>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Fallout/Plants/XanderRoot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<selectable>true</selectable>
-		<pathCost>10</pathCost>
-		<plant>
-			<fertilitySensitivity>0.6</fertilitySensitivity>
-			<growDays>4.5</growDays>
-			<dieIfLeafless>true</dieIfLeafless>
-			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>PFXanderRootItem</harvestedThingDef>
-			<harvestYield>1</harvestYield>
-			<sowMinSkill>5</sowMinSkill>
-			<sowTags>
-				<li>Ground</li>
-				<li>Hydroponic</li>
-			</sowTags>
-			<topWindExposure>0.1</topWindExposure>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.0</max>
-			</visualSizeRange>
-			<purpose>Health</purpose>
-		</plant>
-	</ThingDef>
-	
-	<ThingDef ParentName="PlantBase">
-		<defName>PFPlantBrocFlower</defName>
-		<label>Broc Flower</label>
-		<description>A small orange flower with slight medicinal properties. When combined with a Xander Root it can create herbal medicine or stimpaks.</description>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Fallout/Plants/BrocFlowerPlant</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
-		</graphicData>
-		<selectable>true</selectable>
-		<pathCost>10</pathCost>
-		<plant>
-			<fertilitySensitivity>0.75</fertilitySensitivity>
-			<growDays>4</growDays>
-			<dieIfLeafless>true</dieIfLeafless>
-			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>PFBrocFlowerItem</harvestedThingDef>
-			<harvestYield>1</harvestYield>
-			<sowMinSkill>6</sowMinSkill>
-			<sowTags>
-				<li>Ground</li>
-				<li>Hydroponic</li>
-			</sowTags>
-			<topWindExposure>0.1</topWindExposure>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.0</max>
-			</visualSizeRange>
-			<purpose>Health</purpose>
-		</plant>
-	</ThingDef>
-	
+    <ThingDef ParentName="PlantBase">
+        <defName>PFPlantXanderRoot</defName>
+        <label>Xander Root</label>
+        <description>A large turnip-like root with mild healing properties. When combined with a Broc Flower it can
+            create herbal medicine or stimpaks.
+        </description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Fallout/Plants/XanderRoot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <plant>
+            <fertilitySensitivity>0.6</fertilitySensitivity>
+            <growDays>4.5</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>PFXanderRootItem</harvestedThingDef>
+            <harvestYield>1</harvestYield>
+            <sowMinSkill>5</sowMinSkill>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.0</max>
+            </visualSizeRange>
+            <purpose>Health</purpose>
+        </plant>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantBase">
+        <defName>PFPlantBrocFlower</defName>
+        <label>Broc Flower</label>
+        <description>A small orange flower with slight medicinal properties. When combined with a Xander Root it can
+            create herbal medicine or stimpaks.
+        </description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Fallout/Plants/BrocFlowerPlant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <plant>
+            <fertilitySensitivity>0.75</fertilitySensitivity>
+            <growDays>4</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>PFBrocFlowerItem</harvestedThingDef>
+            <harvestYield>1</harvestYield>
+            <sowMinSkill>6</sowMinSkill>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.0</max>
+            </visualSizeRange>
+            <purpose>Health</purpose>
+        </plant>
+    </ThingDef>
+
 </Defs>

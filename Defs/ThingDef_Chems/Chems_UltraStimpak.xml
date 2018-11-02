@@ -2,152 +2,154 @@
 
 <Defs>
 
-<ThingDef ParentName="ChemBase">
-<defName>PFUltraStimpak</defName>
-<label>Ultra Stimpak</label>
-<description>A syringe containing a cocktail of very high grade medicine and drugs that quickly heal injuries, scars, infections, and even can regenerate limbs and organs to some capacity.</description>
-<graphicData>
-<texPath>Things/Fallout/Chems/UltraStimpak</texPath>
-<graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<rotatable>false</rotatable>
-<statBases>
-<MarketValue>600</MarketValue>
-<Mass>0.1</Mass>
-</statBases>
-<techLevel>Spacer</techLevel>
-<ingestible>
-<foodType>Processed</foodType>
-<drugCategory>Medical</drugCategory>
-<baseIngestTicks>120</baseIngestTicks>
-<ingestHoldUsesTable>false</ingestHoldUsesTable>
-<ingestCommandString>Inject {0}</ingestCommandString>
-<ingestReportString>Injecting {0}.</ingestReportString>
-<outcomeDoers>
-<li Class="IngestionOutcomeDoer_GiveHediff">
-<hediffDef>PFUltraStimpakHeal</hediffDef>
-<severity>0.1</severity>
-<toleranceChemical>PFUltraStimpakTolerance</toleranceChemical>
-</li>
-<li Class="IngestionOutcomeDoer_GiveHediff">
-<hediffDef>PFUltraStimpakTolerance</hediffDef>
-<severity>0.1</severity>
-<divideByBodySize>true</divideByBodySize>
-</li>
-</outcomeDoers>
-</ingestible>
-<comps>
-<li Class="CompProperties_Drug">
-<chemical>PFUltraStimpakC</chemical>
-<addictiveness>0</addictiveness>
-<minToleranceToAddict>0.9</minToleranceToAddict>
-<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
-<needLevelOffset>1</needLevelOffset>
-<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
-<listOrder>2005</listOrder>
-</li>
-</comps>
-</ThingDef>
+    <ThingDef ParentName="ChemBase">
+        <defName>PFUltraStimpak</defName>
+        <label>Ultra Stimpak</label>
+        <description>A syringe containing a cocktail of very high grade medicine and drugs that quickly heal injuries,
+            scars, infections, and even can regenerate limbs and organs to some capacity.
+        </description>
+        <graphicData>
+            <texPath>Things/Fallout/Chems/UltraStimpak</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MarketValue>600</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+        <techLevel>Spacer</techLevel>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <drugCategory>Medical</drugCategory>
+            <baseIngestTicks>120</baseIngestTicks>
+            <ingestHoldUsesTable>false</ingestHoldUsesTable>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>PFUltraStimpakHeal</hediffDef>
+                    <severity>0.1</severity>
+                    <toleranceChemical>PFUltraStimpakTolerance</toleranceChemical>
+                </li>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>PFUltraStimpakTolerance</hediffDef>
+                    <severity>0.1</severity>
+                    <divideByBodySize>true</divideByBodySize>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>PFUltraStimpakC</chemical>
+                <addictiveness>0</addictiveness>
+                <minToleranceToAddict>0.9</minToleranceToAddict>
+                <existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+                <needLevelOffset>1</needLevelOffset>
+                <isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+                <listOrder>2005</listOrder>
+            </li>
+        </comps>
+    </ThingDef>
 
-<HediffDef>
-<defName>PFUltraStimpakHigh</defName>
-<hediffClass>HediffWithComps</hediffClass>
-<label>High on Ultra Stimpak</label>
-<labelNoun>an Ultra Stimpak high</labelNoun>
-<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-<scenarioCanAdd>false</scenarioCanAdd>
-<maxSeverity>1.0</maxSeverity>
-<isBad>false</isBad>
-<comps>
-<li Class="HediffCompProperties_SeverityPerDay">
-<severityPerDay>-0.5</severityPerDay>
-</li>
-			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>
-					<min>1000</min>
-					<max>2000</max>
-				</disappearsAfterTicks>
-			</li>
-</comps>
-</HediffDef>
+    <HediffDef>
+        <defName>PFUltraStimpakHigh</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>High on Ultra Stimpak</label>
+        <labelNoun>an Ultra Stimpak high</labelNoun>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.5</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>
+                    <min>1000</min>
+                    <max>2000</max>
+                </disappearsAfterTicks>
+            </li>
+        </comps>
+    </HediffDef>
 
-<ThoughtDef>
-<defName>PFUltraStimpakHigh</defName>
-<workerClass>ThoughtWorker_Hediff</workerClass>
-<hediff>PFUltraStimpakHeal</hediff>
-<stages>
-<li>
-<label>Healing from Ultra Stimpak</label>
-<description>All of my injuries are healing, I'll be back to full strength in no time!</description>
-<baseMoodEffect>0</baseMoodEffect>
-</li>
-</stages>
-</ThoughtDef>
+    <ThoughtDef>
+        <defName>PFUltraStimpakHigh</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PFUltraStimpakHeal</hediff>
+        <stages>
+            <li>
+                <label>Healing from Ultra Stimpak</label>
+                <description>All of my injuries are healing, I'll be back to full strength in no time!</description>
+                <baseMoodEffect>0</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 
-<ChemicalDef>
-<defName>PFUltraStimpakC</defName>
-<label>Ultra Stimpak</label>
-<addictionHediff>PFUltraStimpakAddiction</addictionHediff>
-<toleranceHediff>PFUltraStimpakTolerance</toleranceHediff>
-<canBinge>false</canBinge>
-</ChemicalDef>
+    <ChemicalDef>
+        <defName>PFUltraStimpakC</defName>
+        <label>Ultra Stimpak</label>
+        <addictionHediff>PFUltraStimpakAddiction</addictionHediff>
+        <toleranceHediff>PFUltraStimpakTolerance</toleranceHediff>
+        <canBinge>false</canBinge>
+    </ChemicalDef>
 
-<NeedDef ParentName="ChemAddictionNeedBase">
-<defName>Chemical_PFUltraStimpak</defName>
-<needClass>Need_Chemical</needClass>
-<label>Ultra Stimpak</label>
-<description>This shouldn't be a thing</description>
-<listPriority>45</listPriority>
-</NeedDef>
+    <NeedDef ParentName="ChemAddictionNeedBase">
+        <defName>Chemical_PFUltraStimpak</defName>
+        <needClass>Need_Chemical</needClass>
+        <label>Ultra Stimpak</label>
+        <description>This shouldn't be a thing</description>
+        <listPriority>45</listPriority>
+    </NeedDef>
 
-<HediffDef ParentName="ChemToleranceBase">
-<defName>PFUltraStimpakTolerance</defName>
-<label>Stimpak tolerance</label>
-<comps>
-<li Class="HediffCompProperties_SeverityPerDay">
-<severityPerDay>-0.5</severityPerDay>
-</li>
-<li Class="HediffCompProperties_DrugEffectFactor">
-<chemical>PFUltraStimpakC</chemical>
-</li>
-</comps>
-</HediffDef>
+    <HediffDef ParentName="ChemToleranceBase">
+        <defName>PFUltraStimpakTolerance</defName>
+        <label>Stimpak tolerance</label>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.5</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_DrugEffectFactor">
+                <chemical>PFUltraStimpakC</chemical>
+            </li>
+        </comps>
+    </HediffDef>
 
-<HediffDef ParentName="ChemAddictionBase">
-<defName>PFUltraStimpakAddiction</defName>
-<hediffClass>Hediff_Addiction</hediffClass>
-<label>Ultra Stimpak addiction</label>
-<causesNeed>Chemical_PFStimpak</causesNeed>
-<comps>
-<li Class="HediffCompProperties_SeverityPerDay">
-<severityPerDay>-0.02</severityPerDay>
-</li>
-</comps>
-<stages>
-<li>
-</li>
-<li>
-<label>Withdrawal</label>
-<capMods>
-</capMods>
-</li>
-</stages>
-</HediffDef>
+    <HediffDef ParentName="ChemAddictionBase">
+        <defName>PFUltraStimpakAddiction</defName>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <label>Ultra Stimpak addiction</label>
+        <causesNeed>Chemical_PFStimpak</causesNeed>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.02</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+            </li>
+            <li>
+                <label>Withdrawal</label>
+                <capMods>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
 
-<ThoughtDef>
-<defName>PFUltraStimpakWithdrawal</defName>
-<workerClass>ThoughtWorker_Hediff</workerClass>
-<hediff>PFUltraStimpakAddiction</hediff>
-<stages>
-<li>
-<visible>false</visible>
-</li>
-<li>
-<label>You shouldn't be seeing this</label>
-<description>Ultra Stimpaks don't even have a withdrawl</description>
-<baseMoodEffect>0</baseMoodEffect>
-</li>
-</stages>
-</ThoughtDef>
+    <ThoughtDef>
+        <defName>PFUltraStimpakWithdrawal</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PFUltraStimpakAddiction</hediff>
+        <stages>
+            <li>
+                <visible>false</visible>
+            </li>
+            <li>
+                <label>You shouldn't be seeing this</label>
+                <description>Ultra Stimpaks don't even have a withdrawl</description>
+                <baseMoodEffect>0</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 
 </Defs>

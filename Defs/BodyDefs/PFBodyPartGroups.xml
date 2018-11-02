@@ -2,24 +2,24 @@
 
 <Defs>
 
-	<BodyPartGroupDef>
-		<defName>PFScorpTail</defName>
-		<label>Radscorpion Tail</label>
-	</BodyPartGroupDef>
-	
-	<BodyPartGroupDef>
-		<defName>PFStinger</defName>
-		<label>Radscorpion Stinger</label>
-	</BodyPartGroupDef>
-	
-	<BodyPartGroupDef>
-		<defName>PFScorpPincerLeft</defName>
-		<label>Left Pincer</label>
-	</BodyPartGroupDef>
-	
-	<BodyPartGroupDef>
-		<defName>PFScorpPincerRight</defName>
-		<label>Right Pincer</label>
-	</BodyPartGroupDef>
-	
+    <BodyPartGroupDef>
+        <defName>PFScorpTail</defName>
+        <label>Radscorpion Tail</label>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>PFStinger</defName>
+        <label>Radscorpion Stinger</label>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>PFScorpPincerLeft</defName>
+        <label>Left Pincer</label>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>PFScorpPincerRight</defName>
+        <label>Right Pincer</label>
+    </BodyPartGroupDef>
+
 </Defs>

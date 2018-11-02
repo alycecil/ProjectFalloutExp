@@ -2,14 +2,14 @@
 
 <Defs>
 
-	<ToolCapacityDef>
-		<defName>PFShishDamage</defName>
-		<label>slicing</label>
-	</ToolCapacityDef>
-	
-	<ToolCapacityDef>
-		<defName>PFScorpPoison</defName>
-		<label>stinging</label>
-	</ToolCapacityDef>
-	
+    <ToolCapacityDef>
+        <defName>PFShishDamage</defName>
+        <label>slicing</label>
+    </ToolCapacityDef>
+
+    <ToolCapacityDef>
+        <defName>PFScorpPoison</defName>
+        <label>stinging</label>
+    </ToolCapacityDef>
+
 </Defs>

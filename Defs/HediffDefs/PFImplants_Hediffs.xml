@@ -1,189 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-<HediffDef Abstract="True" Name="ImplantHediffBase">
-<hediffClass>Hediff_Implant</hediffClass>
-<defaultLabelColor>(0.65, 0.3, 0.9)</defaultLabelColor>
-<isBad>false</isBad>
-</HediffDef>
+    <HediffDef Abstract="True" Name="ImplantHediffBase">
+        <hediffClass>Hediff_Implant</hediffClass>
+        <defaultLabelColor>(0.65, 0.3, 0.9)</defaultLabelColor>
+        <isBad>false</isBad>
+    </HediffDef>
 
-<HediffDef ParentName="ImplantHediffBase">
-<defName>PFVATS</defName>
-<label>VATS Implant</label>
-<stages>
-<li>
-<capMods>
-<li>
-<capacity>Consciousness</capacity>
-<offset>0.2</offset>
-</li>
-<li>
-<capacity>Sight</capacity>
-<offset>0.2</offset>
-</li>
-<li>
-<capacity>Manipulation</capacity>
-<offset>0.1</offset>
-</li>
-</capMods>
-</li>
-</stages>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>PFVATS</defName>
+        <label>VATS Implant</label>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
 
-<spawnThingOnRemoved>PFVATSImplant</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PFVATSImplant</spawnThingOnRemoved>
 
-</HediffDef>
+    </HediffDef>
 
-<HediffDef ParentName="ImplantHediffBase">
-<defName>PFAgility</defName>
-<label>Agility Implant</label>
-<stages>
-<li>
-<capMods>
-<li>
-<capacity>Moving</capacity>
-<offset>0.2</offset>
-</li>
-</capMods>
-</li>
-</stages>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>PFAgility</defName>
+        <label>Agility Implant</label>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
 
-<spawnThingOnRemoved>PFAgilityImplant</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PFAgilityImplant</spawnThingOnRemoved>
 
-</HediffDef>
+    </HediffDef>
 
-<HediffDef ParentName="ImplantHediffBase">
-<defName>PFCharisma</defName>
-<label>Charisma Implant</label>
-<stages>
-<li>
-<capMods>
-<li>
-<capacity>Talking</capacity>
-<offset>0.2</offset>
-</li>
-</capMods>
-</li>
-</stages>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>PFCharisma</defName>
+        <label>Charisma Implant</label>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
 
-<spawnThingOnRemoved>PFCharismaImplant</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PFCharismaImplant</spawnThingOnRemoved>
 
-</HediffDef>
+    </HediffDef>
 
-<HediffDef ParentName="ImplantHediffBase">
-<defName>PFEndurance</defName>
-<label>Endurance Implant</label>
-<stages>
-<li>
-<painFactor>0.8</painFactor>
-<capMods>
-<li>
-<capacity>BloodFiltration</capacity>
-<offset>0.2</offset>
-</li>
-</capMods>
-</li>
-</stages>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>PFEndurance</defName>
+        <label>Endurance Implant</label>
+        <stages>
+            <li>
+                <painFactor>0.8</painFactor>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
 
-<spawnThingOnRemoved>PFEnduranceImplant</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PFEnduranceImplant</spawnThingOnRemoved>
 
-</HediffDef>
+    </HediffDef>
 
-<HediffDef ParentName="ImplantHediffBase">
-<defName>PFIntelligence</defName>
-<label>Intelligence Implant</label>
-<stages>
-<li>
-<capMods>
-<li>
-<capacity>Consciousness</capacity>
-<offset>0.1</offset>
-</li>
-</capMods>
-</li>
-</stages>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>PFIntelligence</defName>
+        <label>Intelligence Implant</label>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
 
-<spawnThingOnRemoved>PFIntelligenceImplant</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PFIntelligenceImplant</spawnThingOnRemoved>
 
-</HediffDef>
+    </HediffDef>
 
-<HediffDef ParentName="ImplantHediffBase">
-<defName>PFPerception</defName>
-<label>Perception Implant</label>
-<stages>
-<li>
-<capMods>
-<li>
-<capacity>Sight</capacity>
-<offset>0.2</offset>
-</li>
-<li>
-<capacity>Hearing</capacity>
-<offset>0.2</offset>
-</li>
-</capMods>
-</li>
-</stages>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>PFPerception</defName>
+        <label>Perception Implant</label>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
 
-<spawnThingOnRemoved>PFPerceptionImplant</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PFPerceptionImplant</spawnThingOnRemoved>
 
-</HediffDef>
+    </HediffDef>
 
-<HediffDef ParentName="ImplantHediffBase">
-<defName>PFStrength</defName>
-<label>Strength Implant</label>
-<stages>
-<li>
-<capMods>
-<li>
-<capacity>Manipulation</capacity>
-<offset>0.2</offset>
-</li>
-</capMods>
-</li>
-</stages>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>PFStrength</defName>
+        <label>Strength Implant</label>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
 
-<spawnThingOnRemoved>PFStrengthImplant</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PFStrengthImplant</spawnThingOnRemoved>
 
-</HediffDef>
+    </HediffDef>
 
-<HediffDef ParentName="ImplantHediffBase">
-<defName>PFStrength</defName>
-<label>Strength Implant</label>
-<stages>
-<li>
-<capMods>
-<li>
-<capacity>Manipulation</capacity>
-<offset>0.2</offset>
-</li>
-</capMods>
-</li>
-</stages>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>PFStrength</defName>
+        <label>Strength Implant</label>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
 
-<spawnThingOnRemoved>PFStrengthImplant</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PFStrengthImplant</spawnThingOnRemoved>
 
-</HediffDef>
+    </HediffDef>
 
-<HediffDef ParentName="ImplantHediffBase">
-<defName>PFPMB</defName>
-<label>Phoenix Monocyte Breeder Implant</label>
-<stages>
-<li>
-<capMods>
-<li>
-<capacity>BloodFiltration</capacity>
-<offset>0.25</offset>
-</li>
-<li>
-<capacity>Metabolism</capacity>
-<offset>-0.25</offset>
-</li>
-</capMods>
-</li>
-</stages>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>PFPMB</defName>
+        <label>Phoenix Monocyte Breeder Implant</label>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
 
-<spawnThingOnRemoved>PFPMBImplant</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PFPMBImplant</spawnThingOnRemoved>
 
-</HediffDef>
+    </HediffDef>
 
 </Defs>

@@ -2,10 +2,10 @@
 
 <Defs>
 
-	<ThingCategoryDef>
-		<defName>PFCraftingResources</defName>
-		<label>FalloutCraftingResources</label>
-		<parent>Items</parent>
-	</ThingCategoryDef>
-	
+    <ThingCategoryDef>
+        <defName>PFCraftingResources</defName>
+        <label>FalloutCraftingResources</label>
+        <parent>Items</parent>
+    </ThingCategoryDef>
+
 </Defs>

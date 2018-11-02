@@ -2,385 +2,385 @@
 
 <Defs>
 
-<SoundDef>
-	<defName>ShotAntiMaterielRifle</defName>
-	<context>MapOnly</context>
-	<eventNames/>
-	<maxSimultaneous>1</maxSimultaneous>
-	<subSounds>
-		<li>
-			<grains>
-				<li Class="AudioGrain_Clip">
-					<clipPath>Things/AntiMaterialRiflePF</clipPath>
-				</li>
-			</grains>
-			<pitchRange>
-				<min>0.9152174</min>
-				<max>1.042391</max>
-			</pitchRange>
-		</li>
-	</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>ShotAntiMaterielRifle</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/AntiMaterialRiflePF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-	<SoundDef>
-		<defName>InteractAntiMaterielRifle</defName>
-		<context>MapOnly</context>
-		<eventNames/>
-		<maxSimultaneous>1</maxSimultaneous>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-					<clipPath>Things/AntiMaterialRifleInteractPF</clipPath>
-					</li>
-				</grains>
-				<pitchRange>
-					<min>0.9152174</min>
-					<max>1.042391</max>
-				</pitchRange>
-			</li>
-		</subSounds>
-	</SoundDef>
+    <SoundDef>
+        <defName>InteractAntiMaterielRifle</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/AntiMaterialRifleInteractPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>ShotBozar</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/BozarPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>ShotBozar</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/BozarPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>ShotVarmintRifle</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/VarmintRiflePF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>ShotVarmintRifle</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/VarmintRiflePF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
 
-<SoundDef>
-<defName>ShotPFLaserRifle</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/LaserRiflePF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>ShotPFLaserRifle</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/LaserRiflePF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>InteractPFLaserRifle</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/LaserRifleInteractPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>InteractPFLaserRifle</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/LaserRifleInteractPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>ShotAssaultCarbine</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/AssaultCarbinePF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>ShotAssaultCarbine</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/AssaultCarbinePF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>Shishkebab</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/ShishkebabPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>Shishkebab</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/ShishkebabPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>InteractShishkebab</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/ShishkebabInteractPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>InteractShishkebab</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/ShishkebabInteractPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>InteractLaserGatling</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/InteractLaserGatlingPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>InteractLaserGatling</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/InteractLaserGatlingPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>ShotLaserGatling</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/ShotLaserGatlingPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>ShotLaserGatling</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/ShotLaserGatlingPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>LightDynamite</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/ShorterLightFusePF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>LightDynamite</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/ShorterLightFusePF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>ShotSilenced</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/ShotSilencedPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>ShotSilenced</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/ShotSilencedPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>InteractPlasmaPistol</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/InteractPlasmaPistolPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>InteractPlasmaPistol</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/InteractPlasmaPistolPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>ShotPlasmaPistol</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/PlasmaPistolPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>ShotPlasmaPistol</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/PlasmaPistolPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-<SoundDef>
-<defName>PlasmaBoom</defName>
-<context>MapOnly</context>
-<eventNames/>
-<maxSimultaneous>1</maxSimultaneous>
-<subSounds>
-<li>
-<grains>
-<li Class="AudioGrain_Clip">
-<clipPath>Things/PlasmaBoomPF</clipPath>
-</li>
-</grains>
-<pitchRange>
-<min>0.9152174</min>
-<max>1.042391</max>
-</pitchRange>
-</li>
-</subSounds>
-</SoundDef>
+    <SoundDef>
+        <defName>PlasmaBoom</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/PlasmaBoomPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-	<SoundDef>
-		<defName>ShotJunkJet</defName>
-		<context>MapOnly</context>
-		<eventNames/>
-		<maxSimultaneous>1</maxSimultaneous>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>Things/JunkJetPF</clipPath>
-					</li>
-				</grains>
-				<pitchRange>
-					<min>0.9152174</min>
-					<max>1.042391</max>
-				</pitchRange>
-			</li>
-		</subSounds>
-	</SoundDef>
+    <SoundDef>
+        <defName>ShotJunkJet</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/JunkJetPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-	<SoundDef>
-		<defName>PFRipperSound</defName>
-		<context>MapOnly</context>
-		<eventNames/>
-		<maxSimultaneous>1</maxSimultaneous>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>Things/RipperPF</clipPath>
-					</li>
-				</grains>
-				<pitchRange>
-					<min>0.9152174</min>
-					<max>1.042391</max>
-				</pitchRange>
-			</li>
-		</subSounds>
-	</SoundDef>
+    <SoundDef>
+        <defName>PFRipperSound</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/RipperPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
-	<SoundDef>
-		<defName>PFInteractRipper</defName>
-		<context>MapOnly</context>
-		<eventNames/>
-		<maxSimultaneous>1</maxSimultaneous>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>Things/InteractRipperPF</clipPath>
-					</li>
-				</grains>
-				<pitchRange>
-					<min>0.9152174</min>
-					<max>1.042391</max>
-				</pitchRange>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
+    <SoundDef>
+        <defName>PFInteractRipper</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Things/InteractRipperPF</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>
+                    <min>0.9152174</min>
+                    <max>1.042391</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
 </Defs>
